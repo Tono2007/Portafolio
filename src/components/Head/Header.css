@@ -16,7 +16,7 @@ header ul li a {
   letter-spacing: 1px;
 }
 header ul li a:hover {
-  color: #ff014f;
+  color: #66b58f;
 }
 
 .home-btn {
@@ -25,14 +25,14 @@ header ul li a:hover {
   transition: 0.3s all ease;
   cursor: pointer;
   height: fit-content;
-  color: #ff014f;
+  color: #66b58f;
 }
 .home-btn {
   background: linear-gradient(145deg, #e2e8ec, #ffffff);
-  box-shadow: 4px 4px 8px #cbcbcb, 14px -4px 8px #ffffff;
+  box-shadow: 4px 4px 8px #cbcbcb, 4px -4px 8px #ffffff;
 }
 .home-btn:hover {
-  background-color: #ff014f;
+  background: #66b58f;
   color: #fff;
 }
 .open {
@@ -80,21 +80,23 @@ header ul li a:hover {
   .close,
   .open {
     position: absolute;
-    top: 35px;
-    right: 20px;
-    color: #ff014f;
+    color: #66b58f;
     display: block;
     font-size: 25px;
     z-index: 999;
   }
   .open {
     top: 20px;
+    right: 20px;
+    cursor: pointer;
+    transition: 0.5s;
   }
   .close {
+    top: 35px;
     right: 45%;
   }
   .close.home-btn {
-    color: #ff014f;
+    color: #66b58f;
     border-radius: 50%;
     padding: 0;
     width: 60px;
@@ -104,7 +106,4 @@ header ul li a:hover {
   .header.active {
     height: 10vh;
   }
-}
-.demo {
-  height: 200vh;
 }

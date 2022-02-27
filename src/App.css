@@ -52,13 +52,55 @@ button {
   color: #000;
 }
 
-.btn_shadow:hover {
+.btn_shadow {
   background: linear-gradient(145deg, #e2e8ec, #ffffff);
   box-shadow: 4px 4px 8px #cbcbcb, 4px -4px 8px #ffffff;
 }
 
 .btn_shadow:hover {
-  background: #ff014f;
+  background: #66b58f;
   color: #fff;
   transform: translateY(-10px);
+}
+
+.row,
+.left,
+.right {
+  width: 50%;
+}
+
+.top {
+  margin-top: 80px;
+}
+
+.mtop {
+  margin-top: 40px;
+}
+
+.heading {
+  margin: 50px 0;
+}
+.heading h4 {
+  color: #66b58f;
+  letter-spacing: 2px;
+  font-weight: 400;
+}
+.heading h1 {
+  font-size: 60px;
+  color: #3c3e41;
+}
+h1 {
+  color: #3c3e41;
+ }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+}
+p {
+  color: #3c3e41;
+}
+.text-center {
+  text-align: center;
 }

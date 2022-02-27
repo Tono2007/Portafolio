@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./Header.css";
+import logo1 from "../../assets/logo_fondo_blanco_4.png";
 
 const Header = () => {
   window.addEventListener("scroll", () => {
@@ -13,10 +14,13 @@ const Header = () => {
       <header className="header">
         <div className="container d_flex">
           <div className="logo">
-            <img src="https://picsum.photos/50/50" alt="<AntonioAyola/>" />
+            <img
+              src={logo1}
+              alt="<AntonioAyola/>"
+              style={{ width: "auto", height: "40px" }}
+            />
           </div>
           <div className="navlink">
-            {/*  <ul className="link f_flex uppercase"> */}
             <ul
               className={Mobile ? "nav-links-mobile" : "link f_flex uppercase"}
               onClick={() => setMobile(false)}
@@ -28,7 +32,7 @@ const Header = () => {
                 <a href="#features">features</a>
               </li>
               <li>
-                <a href="#portafolio">portafolio</a>
+                <a href="#portfolio">portafolio</a>
               </li>
               <li>
                 <a href="#resume">resume</a>
@@ -43,7 +47,7 @@ const Header = () => {
                 <a href="#contact">contact</a>
               </li>
               <li>
-                <button className="home-btn">BUY NOW</button>
+                <button className="home-btn">SUPPORT ME</button>
               </li>
             </ul>
             <button className="toggle" onClick={() => setMobile(!Mobile)}>
@@ -56,7 +60,6 @@ const Header = () => {
           </div>
         </div>
       </header>
-      <section className="demo"></section>
     </>
   );
 };

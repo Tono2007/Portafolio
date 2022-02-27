@@ -1,0 +1,89 @@
+.hero {
+  position: relative;
+}
+.hero h3 {
+  font-weight: 100;
+  letter-spacing: 2px;
+}
+
+.hero h1 {
+  font-size: 60px;
+  font-weight: bold;
+}
+.hero h1 span {
+  color: #66b58f;
+}
+.hero h2 {
+  font-size: 50px;
+  font-weight: bold;
+  color: #66b58f;
+}
+.hero h2 span {
+  color: black;
+}
+.hero p {
+  color: #878e99;
+  font-size: 18px;
+  line-height: 30px;
+  margin-top: 30px;
+}
+.hero_btn {
+  margin-top: 20%;
+}
+
+.hero_btn h4 {
+  font-weight: 500;
+  letter-spacing: 2px;
+  color: #43474b;
+  font-size: 15px;
+  margin: 30px 0;
+}
+
+.hero_btn button {
+  margin-right: 30px;
+}
+
+.hero_btn i {
+  font-size: 20px;
+}
+.hero_btn button img {
+  object-fit: cover;
+  width: 50px;
+  height: 50px;
+}
+
+.hero .left {
+  margin-right: 10%;
+}
+.hero .right {
+  width: 40%;
+  position: relative;
+}
+
+.hero .right_img {
+  background: linear-gradient(145deg, #e2e8ec, #ffffff);
+  box-shadow: 4px 4px 8px #cbcbcb, 4px -4px 8px #ffffff;
+  border-radius: 10px;
+  height: 580px;
+  width: 510px;
+  margin-top: 20%;
+}
+
+.hero .right_img img {
+  position: absolute;
+  top: 0;
+  right: 10%;
+  width: 510px;
+}
+
+.skillImg {
+  height: 200px;
+}
+
+.skillBtn {
+  width: 60px;
+  height: 60px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
