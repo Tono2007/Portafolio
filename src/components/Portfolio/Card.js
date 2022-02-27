@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
 
 const Card = (props) => {
   const { id, category, totalLike, title, image } = props.project;
@@ -9,21 +9,27 @@ const Card = (props) => {
 
   return (
     <>
-      <div className="box btn_shadow">
+      <div
+        className="box btn_shadow"
+        onClick={toogleModal}
+        onKeyPress={toogleModal}
+        role="button"
+        tabIndex={0}
+      >
         <div className="img">
-          <img src={image} alt="" onClick={toogleModal} />
+          <img src={image} alt="" />
         </div>
         <div className="category d_flex">
-          <span onClick={toogleModal}>{category}</span>
-          <label>
-            <i className="fas fa-heart"></i>
+          <span>{category}</span>
+          <span>
+            <i className="fas fa-heart" />
             {totalLike}
-          </label>
+          </span>
         </div>
         <div className="title">
-          <h2 onClick={toogleModal}>{title}</h2>
+          <h2>{title}</h2>
           <a href="#popup" className="arrow" onClick={toogleModal}>
-            <i className="fas fa-arrow-right"></i>
+            <i className="fas fa-arrow-right" />
           </a>
         </div>
       </div>
@@ -31,7 +37,7 @@ const Card = (props) => {
       {/*Modal */}
       {modal && (
         <div className="modal">
-          <div onClick={toogleModal} className="overlay"></div>
+          <div onClick={toogleModal} className="overlay" role="none" />
           <div className="modal-content d_flex">
             <div className="modal-img left" left>
               <img src={image} alt="" />
@@ -48,15 +54,19 @@ const Card = (props) => {
                 Ratione nobis optio, dolor ea molestias ullam sequi omnis libero
               </p>
               <div className="button f_flex mtop">
-                <button className="btn_shadow">
-                  LIKE THIS <i className="fas fa-thumbs-up"></i>
+                <button className="btn_shadow" type="button">
+                  LIKE THIS <i className="fas fa-thumbs-up" />
                 </button>
-                <button className="btn_shadow">
-                  VIEW PROJECT <i className="fas fa-chevron-right"></i>
+                <button className="btn_shadow" type="button">
+                  VIEW PROJECT <i className="fas fa-chevron-right" />
                 </button>
               </div>
-              <button className="close-modal btn_shadow" onClick={toogleModal}>
-                <i className="fas fa-times"></i>
+              <button
+                className="close-modal btn_shadow"
+                onClick={toogleModal}
+                type="button"
+              >
+                <i className="fas fa-times" />
               </button>
             </div>
           </div>

@@ -30,7 +30,7 @@
   margin: 20px 0 30px 0;
   text-transform: uppercase;
 }
-.portfolio .category span {
+.portfolio .category span:nth-child(1) {
   color: #66b58f;
   font-size: 13px;
   letter-spacing: 2px;
@@ -89,7 +89,7 @@
 }
 
 .overlay {
-  background-color: #ecf0f3;
+  background-color: #ecf0f3f6;
 }
 .modal-content {
   position: absolute;
