@@ -57,6 +57,11 @@ button {
   box-shadow: 4px 4px 8px #cbcbcb, 4px -4px 8px #ffffff;
 }
 
+.box_shadow {
+  background: linear-gradient(145deg, #e2e8ec, #ffffff);
+  box-shadow: 4px 4px 8px #cbcbcb, 4px -4px 8px #ffffff;
+  border-radius: 10px;
+}
 .btn_shadow:hover {
   background: #66b58f;
   color: #fff;
@@ -103,4 +108,14 @@ p {
 }
 .text-center {
   text-align: center;
+}
+
+textarea,
+input {
+  width: 100%;
+  padding: 20px;
+  border-radius: 5px;
+  outline: none;
+  border: 3px solid #e2e8ec;
+  margin-bottom: 20px;
 }

@@ -1,6 +1,9 @@
 .hero {
   position: relative;
 }
+.hero.active {
+  margin-top: 150px;
+}
 .hero h3 {
   font-weight: 100;
   letter-spacing: 2px;
@@ -64,16 +67,17 @@
   background: linear-gradient(145deg, #e2e8ec, #ffffff);
   box-shadow: 4px 4px 8px #cbcbcb, 4px -4px 8px #ffffff;
   border-radius: 10px;
-  height: 580px;
+  height: 500px;
   width: 510px;
-  margin-top: 20%;
+  margin-top: -0%;
 }
 
 .hero .right_img img {
   position: absolute;
-  top: 0;
-  right: 10%;
-  width: 510px;
+  top: -30px;
+  right: 15%;
+  max-width: 530px;
+  height: 100%;
 }
 
 .skillImg {

@@ -1,6 +1,7 @@
 header {
   height: 10vh;
-  line-height: 10vh;
+  max-height: 200px;
+  line-height: 7vh;
 }
 
 header .container {

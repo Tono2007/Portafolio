@@ -21,7 +21,6 @@ const data = [
     image: 'https://picsum.photos/50/50?random=3',
     icon: 'fas fa-chart-line main',
     title: 'Personal Portfolio April',
-
     description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat quibusdam omnis unde et tempora ',
   },
@@ -29,8 +28,7 @@ const data = [
     id: 4,
     image: 'https://picsum.photos/50/50?random=4',
     icon: 'fas fa-microchip main',
-    title: 'tituloo',
-
+    title: 'Business Strategy',
     description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat quibusdam omnis unde et ',
   },
@@ -38,9 +36,17 @@ const data = [
     id: 5,
     image: 'https://picsum.photos/50/50?random=5',
     icon: 'fas fa-desktop main',
-    title: 'tituloo',
-
-    description: 'description',
+    title: 'App Development',
+    description:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat quibusdam omnis unde et ',
+  },
+  {
+    id: 6,
+    image: 'https://picsum.photos/50/50?random=6',
+    icon: 'fas fa-desktop main',
+    title: 'App Development',
+    description:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat quibusdam omnis unde et ',
   },
 ];
 

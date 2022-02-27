@@ -39,7 +39,7 @@ const Card = (props) => {
         <div className="modal">
           <div onClick={toogleModal} className="overlay" role="none" />
           <div className="modal-content d_flex">
-            <div className="modal-img left" left>
+            <div className="modal-img left">
               <img src={image} alt="" />
             </div>
             <div className="modal-text right">

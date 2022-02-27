@@ -10,13 +10,13 @@ const Header = () => {
 
   const [Mobile, setMobile] = useState(false);
   return (
-    <header className="header">
+    <header className={Mobile ? 'header headerActive' : 'header'}>
       <div className="container d_flex">
         <div className="logo">
           <img
             src={logo1}
             alt="<AntonioAyola/>"
-            style={{ width: 'auto', height: '40px' }}
+            style={{ width: 'auto', height: '40px', marginTop: '10px' }}
           />
         </div>
         <div className="navlink">

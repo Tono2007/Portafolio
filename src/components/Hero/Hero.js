@@ -3,6 +3,10 @@ import './Hero.css';
 import hero from '../../assets/hero8.svg';
 
 const Hero = () => {
+  window.addEventListener('scroll', () => {
+    const header = document.querySelector('#home');
+    header.classList.toggle('active', window.scrollY > 100);
+  });
   return (
     <section className="hero" id="home">
       <div className="container f_flex top">
