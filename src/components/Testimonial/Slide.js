@@ -15,7 +15,7 @@ const Slide = ({ valueIndex, index, dataLength }) => {
   return (
     <article className={`box d_flex ${position}`}>
       <div className="left box_shadow">
-        <div className="img">
+        <div className="slide_img">
           <img
             src={`https://picsum.photos/400/250?random=${valueIndex}`}
             alt=""

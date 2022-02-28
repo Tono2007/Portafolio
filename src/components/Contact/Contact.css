@@ -1,0 +1,73 @@
+.contact .left {
+  width: 36%;
+}
+
+.contact .right {
+  width: 60%;
+}
+
+.contact .box {
+  padding: 30px;
+}
+.contact .details h1 {
+  margin: 20px 0;
+  font-size: 35px;
+}
+.contact .details p {
+  font-style: 17px;
+}
+
+.contact .button {
+  margin-top: 20px;
+}
+
+.contact .right {
+  padding: 35px;
+}
+
+.contact .input span {
+  font-size: 13px;
+}
+
+.contact input {
+  margin-top: 10px;
+}
+
+.contact .input {
+  width: 100%;
+}
+.contact .input.row {
+  width: 50%;
+}
+.contact .right button {
+  width: 100%;
+  color: #66b58f;
+}
+
+.contact .right button:hover {
+  color: white;
+}
+
+.contact .right button i {
+  margin-left: 10px;
+}
+
+.submitBtn {
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .contact .d_flex {
+    flex-direction: column;
+  }
+
+  .contact .left,
+  .contact .right {
+    width: 100%;
+    margin-top: 50px;
+  }
+
+  .contact img {
+    width: 100%;
+  }
+}

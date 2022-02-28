@@ -22,3 +22,10 @@
 .blog_contact .left {
   margin: 0 25px 0 0;
 }
+
+@media screen and (max-width: 768px) {
+  .modal-blog.modal .modal-content {
+    max-width: 90%;
+    margin-bottom: 20%;
+  }
+}

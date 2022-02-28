@@ -91,3 +91,25 @@
   justify-content: center;
   align-items: center;
 }
+
+@media screen and (max-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hero .left,
+  .hero .right {
+    width: 100%;
+    margin-left: 20px;
+  }
+
+  .hero .f_flex {
+    flex-direction: column;
+    flex-direction: column-reverse;
+  }
+
+  .hero .right_img {
+    width: 95%;
+    height: 54vh;
+  }
+}

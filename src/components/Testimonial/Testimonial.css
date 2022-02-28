@@ -78,4 +78,43 @@ article.nextSlide {
   transform: translateX(100%);
 }
 
+.slide_img img {
+  width: 100%;
+}
+
 /*Slider*/
+
+@media screen and (max-width: 768px) {
+  article {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .testimonial .left {
+    width: 100%;
+    display: flex;
+    margin: 0;
+    margin-top: 15%;
+  }
+
+  .testimonial .left img {
+    width: 190px;
+    border-radius: 10px;
+    margin-right: 20px;
+  }
+
+  .testimonial .right {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .testimonial .slide {
+    height: 100vh;
+    max-width: 90%;
+  }
+
+  .testimonial .quote {
+    display: none;
+  }
+}

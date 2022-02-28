@@ -89,7 +89,15 @@
 }
 
 .resume .box:hover.box::before {
-    background: #66b58f;
-
+  background: #66b58f;
 }
 
+@media screen and (max-width: 768px) {
+  .resume .d_flex {
+    flex-direction: column;
+  }
+  .resume .left::after {
+    top: 14%;
+    height: 105vh;
+  }
+}

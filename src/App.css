@@ -23,6 +23,11 @@ body {
 
 .f_flex {
   display: flex;
+  flex-wrap: wrap;
+}
+.c_flex {
+  display: flex;
+  flex-direction: column;
 }
 a {
   text-decoration: none;
@@ -118,4 +123,23 @@ input {
   outline: none;
   border: 3px solid #e2e8ec;
   margin-bottom: 20px;
+}
+
+footer {
+  margin: 20% 0 10% 0;
+}
+
+footer img {
+  width: 300px;
+}
+
+@media screen and (max-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .left,
+  .right {
+    width: 100%;
+  }
 }
