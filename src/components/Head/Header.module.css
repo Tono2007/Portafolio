@@ -1,0 +1,133 @@
+.header {
+  height: 10vh;
+  max-height: 200px;
+}
+
+.headerActive {
+  height: 12vh;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  background-color: #ecf0f3;
+  box-shadow: -1px 11px 24px -11px rgba(0, 0, 0, 0.75);
+  transition: 0.5s;
+}
+
+.nav {
+  height: 100%;
+  composes: container from global;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+
+.logo {
+  width: auto;
+  height: 45px;
+}
+
+.navLinks {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  composes: uppercase from global;
+}
+.navLinks li {
+  margin-left: 30px;
+}
+
+.navLinks li a {
+  transition: 0.5s;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.navLinks li a:hover {
+  color: #66b58f;
+}
+
+.homeBtn {
+  padding: 18px 25px;
+  border-radius: 6px;
+  transition: 0.3s all ease;
+  cursor: pointer;
+  height: fit-content;
+  color: #66b58f;
+  background: linear-gradient(145deg, #e2e8ec, #ffffff);
+  box-shadow: 4px 4px 8px #cbcbcb, 4px -4px 8px #ffffff;
+}
+.homeBtn:hover {
+  background: #66b58f;
+  color: #fff;
+}
+
+.navMobileLinks {
+  composes: navLinks;
+  position: absolute;
+  display: none;
+  list-style: none;
+  box-shadow: 0 50px 100px -20px rgba(50, 50, 93, 0.23),
+    0 30px 60px -30px rgb(0, 0, 0);
+  left: 0;
+  top: 0;
+  transition: all 0.5s ease-in-out;
+  width: 60%;
+  height: 100vh;
+  background-color: white;
+  z-index: 888;
+}
+.navMobileLinks li {
+  width: 100%;
+  transition: 0.5s;
+  text-transform: uppercase;
+  line-height: 70px;
+}
+
+.showMobile {
+  display: none;
+}
+.mobileBtns {
+  transition: 0.5s;
+  position: absolute;
+  color: #66b58f;
+  font-size: 25px;
+  z-index: 999;
+  composes: showMobile;
+}
+
+.openBtn {
+  composes: fas fa-bars from global;
+  composes: mobileBtns;
+  top: 35px;
+  right: 30px;
+  cursor: pointer;
+}
+.closeBtn {
+  composes: fas fa-times from global;
+  composes: homeBtn mobileBtns;
+  border-radius: 50%;
+  padding: 0;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  top: 35px;
+  right: 45%;
+}
+
+@media (max-width: 1100px) {
+  .showMobile {
+    display: block;
+  }
+
+  .navLinks {
+    display: none;
+  }
+  .navMobileLinks {
+    padding-top: 30px;
+    display: block;
+  }
+}

@@ -1,0 +1,101 @@
+.hero {
+}
+
+.heroActive {
+  margin-top: 10vh;
+}
+
+.heroContainer {
+  composes: container from global;
+  display: flex;
+  margin-top: 10px;
+  padding: 40px;
+}
+
+.heroLeft {
+  width: 60%;
+  margin-right: 5%;
+}
+
+.hero .heroLeft h3 {
+  font-weight: 100;
+  letter-spacing: 2px;
+}
+
+.hero h1 {
+  font-size: 60px;
+  font-weight: bold;
+}
+.hero h1 span {
+  color: #66b58f;
+}
+.hero h2 {
+  font-size: 50px;
+  font-weight: bold;
+  color: #66b58f;
+}
+.hero h2 span {
+  color: black;
+}
+.hero p {
+  color: #878e99;
+  font-size: 18px;
+  line-height: 30px;
+  margin-top: 30px;
+}
+.socialSkills {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5%;
+}
+.socialContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.socialSkills h4 {
+  font-weight: 500;
+  letter-spacing: 2px;
+  color: #43474b;
+  font-size: 15px;
+  margin: 30px 0;
+}
+
+.socialBtn {
+  margin-right: 30px;
+  composes: btnShadow from global;
+}
+.skillBtn {
+  margin-right: 30px;
+
+  width: 60px;
+  height: 60px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  composes: btnShadow from global;
+}
+
+.socialSkills i {
+  font-size: 20px;
+}
+.socialSkills button img {
+  object-fit: cover;
+  width: 50px;
+  height: 50px;
+}
+.heroRight {
+  width: 40%;
+}
+.rightImg {
+  position: relative;
+  background: linear-gradient(145deg, #e2e8ec, #ffffff);
+  box-shadow: 4px 4px 8px #cbcbcb, 4px -4px 8px #ffffff;
+  border-radius: 10px;
+  width: 100%;
+  height: 500px;
+}
+.rightImg img {
+  max-width: 100%;
+  height: 100%;
+}

@@ -11,7 +11,19 @@ body {
   font-family: 'Poppins', sans-serif;
   background-color: #ecf0f3;
 }
-.container {
+a {
+  text-decoration: none;
+  color: black;
+}
+li {
+  list-style: none;
+}
+button {
+  border: none;
+  outline: none;
+  background-color: none;
+}
+:global .container {
   max-width: 95%;
   margin: auto;
 }
@@ -29,24 +41,12 @@ body {
   display: flex;
   flex-direction: column;
 }
-a {
-  text-decoration: none;
-  color: black;
-}
-li {
-  list-style: none;
-}
 
-.uppercase {
+:global .uppercase {
   text-transform: uppercase;
 }
-.capitalize {
+:global .capitalize {
   text-transform: capitalize;
-}
-button {
-  border: none;
-  outline: none;
-  background-color: none;
 }
 
 .btn_shadow {
@@ -66,6 +66,29 @@ button {
   background: linear-gradient(145deg, #e2e8ec, #ffffff);
   box-shadow: 4px 4px 8px #cbcbcb, 4px -4px 8px #ffffff;
   border-radius: 10px;
+}
+
+:global .btnShadow {
+  padding: 18px 25px;
+  border-radius: 6px;
+  transition: 0.5s all ease;
+  cursor: pointer;
+  color: #000;
+}
+:global .btnShadow {
+  background: linear-gradient(145deg, #e2e8ec, #ffffff);
+  box-shadow: 4px 4px 8px #cbcbcb, 4px -4px 8px #ffffff;
+}
+
+.boxShadow {
+  background: linear-gradient(145deg, #e2e8ec, #ffffff);
+  box-shadow: 4px 4px 8px #cbcbcb, 4px -4px 8px #ffffff;
+  border-radius: 10px;
+}
+:global .btnShadow:hover {
+  background: #66b58f;
+  color: #fff;
+  transform: translateY(-10px);
 }
 .btn_shadow:hover {
   background: #66b58f;

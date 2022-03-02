@@ -1,4 +1,5 @@
-import './App.css';
+import './App.module.css';
+import './utils/theme.css';
 import Blog from './components/Blog/Blog';
 import Contact from './components/Contact/Contact';
 import Features from './components/Features/Features';

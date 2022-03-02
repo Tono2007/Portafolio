@@ -1,0 +1,16 @@
+:root :global {
+  --ddd: rgb(143, 26, 26);
+  --gradientPaper: linear-gradient(145deg, #e2e8ec, #961f1f);
+}
+
+.primaryColor {
+  color: aqua;
+}
+
+:global .font {
+  font-size: 55px;
+}
+
+:global .title {
+  font-size: 20px;
+}
