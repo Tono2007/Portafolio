@@ -10,6 +10,9 @@ const Footer = () => {
         </div>
         <p>© 2022 Copyright. All right reserved by Tono</p>
       </div>
+      <button type="button">
+        <i className="fas fa-angle-double-up" />
+      </button>
     </footer>
   );
 };

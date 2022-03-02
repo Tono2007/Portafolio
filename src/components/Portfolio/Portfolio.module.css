@@ -1,0 +1,222 @@
+.portafolio {
+}
+
+.heading {
+  composes: heading from global;
+  text-align: center;
+}
+
+.contentGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+}
+
+.card {
+  composes: btnShadow from global;
+  border-radius: 10px;
+}
+.card:hover {
+  background: none;
+  transform: translateY(0);
+  color: black;
+}
+
+.img {
+  width: 100%;
+  transition: 0.5s;
+}
+
+.img img {
+  max-height: 300px;
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
+  transition: 0.5s;
+  object-fit: cover;
+}
+
+.img:hover img {
+  transform: scale(1.05);
+}
+.category {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0 20px 0;
+  text-transform: uppercase;
+}
+.category span:nth-child(1) {
+  color: #66b58f;
+  font-size: 13px;
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+
+.arrow {
+  position: absolute;
+  right: 20px;
+  bottom: 10px;
+  transform: rotate(-45deg);
+  color: #66b58f;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.card:hover .arrow {
+  opacity: 1;
+}
+
+.card h2 {
+  font-size: 18px;
+  transition: 0.5s;
+  padding-bottom: 30px;
+}
+
+.card:hover h2 {
+  color: #66b58f;
+}
+
+.card span i {
+  margin-right: 10px;
+}
+@media screen and (max-width: 900px) {
+  .contentGrid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .contentGrid {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+  }
+}
+
+/*-----Modal----*/
+
+.modal {
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5% 0;
+}
+
+.overlay {
+  composes: modal;
+  background-color: #ecf0f3f6;
+}
+
+.modalContent {
+  composes: container from global;
+  position: relative;
+  z-index: 9999;
+  line-height: 1.4;
+  background: linear-gradient(145deg, #e2e8ec, #ffffff);
+  box-shadow: 4px 4px 8px #cbcbcb, 4px -4px 8px #ffffff;
+  padding: 50px;
+  border-radius: 10px;
+  display: flex;
+  overflow: auto;
+}
+
+.modalImg {
+  width: 50%;
+  height: auto;
+}
+.modal img {
+  width: 100%;
+  height: 100%;
+  max-height: 450px;
+
+  object-fit: cover;
+}
+
+.modalText {
+  width: 50%;
+
+  padding: 0 30px 0 50px;
+}
+
+.modalText h1 {
+  margin: 35px 0 35px 0;
+  font-size: 30px;
+}
+
+.modalText p {
+  font-size: 17px;
+  margin-bottom: 20px;
+  line-height: 25px;
+}
+
+.modalActions {
+  width: 100%;
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.actionBtn {
+  composes: btnShadow from global;
+  margin-right: 20px;
+  color: #66b58f;
+}
+.actionBtn i {
+  margin-left: 10px;
+}
+
+.closeBtn {
+  composes: btnShadow from global;
+  color: #66b58f;
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 50%;
+  padding: 0;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 900px) {
+  .modalContent {
+    height: 90vh;
+    flex-direction: column;
+    padding: 8%;
+  }
+  .modalImg {
+    width: 100%;
+    padding: 0;
+    padding-bottom: 10px;
+  }
+
+  .modalText {
+    width: 100%;
+    padding: 0;
+  }
+  .modalText h1 {
+    margin: 25px 0;
+  }
+}
+@media screen and (max-width: 450px) {
+  .modalActions {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .actionBtn {
+    margin-bottom: 25px;
+    margin-right: 0px;
+  }
+}
+
+/*-----Modal----*/

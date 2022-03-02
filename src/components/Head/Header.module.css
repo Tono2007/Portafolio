@@ -1,10 +1,10 @@
 .header {
   height: 10vh;
-  max-height: 200px;
 }
 
 .headerActive {
   height: 12vh;
+  max-height: 100px;
   position: fixed;
   top: 0;
   z-index: 1000;
@@ -23,10 +23,29 @@
   align-items: center;
   align-content: center;
 }
+nav li a::after {
+  transition: 1s ease;
+  content: '';
+  position: absolute;
+  bottom: 0;
+  border-radius: 25px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #66b58f;
+}
+:global nav li.active a::after {
+  width: 100%;
+}
+:global nav li.active a {
+  color: #66b58f;
+}
 
 .logo {
+  margin-top: 10px;
   width: auto;
   height: 45px;
+  cursor: pointer;
 }
 
 .navLinks {
@@ -36,6 +55,7 @@
   composes: uppercase from global;
 }
 .navLinks li {
+  position: relative;
   margin-left: 30px;
 }
 

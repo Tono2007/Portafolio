@@ -4,7 +4,7 @@ const data = [
     category: 'DEVELOPMENT',
     totalLike: '280',
     title: 'Services for design',
-    image: 'https://picsum.photos/600/500?random=1',
+    image: 'https://picsum.photos/900/500?random=1',
   },
   {
     id: 2,

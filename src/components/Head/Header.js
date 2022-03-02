@@ -1,10 +1,18 @@
 import { useState, useEffect, useRef } from 'react';
 import logo1 from '../../assets/logo_fondo_blanco_4.png';
 import styles from './Header.module.css';
+import scrollTop from '../../utils/helpers/scrollTop';
+import useToggle from '../../utils/hooks/useToggle';
+import useScrollInto from '../../utils/hooks/useScrollInto';
+import useScrollSpy from '../../utils/hooks/useScrollSpy';
 
 const Header = () => {
+  const { open, handleOpen, handleClose } = useToggle();
   const [Mobile, setMobile] = useState(false);
   const [activeNav, setActiveNav] = useState(false);
+  const scrollTo = useScrollInto();
+  useScrollSpy();
+
   useEffect(() => {
     function handleScroll() {
       window.scrollY > 100 ? setActiveNav(true) : setActiveNav(false);
@@ -13,45 +21,56 @@ const Header = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  const toogleMobileNav = () => {
+    setMobile(!Mobile);
+    const body = document.getElementsByTagName('body');
+    body[0].classList.toggle('hideScroll');
+  };
+
+  const handleLink = (section) => {
+    setMobile(false);
+    scrollTo(section);
+  };
+
   return (
     <header className={activeNav ? styles.headerActive : styles.header}>
       <nav className={styles.nav}>
-        <div>
+        <button type="button" onClick={scrollTop}>
           <img src={logo1} alt="<AntonioAyola/>" className={styles.logo} />
-        </div>
+        </button>
         <ul className={styles.navLinks}>
-          <li>
-            <a href="#home" onClick={() => setMobile(false)}>
+          <li className="home">
+            <a href="#!" onClick={() => handleLink('home')}>
               home
             </a>
           </li>
-          <li>
-            <a href="#features" onClick={() => setMobile(false)}>
+          <li className="features">
+            <a href="#!" onClick={() => handleLink('features')}>
               features
             </a>
           </li>
-          <li>
-            <a href="#portfolio" onClick={() => setMobile(false)}>
+          <li className="portfolio">
+            <a href="#!" onClick={() => handleLink('portfolio')}>
               portafolio
             </a>
           </li>
-          <li>
-            <a href="#resume" onClick={() => setMobile(false)}>
+          <li className="resume">
+            <a href="#!" onClick={() => handleLink('resume')}>
               resume
             </a>
           </li>
-          <li>
-            <a href="#clients" onClick={() => setMobile(false)}>
+          <li className="clients">
+            <a href="#!" onClick={() => handleLink('clients')}>
               clients
             </a>
           </li>
-          <li>
-            <a href="#blog" onClick={() => setMobile(false)}>
+          <li className="blog">
+            <a href="#!" onClick={() => handleLink('blog')}>
               blog
             </a>
           </li>
-          <li>
-            <a href="#contact" onClick={() => setMobile(false)}>
+          <li className="contact">
+            <a href="#!" onClick={() => handleLink('contact')}>
               contact
             </a>
           </li>
@@ -67,38 +86,38 @@ const Header = () => {
         </ul>
         {Mobile && (
           <ul className={styles.navMobileLinks}>
-            <li>
-              <a href="#home" onClick={() => setMobile(false)}>
+            <li className="home">
+              <a href="#!" onClick={() => handleLink('home')}>
                 home
               </a>
             </li>
-            <li>
-              <a href="#features" onClick={() => setMobile(false)}>
+            <li className="features">
+              <a href="#!" onClick={() => handleLink('features')}>
                 features
               </a>
             </li>
-            <li>
-              <a href="#portfolio" onClick={() => setMobile(false)}>
+            <li className="portfolio">
+              <a href="#!" onClick={() => handleLink('portfolio')}>
                 portafolio
               </a>
             </li>
-            <li>
-              <a href="#resume" onClick={() => setMobile(false)}>
+            <li className="resume">
+              <a href="#!" onClick={() => handleLink('resume')}>
                 resume
               </a>
             </li>
-            <li>
-              <a href="#clients" onClick={() => setMobile(false)}>
+            <li className="clients">
+              <a href="#!" onClick={() => handleLink('clients')}>
                 clients
               </a>
             </li>
-            <li>
-              <a href="#blog" onClick={() => setMobile(false)}>
+            <li className="blog">
+              <a href="#!" onClick={() => handleLink('blog')}>
                 blog
               </a>
             </li>
-            <li>
-              <a href="#contact" onClick={() => setMobile(false)}>
+            <li className="contact">
+              <a href="#!" onClick={() => handleLink('contact')}>
                 contact
               </a>
             </li>
@@ -116,7 +135,7 @@ const Header = () => {
 
         <button
           className={styles.showMobile}
-          onClick={() => setMobile(!Mobile)}
+          onClick={toogleMobileNav}
           type="button"
         >
           <i className={Mobile ? styles.closeBtn : styles.openBtn} />

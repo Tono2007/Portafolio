@@ -1,74 +1,78 @@
 import React, { useState } from 'react';
+import styles from './Portfolio.module.css';
 
 const Card = (props) => {
   const { id, category, totalLike, title, image } = props.project;
   const [modal, setModal] = useState(false);
   const toogleModal = () => {
     setModal(!modal);
+    const body = document.getElementsByTagName('body');
+
+    body[0].classList.toggle('hideScroll');
   };
 
   return (
     <>
       <div
-        className="box btn_shadow"
+        className={styles.card}
         onClick={toogleModal}
         onKeyPress={toogleModal}
         role="button"
         tabIndex={0}
       >
-        <div className="img">
+        <div className={styles.img}>
           <img src={image} alt="" />
         </div>
-        <div className="category d_flex">
+        <div className={styles.category}>
           <span>{category}</span>
           <span>
             <i className="fas fa-heart" />
             {totalLike}
           </span>
         </div>
-        <div className="title">
+        <div>
           <h2>{title}</h2>
-          <a href="#popup" className="arrow" onClick={toogleModal}>
+          <span className={styles.arrow}>
             <i className="fas fa-arrow-right" />
-          </a>
+          </span>
         </div>
       </div>
 
       {/*Modal */}
       {modal && (
-        <div className="modal">
-          <div onClick={toogleModal} className="overlay" role="none" />
-          <div className="modal-content d_flex">
-            <div className="modal-img left">
+        <div className={styles.modal}>
+          <div onClick={toogleModal} className={styles.overlay} role="none" />
+          <div className={styles.modalContent}>
+            <div className={styles.modalImg}>
               <img src={image} alt="" />
             </div>
-            <div className="modal-text right">
+            <div className={styles.modalText}>
               <span>Featured - Design</span>
               <h1>{title}</h1>
               <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Lorem ipsum dolor sit amet con sectetur, adipisicing elit.
                 Ratione nobis optio, dolor ea molestias ullam sequi omnis libero
               </p>
               <p>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                 Ratione nobis optio, dolor ea molestias ullam sequi omnis libero
               </p>
-              <div className="button f_flex mtop">
-                <button className="btn_shadow" type="button">
+              <div className={styles.modalActions}>
+                <button className={styles.actionBtn} type="button">
                   LIKE THIS <i className="fas fa-thumbs-up" />
                 </button>
-                <button className="btn_shadow" type="button">
+                <button className={styles.actionBtn} type="button">
                   VIEW PROJECT <i className="fas fa-chevron-right" />
                 </button>
               </div>
-              <button
-                className="close-modal btn_shadow"
-                onClick={toogleModal}
-                type="button"
-              >
-                <i className="fas fa-times" />
-              </button>
             </div>
+            <button
+              className={styles.closeBtn}
+              onClick={toogleModal}
+              type="button"
+            >
+              <i className="fas fa-times" />
+            </button>
           </div>
         </div>
       )}
