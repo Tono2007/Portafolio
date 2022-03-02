@@ -1,16 +1,19 @@
 import React from 'react';
+import styles from './Features.module.css';
 
 const Card = ({ image, title, description, icon }) => {
   return (
-    <div className="box btn_shadow">
+    <div className={styles.card}>
       {/* <img src={image} alt="" /> */}
-      <i className={icon} />
+      <span className={styles.mainIcon}>
+        <i className={icon} />
+      </span>
 
       <h2>{title}</h2>
       <p>{description}</p>
-      <a href="!#">
+      <span className={styles.actionIcon}>
         <i className="fas fa-arrow-right action" />
-      </a>
+      </span>
     </div>
   );
 };

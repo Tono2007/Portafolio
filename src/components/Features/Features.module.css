@@ -1,0 +1,56 @@
+.features {
+  margin-top: 80px;
+}
+
+.contentGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+}
+
+.card {
+  composes: btnShadow from global;
+  padding: 40px;
+}
+
+.card h2 {
+  font-size: 23px;
+  margin: 15px 0;
+}
+.card p {
+  word-spacing: 2px;
+  transition: 0.5s;
+}
+
+.actionIcon i {
+  font-size: 20px;
+  margin-top: 20px;
+  transition: 0.5s;
+  opacity: 0;
+}
+.mainIcon i {
+  font-size: 40px;
+  color: black;
+}
+
+.card:hover p {
+  color: white;
+}
+.card:hover .actionIcon i {
+  color: white;
+  opacity: 1;
+}
+
+@media screen and (max-width: 900px) {
+  .contentGrid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .contentGrid {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+  }
+}

@@ -1,14 +1,9 @@
 import { useState, useEffect } from 'react';
 import { Typewriter } from 'react-simple-typewriter';
 import hero from '../../assets/hero8.svg';
-import stylefs from './styles.module.css';
 import styles from './Hero.module.css';
 
 const Hero = () => {
-  window.addEventListener('scroll', () => {
-    const header = document.querySelector('#home');
-    header.classList.toggle('active', window.scrollY > 100);
-  });
   const [activeNav, setActiveNav] = useState(false);
   useEffect(() => {
     function handleScroll() {

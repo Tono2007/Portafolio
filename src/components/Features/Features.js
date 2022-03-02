@@ -1,17 +1,17 @@
 import React from 'react';
 import Card from './Card';
-import './Features.css';
+import styles from './Features.module.css';
 import data from './FeaturesData';
 
 function Features() {
   return (
-    <section className="features top" id="features">
+    <section className={styles.Features} id="features">
       <div className="container">
         <div className="heading">
           <h4>Features</h4>
           <h1>What I Do</h1>
         </div>
-        <div className="content grid">
+        <div className={styles.contentGrid}>
           {data.map((feature, index) => (
             <Card
               key={index}

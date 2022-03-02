@@ -50,7 +50,6 @@
 }
 .socialContainer {
   display: flex;
-  justify-content: space-between;
 }
 
 .socialSkills h4 {
@@ -98,4 +97,25 @@
 .rightImg img {
   max-width: 100%;
   height: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .heroLeft,
+  .heroRight {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  .heroContainer {
+    flex-direction: column-reverse;
+  }
+
+  .hero h1 {
+    font-size: 40px;
+    font-weight: bold;
+  }
+
+  .socialSkills {
+    flex-direction: column;
+  }
 }

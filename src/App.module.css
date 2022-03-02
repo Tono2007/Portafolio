@@ -62,6 +62,11 @@ button {
   box-shadow: 4px 4px 8px #cbcbcb, 4px -4px 8px #ffffff;
 }
 
+.btn_shadow:hover {
+  background: #66b58f;
+  color: #fff;
+  transform: translateY(-10px);
+}
 .box_shadow {
   background: linear-gradient(145deg, #e2e8ec, #ffffff);
   box-shadow: 4px 4px 8px #cbcbcb, 4px -4px 8px #ffffff;
@@ -90,11 +95,6 @@ button {
   color: #fff;
   transform: translateY(-10px);
 }
-.btn_shadow:hover {
-  background: #66b58f;
-  color: #fff;
-  transform: translateY(-10px);
-}
 
 .row,
 .left,
@@ -110,15 +110,15 @@ button {
   margin-top: 40px;
 }
 
-.heading {
+:global .heading {
   margin: 50px 0;
 }
-.heading h4 {
+:global .heading h4 {
   color: #66b58f;
   letter-spacing: 2px;
   font-weight: 400;
 }
-.heading h1 {
+:global .heading h1 {
   font-size: 60px;
   color: #3c3e41;
 }

@@ -67,7 +67,7 @@
 
 .navMobileLinks {
   composes: navLinks;
-  position: absolute;
+  position: fixed;
   display: none;
   list-style: none;
   box-shadow: 0 50px 100px -20px rgba(50, 50, 93, 0.23),
