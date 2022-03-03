@@ -1,0 +1,170 @@
+.testimonial {
+}
+
+.heading {
+  composes: heading from global;
+  text-align: center;
+}
+.slideButtons {
+  position: absolute;
+  top: 30px;
+  right: 20px;
+}
+
+.sliderBtn {
+  composes: btnShadow from global;
+}
+.sliderBtn:nth-child(1) {
+  margin-right: 30px;
+}
+.sliderBtn i {
+  font-size: 18px;
+}
+
+.slider {
+  width: 100%;
+  max-width: 90%;
+  margin: auto;
+  min-height: 500px;
+  position: relative;
+  display: flex;
+  overflow: hidden;
+}
+
+/*Slide*/
+
+.slide {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: all 0.4s linear;
+}
+
+.activeSlide {
+  opacity: 1;
+  transform: translateX(0);
+}
+.lastSlide {
+  opacity: 1;
+  transform: translateX(-100%);
+}
+.nextSlide {
+  transform: translateX(100%);
+}
+
+.left {
+  composes: boxShadow from global;
+  width: 40%;
+  height: auto;
+  padding: 35px;
+  margin: 20px;
+}
+.slideImg img {
+  border-radius: 5px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.details {
+  margin-top: 40px;
+}
+.details span {
+  color: #66b58f;
+}
+.details h2 {
+  margin: 15px 0 0 0;
+}
+
+.right {
+  width: 60%;
+  padding: 0 0 0 40px;
+  margin: 0 15px 0 0;
+}
+.quote i {
+  font-size: 150px;
+  opacity: 0.1;
+}
+.content {
+  composes: boxShadow from global;
+  padding: 45px;
+  margin-top: 40px;
+}
+
+.content h1 {
+  font-weight: 500;
+}
+
+.content h3 {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 40px;
+}
+
+@media screen and (max-width: 1150px) {
+  .slider {
+    max-width: 100%;
+    min-height: 520px;
+  }
+  .right {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .slider {
+    max-width: 100%;
+    min-height: 750px;
+  }
+  .slide {
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .left {
+    width: 100%;
+    display: flex;
+    margin: 0;
+    padding: 25px;
+    margin-top: 20%;
+  }
+  .details {
+    width: 60%;
+    margin: 0;
+    padding: 0;
+  }
+  .slideImg {
+    margin-right: 20px;
+    width: 40%;
+  }
+  .right {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .quote {
+    display: none;
+  }
+}
+@media screen and (max-width: 450px) {
+  .slider {
+    max-width: 100%;
+    min-height: 750px;
+  }
+  .left {
+    margin-top: 25%;
+  }
+  .content {
+    padding: 40px;
+  }
+}
+
+/*Slide*/

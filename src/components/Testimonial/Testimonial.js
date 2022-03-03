@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Slide from './Slide';
-import './Testimonial.css';
+import styles from './Testimonial.module.css';
 
 const Testimonial = () => {
   const [data, setdata] = useState([0, 1, 2, 3, 4, 5, 6, 7]);
@@ -25,13 +25,13 @@ const Testimonial = () => {
   }, [index]);
 
   return (
-    <section id="clients" className="testimonial">
+    <section id="clients" className={styles.testimonial}>
       <div className="container">
-        <div className="heading text-center">
+        <div className={styles.heading}>
           <h4>WHAT CLIENTS SAY</h4>
           <h1>Testimonial</h1>
         </div>
-        <div className="slide">
+        <div className={styles.slider}>
           {data.map((id) => (
             <Slide
               valueIndex={id}
@@ -41,16 +41,16 @@ const Testimonial = () => {
             />
           ))}
 
-          <div className="slide_button">
+          <div className={styles.slideButtons}>
             <button
-              className="btn_shadow prev_btn"
+              className={styles.sliderBtn}
               type="button"
               onClick={() => setIndex(index - 1)}
             >
               <i className="fas fa-arrow-left" />
             </button>
             <button
-              className="btn_shadow next_btn"
+              className={styles.sliderBtn}
               type="button"
               onClick={() => setIndex(index + 1)}
             >

@@ -13,13 +13,11 @@
 }
 
 .card {
-  composes: btnShadow from global;
+  composes: boxShadow from global;
   border-radius: 10px;
-}
-.card:hover {
-  background: none;
-  transform: translateY(0);
-  color: black;
+  padding: 18px 25px;
+  cursor: pointer;
+  position: relative;
 }
 
 .img {
@@ -54,12 +52,15 @@
 
 .arrow {
   position: absolute;
-  right: 20px;
-  bottom: 10px;
+  right: 15px;
+  bottom: 15px;
   transform: rotate(-45deg);
   color: #66b58f;
   opacity: 0;
   transition: 0.5s;
+}
+.arrow i {
+  font-size: 30px;
 }
 
 .card:hover .arrow {

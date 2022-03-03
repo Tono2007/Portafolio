@@ -22,7 +22,6 @@ function App() {
       {/*       <Blog />
        */}{' '}
       <Contact />
-      <Footer />
     </>
   );
 }

@@ -25,7 +25,7 @@ const Hero = () => {
        */}{' '}
       <div className={styles.heroContainer}>
         <div className={styles.heroLeft}>
-          <h3> WELCOME TO MY WORLD</h3>
+          <h3>BIENVENIDO A MI MUNDO</h3>
           <h1>
             Hi, I&#39;m <span>Antonio Ayola</span>
           </h1>
@@ -34,7 +34,7 @@ const Hero = () => {
             a
             <span>
               <Typewriter
-                words={[' Profesional Coder', ' Developer']}
+                words={[' Profesional Coder', ' Frontend Developer']}
                 loop={5}
                 cursor
                 cursorStyle="|"
@@ -45,10 +45,10 @@ const Hero = () => {
             </span>
           </h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
-            ducimus facilis voluptatum quis quisquam possimus cupiditate ab iste
-            aut fugit! Officiis fugiat quo distinctio error ea accusantium,
-            placeat dignissimos fuga.
+            Desarrollador Front-End especializada en React JS. Creación,
+            prototipado y desarrollo de productos digitales innovadores
+            centrados en el usuario. Apasionada por el diseño y el
+            emprendimiento. Estoy en constante aprendizaje.
           </p>
           <div className={styles.socialSkills}>
             <div className="col_1">

@@ -32,6 +32,7 @@ const Card = (props) => {
         </div>
         <div>
           <h2>{title}</h2>
+
           <span className={styles.arrow}>
             <i className="fas fa-arrow-right" />
           </span>

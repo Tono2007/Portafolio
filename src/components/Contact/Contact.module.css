@@ -1,0 +1,104 @@
+.contact {
+  composes: container from global;
+  margin-top: 80px;
+}
+
+.heading {
+  composes: heading from global;
+  text-align: center;
+}
+.content {
+  display: flex;
+  justify-content: space-between;
+}
+.left {
+  width: 36%;
+}
+
+.right {
+  width: 60%;
+  composes: boxShadow from global;
+  padding: 35px;
+}
+
+.img img {
+  width: 100%;
+}
+
+.box {
+  padding: 30px;
+  composes: boxShadow from global;
+}
+.details h1 {
+  margin: 20px 0;
+  font-size: 35px;
+}
+.details p {
+  font-style: 17px;
+}
+
+.socialContainer {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.socialContainer button {
+  margin-right: 25px;
+}
+
+.form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.input span {
+  font-size: 13px;
+}
+
+.input {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.inputRow {
+  width: 50%;
+}
+.submitBtn {
+  composes: btnShadow from global;
+  width: 100%;
+  color: #66b58f;
+}
+
+.submitBtn:hover {
+  color: white;
+}
+
+.submitBtn i {
+  margin-left: 5px;
+  font-size: 15px;
+}
+
+@media screen and (max-width: 768px) {
+  .content {
+    flex-direction: column;
+  }
+
+  .left,
+  .right {
+    width: 100%;
+    margin-bottom: 50px;
+    margin-top: 30px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .heading {
+    margin: 0px 0px ;
+  }
+  .heading h1 {
+    font-size: 50px;
+  }
+   
+.inputRow {
+  width: 100%;
+}
+}

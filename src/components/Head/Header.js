@@ -24,10 +24,16 @@ const Header = () => {
   const toogleMobileNav = () => {
     setMobile(!Mobile);
     const body = document.getElementsByTagName('body');
-    body[0].classList.toggle('hideScroll');
+    /* body[0].classList.toggle('hideScroll'); */
+  };
+  const removeMobileNav = () => {
+    setMobile(false);
+    const body = document.getElementsByTagName('body');
+    /*   body[0].classList.remove('hideScroll'); */
   };
 
   const handleLink = (section) => {
+    removeMobileNav();
     setMobile(false);
     scrollTo(section);
   };

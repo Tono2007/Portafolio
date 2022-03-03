@@ -1,4 +1,5 @@
 import React from 'react';
+import styles from './Testimonial.module.css';
 
 const Slide = ({ valueIndex, index, dataLength }) => {
   let position = 'nextSlide';
@@ -13,27 +14,25 @@ const Slide = ({ valueIndex, index, dataLength }) => {
     position = 'lastSlide';
   }
   return (
-    <article className={`box d_flex ${position}`}>
-      <div className="left box_shadow">
-        <div className="slide_img">
+    <article className={`${styles.slide} ${styles[position]}`}>
+      <div className={styles.left}>
+        <div className={styles.slideImg}>
           <img
             src={`https://picsum.photos/400/250?random=${valueIndex}`}
             alt=""
           />
         </div>
-        <div className="details mtop">
+        <div className={styles.details}>
           <span>AppDT Software</span>
           <h2>Miguel Cortes</h2>
-          <span>Operating Officer</span>
+          <p>Operating Officer</p>
         </div>
       </div>
-      <div className="right">
-        <div className="icon">
-          <div className="quote">
-            <i className="fas fa-quote-right" />
-          </div>
+      <div className={styles.right}>
+        <div className={styles.quote}>
+          <i className="fas fa-quote-right" />
         </div>
-        <div className="content box_shadow mtop">
+        <div className={styles.content}>
           <h1>Android App Design</h1>
           <h3>Fiver - 17 Septiembre 2097</h3>
           <p>
