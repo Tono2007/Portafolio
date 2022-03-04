@@ -1,0 +1,44 @@
+.footer {
+  composes: container from global;
+  text-align: center;
+  margin: 10% 0 5% 0;
+  position: relative;
+}
+
+.footer img {
+  width: 350px;
+}
+
+.floatBtn i {
+  color: #66b58f;
+  font-size: 25px;
+}
+.floatBtn:hover {
+  background: #66b58f;
+}
+.floatBtn:hover i {
+  color: white;
+}
+.floatBtn {
+  composes: boxShadow from global;
+  padding: 18px 25px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  animation-name: up;
+  animation-duration: 0.9s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease;
+}
+
+@keyframes up {
+  0% {
+    top: 0;
+  }
+
+  100% {
+    top: -15px;
+  }
+}

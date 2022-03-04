@@ -23,6 +23,7 @@
 
 .img img {
   width: 100%;
+  border-radius: 5px;
 }
 
 .box {
@@ -92,13 +93,13 @@
 }
 @media screen and (max-width: 550px) {
   .heading {
-    margin: 0px 0px ;
+    margin: 0px 0px;
   }
   .heading h1 {
     font-size: 50px;
   }
-   
-.inputRow {
-  width: 100%;
-}
+
+  .inputRow {
+    width: 100%;
+  }
 }

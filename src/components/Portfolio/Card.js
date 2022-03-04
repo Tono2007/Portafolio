@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import styles from './Portfolio.module.css';
+import Modal from '../Modal/Modal';
 
 const Card = (props) => {
   const { id, category, totalLike, title, image } = props.project;
@@ -8,7 +9,7 @@ const Card = (props) => {
     setModal(!modal);
     const body = document.getElementsByTagName('body');
 
-    body[0].classList.toggle('hideScroll');
+    /*   body[0].classList.toggle('hideScroll'); */
   };
 
   return (

@@ -1,0 +1,56 @@
+/*-----Modal----*/
+
+.modal {
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5% 0;
+}
+
+.overlay {
+  composes: modal;
+  background-color: #ecf0f3f6;
+}
+
+.modalContent {
+  composes: container from global;
+  position: relative;
+  z-index: 9999;
+  background: linear-gradient(145deg, #e2e8ec, #ffffff);
+  box-shadow: 4px 4px 8px #cbcbcb, 4px -4px 8px #ffffff;
+  padding: 50px;
+  border-radius: 10px;
+  overflow: auto;
+}
+
+.closeBtn {
+  composes: btnShadow from global;
+  color: #66b58f;
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 50%;
+  padding: 0;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 900px) {
+  .modalContent {
+    height: 90vh;
+    flex-direction: column;
+    padding: 8%;
+  }
+}
+
+/*-----Modal----*/

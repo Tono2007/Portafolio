@@ -1,0 +1,96 @@
+/*-----Modal----*/
+
+.modalContainer {
+  display: flex;
+}
+
+.modalImg {
+  width: 50%;
+  height: auto;
+}
+.modalImg img {
+  width: 100%;
+  height: 100%;
+  max-height: 450px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.modalText {
+  width: 50%;
+
+  padding: 0 30px 0 50px;
+}
+
+.modalText h1 {
+  margin: 35px 0 35px 0;
+  font-size: 30px;
+}
+
+.modalText p {
+  font-size: 17px;
+  margin-bottom: 20px;
+  line-height: 25px;
+}
+
+.modalActions {
+  width: 100%;
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.actionBtn {
+  composes: btnShadow from global;
+  margin-right: 20px;
+  color: #66b58f;
+}
+.actionBtn i {
+  margin-left: 10px;
+}
+
+.closeBtn {
+  composes: btnShadow from global;
+  color: #66b58f;
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 50%;
+  padding: 0;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 900px) {
+  .modalContainer {
+    flex-direction: column;
+    padding: 8%;
+  }
+  .modalImg {
+    padding: 0;
+    padding-bottom: 10px;
+  }
+
+  .modalText {
+    width: 100%;
+    padding: 0;
+  }
+  .modalText h1 {
+    margin: 25px 0;
+  }
+}
+@media screen and (max-width: 450px) {
+  .modalActions {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .actionBtn {
+    margin-bottom: 25px;
+    margin-right: 0px;
+  }
+}
+
+/*-----Modal----*/
