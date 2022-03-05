@@ -43,7 +43,7 @@
 .actionBtn {
   composes: btnShadow from global;
   margin-right: 20px;
-  color: #66b58f;
+  color: var(--primaryColor);
 }
 .actionBtn i {
   margin-left: 10px;

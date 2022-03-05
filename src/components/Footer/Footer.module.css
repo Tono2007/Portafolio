@@ -2,6 +2,8 @@
   composes: container from global;
   text-align: center;
   margin: 10% 0 5% 0;
+}
+.footerContainer {
   position: relative;
 }
 
@@ -10,14 +12,14 @@
 }
 
 .floatBtn i {
-  color: #66b58f;
+  color: var(--primaryColor);
   font-size: 25px;
 }
 .floatBtn:hover {
-  background: #66b58f;
+  background: var(--primaryColor);
 }
 .floatBtn:hover i {
-  color: white;
+  color: var(--textContrast);
 }
 .floatBtn {
   composes: boxShadow from global;
@@ -40,5 +42,11 @@
 
   100% {
     top: -15px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .footer img {
+    width: 200px;
   }
 }

@@ -31,14 +31,14 @@
 }
 .mainIcon i {
   font-size: 35px;
-  color: black;
+  color: var(--textPrimary);
 }
 
 .card:hover p {
-  color: white;
+  color: var(--textContrast);
 }
 .card:hover .actionIcon i {
-  color: white;
+  color: var(--textContrast);
   opacity: 1;
 }
 
