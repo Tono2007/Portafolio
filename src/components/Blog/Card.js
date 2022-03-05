@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import styles from './Blog.module.css';
 import Modal from '../Modal/Modal';
 import ModalCard from './ModalCard';

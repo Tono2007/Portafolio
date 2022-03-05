@@ -1,4 +1,3 @@
-import React from 'react';
 import Card from './Card';
 import ResumeData from './ResumeData';
 import './Resume.css';

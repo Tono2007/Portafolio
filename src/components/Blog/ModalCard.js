@@ -29,7 +29,7 @@ function ModalCard() {
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores
           adipisci tempora sunt sit neque, est sint facilis illo, quidem harum
           assumenda exercitationem totam eum voluptates veniam a excepturi nulla
-          fugiat!
+          fugiat! Si llegaste hasta aquí... Gracias por leer &lt;3
         </p>
         {/* <div className="contact mtop">
           <h1>Leave a Reply</h1>

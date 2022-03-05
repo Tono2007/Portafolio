@@ -16,6 +16,7 @@
   font-size: 25px;
 }
 .floatBtn:hover {
+  cursor: pointer;
   background: var(--primaryColor);
 }
 .floatBtn:hover i {
@@ -33,6 +34,18 @@
   animation-iteration-count: infinite;
   animation-direction: alternate;
   animation-timing-function: ease;
+}
+
+.userBtn {
+  font-size: 17px;
+}
+.userBtn:hover {
+  cursor: pointer;
+  color: var(--primaryColor);
+  font-size: 17px;
+}
+.modalContent {
+  height: 85vh;
 }
 
 @keyframes up {

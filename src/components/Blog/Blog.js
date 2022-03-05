@@ -1,4 +1,3 @@
-import React from 'react';
 import Card from './Card';
 import styles from './Blog.module.css';
 
@@ -8,11 +7,11 @@ const Blog = () => {
     <section className={styles.blog} id="blog">
       <div className="container">
         <div className={styles.heading}>
-          <h4>VISIT MY BLOG AND KEEP YOUR FEEDBACK</h4>
-          <h1>My Blog</h1>
+          <h4>VISITA MI BLOG Y DAME FEEDBACK</h4>
+          <h1>Mi Blog</h1>
         </div>
         <div className={styles.contentGrid}>
-          {data.map((value) => (
+          {data.slice(0, 3).map((value) => (
             <Card key={value} id={value} />
           ))}
         </div>
