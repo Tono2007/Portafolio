@@ -9,19 +9,17 @@ import Hero from './components/Hero/Hero';
 import Portfolio from './components/Portfolio/Portfolio';
 import Resume from './components/Resume/Resume';
 import Testimonial from './components/Testimonial/Testimonial';
-import Card2 from './components/Portfolio/Card2';
 
 function App() {
   return (
     <>
       <Header />
       <Hero />
-      <Card2 />
       <Features />
       <Portfolio />
       {/*  <Resume /> */}
       <Testimonial />
-      {/*  <Blog /> */}
+      <Blog />
       <Contact />
       <Footer />
     </>

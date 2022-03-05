@@ -1,17 +1,28 @@
-.portafolio {
-}
-
 .heading {
   composes: heading from global;
   text-align: center;
 }
-
 .contentGrid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 30px;
 }
 
+@media screen and (max-width: 900px) {
+  .contentGrid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .contentGrid {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+  }
+}
+
+/*          Card            */
 .card {
   composes: boxShadow from global;
   border-radius: 10px;
@@ -38,34 +49,18 @@
 .img:hover img {
   transform: scale(1.05);
 }
-.category {
+
+.date {
   display: flex;
   justify-content: space-between;
   margin: 10px 0 20px 0;
   text-transform: uppercase;
 }
-.category span:nth-child(1) {
+.date span:nth-child(1) {
   color: #66b58f;
   font-size: 13px;
   letter-spacing: 2px;
   font-weight: 500;
-}
-
-.arrow {
-  position: absolute;
-  right: 15px;
-  bottom: 15px;
-  transform: rotate(-45deg);
-  color: #66b58f;
-  opacity: 0;
-  transition: 0.5s;
-}
-.arrow i {
-  font-size: 20px;
-}
-
-.card:hover .arrow {
-  opacity: 1;
 }
 
 .card h2 {
@@ -78,19 +73,25 @@
   color: #66b58f;
 }
 
-.card span i {
-  margin-right: 10px;
+.arrow {
+  position: absolute;
+  right: 25px;
+  bottom: 20px;
+  transform: rotate(-45deg);
+  color: #66b58f;
+  opacity: 0;
+  transition: 0.5s;
 }
-@media screen and (max-width: 900px) {
-  .contentGrid {
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 30px;
-  }
+.arrow i {
+  font-size: 25px;
 }
 
-@media screen and (max-width: 600px) {
-  .contentGrid {
-    grid-template-columns: repeat(1, 1fr);
-    grid-gap: 30px;
-  }
+.card:hover .arrow {
+  opacity: 1;
+}
+
+/*          Card            */
+
+.modalContent {
+  height: 90vh;
 }

@@ -47,6 +47,10 @@
   margin-right: 25px;
 }
 
+.socialContainer button i{
+  font-size: 20px
+}
+
 .form {
   display: flex;
   flex-wrap: wrap;

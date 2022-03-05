@@ -49,26 +49,14 @@
   margin-left: 10px;
 }
 
-.closeBtn {
-  composes: btnShadow from global;
-  color: #66b58f;
-  position: absolute;
-  top: 20px;
-  right: 25px;
-  width: 50px;
-  height: 50px;
-  text-align: center;
-  border-radius: 50%;
-  padding: 0;
-  font-size: 20px;
-}
-
 @media screen and (max-width: 900px) {
   .modalContainer {
     flex-direction: column;
     padding: 8%;
   }
   .modalImg {
+    width: 100%;
+
     padding: 0;
     padding-bottom: 10px;
   }
