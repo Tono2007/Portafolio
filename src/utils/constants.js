@@ -1,14 +1,15 @@
-import { es_co } from './language/es_co'
-
 export const constants = {
-  title: 'Kev Farid',
-  avatar: 'https://avatars.githubusercontent.com/u/51223315?v=4',
+  title: 'Antonio Ayola',
+  avatar: 'https://avatars.githubusercontent.com/u/35477201?v=4',
   profilesUrls: {
-    linkedin: 'https://www.linkedin.com/in/kevfarid/',
-    github: 'https://github.com/KevFarid',
-    email: 'kpelaez75@gmail.com',
-    cv: '/cv-kevin-farid-cruz.pdf',
-    twitter: 'https://twitter.com/KevFarid_'
+    linkedin: 'https://www.linkedin.com/in/antonio-ayola-7737191b0/',
+    github: 'https://github.com/Tono2007',
+    email: 'antonio.ayola.cortes@gmail.com',
+    cv: '/04/03/2022.pdf',
+    twitter: 'https://twitter.com/Antonio_Ayola_',
+    whatsapp: 'https://wa.me/527711825937',
+    instagram: 'https://www.instagram.com/antonioayola1/',
+    facebook: 'https://www.facebook.com/tono2007/',
   },
   icons: {
     linkedin: 'https://i.imgur.com/z5abyyx.png',
@@ -22,12 +23,11 @@ export const constants = {
   },
   imgs: {
     heroBG: '/heroBG.jpeg',
-    about: 'https://i.imgur.com/K0VY5gf.png',
-    ogImage: 'https://i.imgur.com/K0VY5gf.png',
   },
-  language: es_co,
+  language: 'es_mx',
   siteData: {
-    siteUrl: 'https://kevinfarid.com',
-    siteRepo: 'https://github.com/kevfarid/kevinfarid.com',
+    siteUrl: 'https://antonioAyola.com',
+    siteRepo: 'https://github.com/Tono2007/portafolio',
   },
-}
+};
+export default constants;
