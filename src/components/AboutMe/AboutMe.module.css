@@ -1,4 +1,5 @@
 .aboutMe {
+  flex-direction: column;
 }
 
 .aboutContainer {
@@ -6,11 +7,11 @@
   display: flex;
 }
 .AboutLeft {
-  width: 30%;
+  width: 40%;
   height: auto;
 }
 .AboutRight {
-  width: 70%;
+  width: 60%;
 }
 
 .tabs {
@@ -128,6 +129,12 @@
 }
 
 .studiesContainer li:hover a {
+  color: var(--primaryColor);
+}
+.me a {
+  color: var(--textSecondary);
+}
+.me a:hover {
   color: var(--primaryColor);
 }
 

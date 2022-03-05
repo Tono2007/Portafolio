@@ -42,7 +42,11 @@ const Header = () => {
 
   return (
     <>
-      <Modal openModal={modal} fnCloseModal={() => setModal(false)}>
+      <Modal
+        openModal={modal}
+        fnCloseModal={() => setModal(false)}
+        style={styles.modalContent}
+      >
         <AboutMe />
       </Modal>
       <header className={activeNav ? styles.headerActive : styles.header}>
@@ -83,7 +87,7 @@ const Header = () => {
             </li>
             <li className="contact">
               <a href="#!" onClick={() => handleLink('contact')}>
-                contact
+                contacto
               </a>
             </li>
             <li>
@@ -135,7 +139,7 @@ const Header = () => {
               </li>
               <li className="contact">
                 <a href="#!" onClick={() => handleLink('contact')}>
-                  contact
+                  contacto
                 </a>
               </li>
               <li>

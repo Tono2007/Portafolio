@@ -16,6 +16,7 @@
   font-size: 25px;
 }
 .floatBtn:hover {
+  cursor: pointer;
   background: var(--primaryColor);
 }
 .floatBtn:hover i {

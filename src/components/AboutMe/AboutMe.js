@@ -6,22 +6,37 @@ import { constants } from '../../utils/constants';
 
 function About() {
   return (
-    <>
+    <div className={styles.me}>
       <h2>Quien soy y mas sobre mi</h2>
       <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem ut
-        deserunt repellat modi explicabo omnis officia, reprehenderit deleniti,
-        fugiat quasi mollitia nesciunt velit est, consequatur amet eius vero
-        voluptatum commodi! Lorem ipsum dolor sit amet consectetur, adipisicing
-        elit. Ratione nobis optio, dolor ea molestias ullam sequi omnis libero
+        Me llamo Antonio Ayola un desarrollador de Software con gran afición al
+        mundo Tecnológico, autodidacta y apasionado por aprender más todos los
+        días sobre nuevas tecnologias.
       </p>
       <h2>Titulo1</h2>
       <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem
-        animi ut porro voluptate facere tenetur eum quas cupiditate saepe est
-        quis placeat similique modi natus nulla, quia autem rem ab.
+        Experiencia en dirección de equipos pequeños y en la participación de
+        todo proceso de una aplicación (desde el planteamiento inicial,
+        extracción de funcionalidades necesarias, desarrollo, pruebas y
+        evolución).
+        <br /> Busco ampliar mis conocimientos en la programación y obtener
+        experiencia formando parte de un productivo y exitoso equipo. Estoy
+        buscando un proyecto adecuado a mis habilidades que me permita
+        desarrollarme, que me ponga nuevos retos y nuevos aprendizajes.
       </p>
-    </>
+      <h2>Intereses y Hobbies</h2>
+      <p>
+        Interesado en aprender más sobre testing, principios de clean code y
+        escalabilidad en general.
+        <br /> En mi tiempo suelo tocar la guitarra 🎸, armar cubos rubik{' '}
+        <img
+          src="https://img.icons8.com/ios/20/000000/rubiks-cube.png"
+          alt="rubik"
+        />{' '}
+        , hacer <a href={constants.profilesUrls.instagram}> origami</a> 🪁 y
+        jugar videojuegos 🎮.
+      </p>
+    </div>
   );
 }
 
@@ -318,7 +333,7 @@ function AboutMe() {
         <div className={styles.AboutLeft}>
           <div className={styles.leftImg}>
             <img src={hero} alt="hero" className={styles.img} />
-            <h1>Antonio Ayola</h1>
+            <h1>{'<Antonio Ayola/>'}</h1>
           </div>
         </div>
         <div className={styles.AboutRight}>

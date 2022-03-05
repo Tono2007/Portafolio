@@ -177,3 +177,7 @@ nav li a::after {
     display: block;
   }
 }
+
+.modalContent {
+  height: 85vh;
+ }

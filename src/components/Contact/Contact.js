@@ -1,53 +1,53 @@
 import React, { useState } from 'react';
 import styles from './Contact.module.css';
 import { constants } from '../../utils/constants';
+import me from '../../assets/me.jpg';
 
 const Contact = () => {
   const [formValues, setFormValues] = useState({});
   return (
     <section className={styles.contact} id="contact">
       <div className={styles.heading}>
-        <h4>CONTACT</h4>
-        <h1>Contact With Me</h1>
+        <h4>DATOS DE CONTACTO</h4>
+        <h1>¡Trabajemos juntos!</h1>
       </div>
       <div className={styles.content}>
         <div className={styles.left}>
           <div className={styles.box}>
             <div className={styles.img}>
-              <img src="https://picsum.photos/400/250?random=1" alt="" />
+              <img src={me} alt="" />
             </div>
             <div className={styles.details}>
-              <h1>Nevina Acotaze</h1>
+              <h1>Juan Antonio Ayola Cortes</h1>
               <p>
-                I am available for freelancer work. Connect with me via and
-                calll in to my accuount. Trabajemos juntos | Contáctame aquí.
+                Estoy disponible en casi todas las redes sociales. Puede
+                enviarme un mensaje, le responderé dentro de las 24 horas. Puedo
+                ayudarte con Js y React.
               </p>
               <br />
               <p>
-                Phone:
+                Numero:{' '}
                 <a
                   href={constants.profilesUrls.whatsapp}
                   target="_blank"
                   rel="noreferrer noopener"
                 >
-                  {'  '}
                   {constants.profilesUrls.number}
                 </a>
               </p>
               <p>
-                Email:
+                Correo:{' '}
                 <a
                   href={`mailto: ${constants.profilesUrls.email}`}
                   target="_blank"
                   rel="noreferrer noopener"
                 >
-                  {'  '}
                   {constants.profilesUrls.email}
                 </a>
               </p>
               <br />
 
-              <span>FIND WITH ME</span>
+              <span> CONTÁCTAME AQUÍ</span>
               <div className={styles.socialContainer}>
                 <a
                   href={constants.profilesUrls.facebook}
