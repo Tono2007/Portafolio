@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import styles from './Contact.module.css';
+import { constants } from '../../utils/constants';
 
 const Contact = () => {
   const [formValues, setFormValues] = useState({});
@@ -22,21 +23,64 @@ const Contact = () => {
                 calll in to my accuount. Trabajemos juntos | Contáctame aquí.
               </p>
               <br />
-              <p>Phone: +52 43478343</p>
-              <p>Email: sdfsdf@sdfsdfsdf.sdf</p>
+              <p>
+                Phone:
+                <a
+                  href={constants.profilesUrls.whatsapp}
+                  target="_blank"
+                  rel="noreferrer noopener"
+                >
+                  {'  '}
+                  {constants.profilesUrls.number}
+                </a>
+              </p>
+              <p>
+                Email:
+                <a
+                  href={`mailto: ${constants.profilesUrls.email}`}
+                  target="_blank"
+                  rel="noreferrer noopener"
+                >
+                  {'  '}
+                  {constants.profilesUrls.email}
+                </a>
+              </p>
               <br />
 
               <span>FIND WITH ME</span>
               <div className={styles.socialContainer}>
-                <button className="btnShadow" type="button">
+                <a
+                  href={constants.profilesUrls.facebook}
+                  className="btnShadow"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                >
                   <i className="fa-brands fa-facebook-f" />
-                </button>
-                <button className="btnShadow" type="button">
+                </a>
+                <a
+                  href={constants.profilesUrls.github}
+                  className="btnShadow"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                >
                   <i className="fa-brands fa-github" />
-                </button>
-                <button className="btnShadow" type="button">
+                </a>
+                <a
+                  href={constants.profilesUrls.linkedin}
+                  className="btnShadow"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                >
                   <i className="fa-brands fa-linkedin-in" />
-                </button>
+                </a>
+                <a
+                  href={constants.profilesUrls.whatsapp}
+                  className="btnShadow"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                >
+                  <i className="fab fa-whatsapp" />
+                </a>
               </div>
             </div>
           </div>

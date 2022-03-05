@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { Typewriter } from 'react-simple-typewriter';
 import hero from '../../assets/hero8.svg';
 import styles from './Hero.module.css';
+import { constants } from '../../utils/constants';
 
 const Hero = () => {
   const [activeNav, setActiveNav] = useState(false);
@@ -25,7 +26,7 @@ const Hero = () => {
        */}{' '}
       <div className={styles.heroContainer}>
         <div className={styles.heroLeft}>
-          <h3>BIENVENIDO A MI MUNDO</h3>
+          <h3>¡HOLA MUNDO!</h3>
           <h1>
             Hi, I&#39;m <span>Antonio Ayola</span>
           </h1>
@@ -45,28 +46,43 @@ const Hero = () => {
             </span>
           </h2>
           <p>
-            Desarrollador Front-End especializada en React JS. Creación,
-            prototipado y desarrollo de productos digitales innovadores
-            centrados en el usuario. Apasionada por el diseño y el
-            emprendimiento. Estoy en constante aprendizaje.
+            Con gran afición al mundo Tecnológico, tanto Frontend como Backend;
+            persiguiendo nuevos retos y explorando continuamente las nuevas
+            tendencias. Experiencia en Creación, prototipado y desarrollo de
+            productos digitales innovadores centrados en el usuario.
           </p>
           <div className={styles.socialSkills}>
             <div className="col_1">
-              <h4>FIND ME WITH</h4>
+              <h4>ENCUENTRAME AQUI</h4>
               <div className={styles.socialContainer}>
-                <button className={styles.socialBtn} type="button">
+                <a
+                  href={constants.profilesUrls.facebook}
+                  className={styles.socialBtn}
+                  target="_blank"
+                  rel="noreferrer noopener"
+                >
                   <i className="fa-brands fa-facebook-f" />
-                </button>
-                <button className={styles.socialBtn} type="button">
+                </a>
+                <a
+                  href={constants.profilesUrls.github}
+                  className={styles.socialBtn}
+                  target="_blank"
+                  rel="noreferrer noopener"
+                >
                   <i className="fa-brands fa-github" />
-                </button>
-                <button className={styles.socialBtn} type="button">
+                </a>
+                <a
+                  href={constants.profilesUrls.linkedin}
+                  className={styles.socialBtn}
+                  target="_blank"
+                  rel="noreferrer noopener"
+                >
                   <i className="fa-brands fa-linkedin-in" />
-                </button>
+                </a>
               </div>
             </div>
             <div className="col_1">
-              <h4>BEST SKILL ON</h4>
+              <h4>APRENDIENDO</h4>
               <button className={styles.skillBtn} type="button">
                 <img
                   src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg"

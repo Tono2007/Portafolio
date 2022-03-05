@@ -1,0 +1,160 @@
+.aboutMe {
+}
+
+.aboutContainer {
+  composes: container from global;
+  display: flex;
+}
+.AboutLeft {
+  width: 30%;
+  height: auto;
+}
+.AboutRight {
+  width: 70%;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.tabs li {
+  position: relative;
+}
+.tabs .divider {
+  color: var(--textPrimary);
+  margin: 0 15px;
+}
+
+.tabs li button {
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.1s;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.tabs li button:hover {
+  color: var(--primaryColor);
+}
+
+.tabs li button::after {
+  transition: 0.1s ease;
+  content: '';
+  position: absolute;
+  bottom: 0;
+  border-radius: 25px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--primaryColor);
+}
+.tabs li.active button::after {
+  width: 65%;
+}
+.tabs li.active button {
+  color: var(--primaryColor);
+}
+
+.tabContent {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.leftImg {
+  margin: auto;
+  position: relative;
+  /* composes: boxShadow from global;*/
+  border-radius: 10px;
+  padding: 10%;
+  margin-right: 10%;
+}
+
+.img {
+  composes: boxShadow from global;
+  border-radius: 8px;
+  object-fit: cover;
+  max-width: 100%;
+  height: auto;
+}
+
+.aboutContainer h1 {
+  color: var(--textSecondary);
+
+  text-align: center;
+}
+
+.AboutRight h2 {
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--textPrimary);
+  margin: 10px 0;
+}
+.AboutRight span {
+  color: var(--primaryColor);
+}
+
+.AboutRight p {
+  font-size: 17px;
+  line-height: 30px;
+}
+
+.skillsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+.skillsContainer a {
+  color: var(--textPrimary);
+  margin-top: 20px;
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+}
+.studiesContainer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.studiesContainer li a {
+  display: block;
+  margin: 5px 0;
+}
+
+.studiesContainer li:hover a {
+  color: var(--primaryColor);
+}
+
+@media screen and (max-width: 768px) {
+  .AboutRight,
+  .AboutLeft {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .aboutContainer {
+    flex-direction: column;
+  }
+
+  .aboutContainer h1 {
+    font-size: 30px;
+    font-weight: bold;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .aboutContainer h1 {
+    font-size: 25px;
+  }
+  .leftImg {
+    padding: 0;
+    padding-top: 5%;
+    margin-right: 0;
+  }
+}

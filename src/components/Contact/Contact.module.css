@@ -43,11 +43,11 @@
   display: flex;
   flex-wrap: wrap;
 }
-.socialContainer button {
+.socialContainer a {
   margin-right: 25px;
 }
 
-.socialContainer button i {
+.socialContainer a i {
   font-size: 20px;
 }
 

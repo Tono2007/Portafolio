@@ -69,6 +69,26 @@ nav li a::after {
 .navLinks li a:hover {
   color: var(--primaryColor);
 }
+.cogBtn {
+  font-size: 18px;
+  composes: fas fa-cog from global;
+  animation-name: rotation;
+  animation-duration: 3.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+.cogBtn:hover {
+  animation-duration: 2s;
+}
 
 .homeBtn {
   padding: 18px 25px;
@@ -102,7 +122,7 @@ nav li a::after {
 .navMobileLinks li {
   width: 100%;
   transition: 0.5s;
-  line-height: 70px;
+  line-height: 65px;
 }
 .navMobileLinks li a::after {
   max-width: 100px;
@@ -137,6 +157,11 @@ nav li a::after {
   line-height: 60px;
   top: 35px;
   right: 45%;
+}
+@media (max-width: 1150px) {
+  .cogBtn {
+    display: none;
+  }
 }
 
 @media (max-width: 1100px) {

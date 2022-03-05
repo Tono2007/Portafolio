@@ -25,18 +25,20 @@
   composes: boxShadow from global;
   position: relative;
   z-index: 9999;
-
   padding: 50px;
   border-radius: 10px;
   overflow: auto;
 }
 
+.btnWrapper {
+  position: absolute;
+  top: 2%;
+  right: 6%;
+}
 .closeBtn {
   composes: btnShadow from global;
   color: var(--primaryColor);
   position: fixed;
-  top: 12%;
-  right: 4%;
   width: 50px;
   height: 50px;
   text-align: center;

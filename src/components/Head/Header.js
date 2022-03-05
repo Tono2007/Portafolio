@@ -1,12 +1,18 @@
 import { useState, useEffect, useRef } from 'react';
 import logo1 from '../../assets/logo_fondo_blanco_4.png';
 import styles from './Header.module.css';
+
+import Modal from '../Modal/Modal';
+import AboutMe from '../AboutMe/AboutMe';
+
 import scrollTop from '../../utils/helpers/scrollTop';
 import useToggle from '../../utils/hooks/useToggle';
 import useScrollInto from '../../utils/hooks/useScrollInto';
 import useScrollSpy from '../../utils/hooks/useScrollSpy';
 
 const Header = () => {
+  const [modal, setModal] = useState(false);
+
   const { open, handleOpen, handleClose } = useToggle();
   const [Mobile, setMobile] = useState(false);
   const [activeNav, setActiveNav] = useState(false);
@@ -35,62 +41,19 @@ const Header = () => {
   };
 
   return (
-    <header className={activeNav ? styles.headerActive : styles.header}>
-      <nav className={styles.nav}>
-        <button type="button" onClick={scrollTop}>
-          <img src={logo1} alt="<AntonioAyola/>" className={styles.logo} />
-        </button>
-        <ul className={styles.navLinks}>
-          <li className="home">
-            <a href="#!" onClick={() => handleLink('home')}>
-              home
-            </a>
-          </li>
-          <li className="features">
-            <a href="#!" onClick={() => handleLink('features')}>
-              features
-            </a>
-          </li>
-          <li className="portfolio">
-            <a href="#!" onClick={() => handleLink('portfolio')}>
-              portafolio
-            </a>
-          </li>
-          <li className="resume">
-            <a href="#!" onClick={() => handleLink('resume')}>
-              resume
-            </a>
-          </li>
-          <li className="clients">
-            <a href="#!" onClick={() => handleLink('clients')}>
-              clients
-            </a>
-          </li>
-          <li className="blog">
-            <a href="#!" onClick={() => handleLink('blog')}>
-              blog
-            </a>
-          </li>
-          <li className="contact">
-            <a href="#!" onClick={() => handleLink('contact')}>
-              contact
-            </a>
-          </li>
-          <li>
-            <button
-              className={styles.homeBtn}
-              type="button"
-              onClick={() => setMobile(false)}
-            >
-              SUPPORT ME
-            </button>
-          </li>
-        </ul>
-        {Mobile && (
-          <ul className={styles.navMobileLinks}>
+    <>
+      <Modal openModal={modal} fnCloseModal={() => setModal(false)}>
+        <AboutMe />
+      </Modal>
+      <header className={activeNav ? styles.headerActive : styles.header}>
+        <nav className={styles.nav}>
+          <button type="button" onClick={scrollTop}>
+            <img src={logo1} alt="<AntonioAyola/>" className={styles.logo} />
+          </button>
+          <ul className={styles.navLinks}>
             <li className="home">
               <a href="#!" onClick={() => handleLink('home')}>
-                home
+                inicio
               </a>
             </li>
             <li className="features">
@@ -103,9 +66,9 @@ const Header = () => {
                 portafolio
               </a>
             </li>
-            <li className="resume">
-              <a href="#!" onClick={() => handleLink('resume')}>
-                resume
+            <li className="about">
+              <a href="#!" onClick={() => setModal(true)}>
+                SOBRE MI
               </a>
             </li>
             <li className="clients">
@@ -124,26 +87,84 @@ const Header = () => {
               </a>
             </li>
             <li>
+              <a href="#!" onClick={() => setModal(true)}>
+                <i className={styles.cogBtn} />
+              </a>
+            </li>
+            <li>
               <button
                 className={styles.homeBtn}
                 type="button"
                 onClick={() => setMobile(false)}
               >
-                SUPPORT ME
+                APOYAME
               </button>
             </li>
           </ul>
-        )}
+          {Mobile && (
+            <ul className={styles.navMobileLinks}>
+              <li className="home">
+                <a href="#!" onClick={() => handleLink('home')}>
+                  inicio
+                </a>
+              </li>
+              <li className="features">
+                <a href="#!" onClick={() => handleLink('features')}>
+                  features
+                </a>
+              </li>
+              <li className="portfolio">
+                <a href="#!" onClick={() => handleLink('portfolio')}>
+                  portafolio
+                </a>
+              </li>
+              <li className="about">
+                <a href="#!" onClick={() => setModal(true)}>
+                  sobre mi
+                </a>
+              </li>
+              <li className="clients">
+                <a href="#!" onClick={() => handleLink('clients')}>
+                  clients
+                </a>
+              </li>
+              <li className="blog">
+                <a href="#!" onClick={() => handleLink('blog')}>
+                  blog
+                </a>
+              </li>
+              <li className="contact">
+                <a href="#!" onClick={() => handleLink('contact')}>
+                  contact
+                </a>
+              </li>
+              <li>
+                <a href="#!" onClick={() => setModal(true)}>
+                  <i className={styles.cogBtn} />
+                </a>
+              </li>
+              <li>
+                <button
+                  className={styles.homeBtn}
+                  type="button"
+                  onClick={() => setMobile(false)}
+                >
+                  APOYAME
+                </button>
+              </li>
+            </ul>
+          )}
 
-        <button
-          className={styles.showMobile}
-          onClick={toogleMobileNav}
-          type="button"
-        >
-          <i className={Mobile ? styles.closeBtn : styles.openBtn} />
-        </button>
-      </nav>
-    </header>
+          <button
+            className={styles.showMobile}
+            onClick={toogleMobileNav}
+            type="button"
+          >
+            <i className={Mobile ? styles.closeBtn : styles.openBtn} />
+          </button>
+        </nav>
+      </header>
+    </>
   );
 };
 

@@ -31,13 +31,15 @@ function Modal(props) {
         />
         <div className={`${styles.modalContent} ${style}`}>
           {props.children}
-          <button
-            className={styles.closeBtn}
-            onClick={closeModalHandler}
-            type="button"
-          >
-            <i className="fas fa-times" />
-          </button>
+          <div className={styles.btnWrapper}>
+            <button
+              className={styles.closeBtn}
+              onClick={closeModalHandler}
+              type="button"
+            >
+              <i className="fas fa-times" />
+            </button>
+          </div>
         </div>
       </div>
     )
