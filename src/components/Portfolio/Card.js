@@ -3,14 +3,14 @@ import styles from './Portfolio.module.css';
 import Modal from '../Modal/Modal';
 import ModalCard from './ModalCard';
 
-const Card = (props) => {
-  const { id, category, totalLike, title, image } = props.project;
+const Card = ({ project }) => {
+  const { id, category, totalLike, title, image } = project;
   const [modal, setModal] = useState(false);
 
   return (
     <>
       <Modal openModal={modal} fnCloseModal={() => setModal(false)}>
-        <ModalCard />
+        <ModalCard project={project} />
       </Modal>
       <div
         className={styles.card}

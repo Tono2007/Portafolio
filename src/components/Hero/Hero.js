@@ -38,7 +38,7 @@ const Hero = () => {
                 words={[
                   ' Profesional Coder',
                   ' Frontend Developer',
-                  'Software Developer',
+                  ' Software Developer',
                 ]}
                 loop={5}
                 cursor

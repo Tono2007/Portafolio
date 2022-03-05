@@ -9,25 +9,31 @@ function About() {
     <div className={styles.me}>
       <h2>Quien soy y mas sobre mi</h2>
       <p>
-        Me llamo Antonio Ayola un desarrollador de Software con gran afición al
-        mundo Tecnológico, autodidacta y apasionado por aprender más todos los
-        días sobre nuevas tecnologias.
+        Me llamo Antonio Ayola soy un desarrollador de Software con gran afición
+        al mundo Tecnológico, autodidacta y apasionado por aprender más todos
+        los días sobre nuevas tecnologias. <br />
+        <br />A lo largo de mi aventura en el mundo del desarrollo web, me
+        involucre en el desarrollo de varios proyectos, proponiéndome retos, los
+        cuales me enseñaron a corregir mis propios errores al desarrollar
+        software.
       </p>
-      <h2>Titulo1</h2>
+      <h2>Trayectoria</h2>
       <p>
         Experiencia en dirección de equipos pequeños y en la participación de
         todo proceso de una aplicación (desde el planteamiento inicial,
         extracción de funcionalidades necesarias, desarrollo, pruebas y
         evolución).
-        <br /> Busco ampliar mis conocimientos en la programación y obtener
-        experiencia formando parte de un productivo y exitoso equipo. Estoy
-        buscando un proyecto adecuado a mis habilidades que me permita
-        desarrollarme, que me ponga nuevos retos y nuevos aprendizajes.
+        <br /> <br />
+        Busco ampliar mis conocimientos en la programación y obtener experiencia
+        formando parte de un productivo y exitoso equipo. Tengo habilidad para
+        adaptarme rapido a otras tecnologias. Estoy buscando un proyecto
+        adecuado a mis habilidades que me permita desarrollarme, que me ponga
+        nuevos retos y nuevos aprendizajes.
       </p>
       <h2>Intereses y Hobbies</h2>
       <p>
-        Interesado en aprender más sobre testing, principios de clean code y
-        escalabilidad en general.
+        Interesado en aprender más sobre testing, principios de clean code,
+        mejorar mi ingles y escalabilidad en general.
         <br /> En mi tiempo suelo tocar la guitarra 🎸, armar cubos rubik{' '}
         <img
           src="https://img.icons8.com/ios/20/000000/rubiks-cube.png"

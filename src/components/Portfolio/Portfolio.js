@@ -7,11 +7,14 @@ const Portfolio = () => {
     <section className={styles.portafolio} id="portfolio">
       <div className="container">
         <div className={styles.heading}>
-          <h4>VISIT MY PORTFOLIO SOME OF MY MOST RECENT PROJECTS</h4>
-          <h1>My Portfolio</h1>
+          <h4>VISITA LOS PROYECTOS MAS RECIENTES DE MI PORTAFOLIO</h4>
+          <h1>Mi Portafolio</h1>
         </div>
+        <button type="button" className={styles.seeAllBtn}>
+          VER TODOS LOS PROYECTOS
+        </button>
         <div className={styles.contentGrid}>
-          {PortfolioData.map((project, index) => (
+          {PortfolioData.slice(0, 3).map((project, index) => (
             <Card key={index} project={project} />
           ))}
         </div>

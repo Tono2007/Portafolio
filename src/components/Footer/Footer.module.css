@@ -36,6 +36,18 @@
   animation-timing-function: ease;
 }
 
+.userBtn {
+  font-size: 17px;
+}
+.userBtn:hover {
+  cursor: pointer;
+  color: var(--primaryColor);
+  font-size: 17px;
+}
+.modalContent {
+  height: 85vh;
+}
+
 @keyframes up {
   0% {
     top: 0;

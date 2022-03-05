@@ -21,8 +21,8 @@ const Contact = () => {
               <h1>Juan Antonio Ayola Cortes</h1>
               <p>
                 Estoy disponible en casi todas las redes sociales. Puede
-                enviarme un mensaje, le responderé dentro de las 24 horas. Puedo
-                ayudarte con Js y React.
+                enviarme un mensaje, le responderé dentro de las 24 horas.
+                Siempre puedes contactarme por los siguientes medios.
               </p>
               <br />
               <p>

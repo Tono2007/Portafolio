@@ -62,7 +62,7 @@ const Header = () => {
             </li>
             <li className="features">
               <a href="#!" onClick={() => handleLink('features')}>
-                features
+                habilidades
               </a>
             </li>
             <li className="portfolio">
@@ -114,7 +114,7 @@ const Header = () => {
               </li>
               <li className="features">
                 <a href="#!" onClick={() => handleLink('features')}>
-                  features
+                  habilidades
                 </a>
               </li>
               <li className="portfolio">

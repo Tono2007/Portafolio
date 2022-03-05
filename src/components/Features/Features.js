@@ -7,8 +7,8 @@ function Features() {
     <section className={styles.Features} id="features">
       <div className="container">
         <div className="heading">
-          <h4>Features</h4>
-          <h1>What I Do</h1>
+          <h4>Habilidades</h4>
+          <h1>Que hago</h1>
         </div>
         <div className={styles.contentGrid}>
           {data.map((feature, index) => (

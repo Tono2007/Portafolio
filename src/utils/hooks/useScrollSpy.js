@@ -8,7 +8,7 @@ const useCurrentLink = () => {
 
     sections.forEach((section) => {
       const sectionTop = section.offsetTop;
-      if (window.pageYOffset >= sectionTop - 110) {
+      if (window.pageYOffset >= sectionTop - 200) {
         current = section.getAttribute('id');
       }
     });

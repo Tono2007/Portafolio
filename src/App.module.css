@@ -56,7 +56,23 @@ p {
   background: var(--gradientPaper);
   box-shadow: var(--boxShadow);
 }
+
 :global .btnShadow:hover {
+  background: var(--primaryColor);
+  color: var(--textContrast);
+  transform: translateY(-10px);
+}
+
+:global .smallBtnShadow {
+  padding: 10px 15px;
+  border-radius: 6px;
+  transition: 0.5s all ease;
+  cursor: pointer;
+  color: var(--textSecondary);
+  background: var(--gradientPaper);
+  box-shadow: var(--boxShadow);
+}
+:global .smallBtnShadow:hover {
   background: var(--primaryColor);
   color: var(--textContrast);
   transform: translateY(-10px);

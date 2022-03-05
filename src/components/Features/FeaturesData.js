@@ -2,51 +2,27 @@ const data = [
   {
     id: 1,
     image: 'https://picsum.photos/50/50?random=1',
-    title: 'Mobile App',
-    icon: 'fas fa-desktop main',
+    title: 'Adaptable',
+    icon: 'fas fa-mobile-alt main',
 
     description:
-      'There are many variations of passages of Lorem Ipsum available, but the majority.',
+      'Capacidad para definir estrategias para obtener sitios web adaptables a diferentes tipos de dispositivos.',
   },
   {
     id: 2,
     image: 'https://picsum.photos/50/50?random=2',
-    icon: 'fas fa-wifi main',
-    title: 'CEO Marketing',
+    icon: 'fas fa-code main',
+    title: 'Desarrollo',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat quibusdam omnis unde et tempo.',
+      'Creación de aplicaciones escalables y mantenibles para resolver problemas. Me gustan los retos.',
   },
   {
     id: 3,
     image: 'https://picsum.photos/50/50?random=3',
-    icon: 'fas fa-chart-line main',
-    title: 'Personal Portfolio April',
+    icon: 'fas fa-globe main',
+    title: 'Rendimiento',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat quibusdam omnis unde et tempora ',
-  },
-  {
-    id: 4,
-    image: 'https://picsum.photos/50/50?random=4',
-    icon: 'fas fa-microchip main',
-    title: 'Business Strategy',
-    description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat quibusdam omnis unde et ',
-  },
-  {
-    id: 5,
-    image: 'https://picsum.photos/50/50?random=5',
-    icon: 'fas fa-desktop main',
-    title: 'App Development',
-    description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat quibusdam omnis unde et ',
-  },
-  {
-    id: 6,
-    image: 'https://picsum.photos/50/50?random=6',
-    icon: 'fas fa-desktop main',
-    title: 'App Development',
-    description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat quibusdam omnis unde et ',
+      'Los sitios web de alto rendimiento para los usuarios son un punto a favor, yo me encargo de eso.',
   },
 ];
 
