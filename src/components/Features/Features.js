@@ -1,4 +1,3 @@
-import React from 'react';
 import Card from './Card';
 import styles from './Features.module.css';
 import data from './FeaturesData';

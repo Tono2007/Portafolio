@@ -1,4 +1,3 @@
-import React from 'react';
 import Card from './Card';
 import PortfolioData from './PortfolioData';
 import styles from './Portfolio.module.css';

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import styles from './Contact.module.css';
 import { constants } from '../../utils/constants';
 import me from '../../assets/me.jpg';
