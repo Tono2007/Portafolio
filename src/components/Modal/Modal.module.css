@@ -17,15 +17,15 @@
 
 .overlay {
   composes: modal;
-  background-color: #ecf0f3f6;
+  background-color: var(--backgroundPrimary);
 }
 
 .modalContent {
   composes: container from global;
+  composes: boxShadow from global;
   position: relative;
   z-index: 9999;
-  background: linear-gradient(145deg, #e2e8ec, #ffffff);
-  box-shadow: 4px 4px 8px #cbcbcb, 4px -4px 8px #ffffff;
+
   padding: 50px;
   border-radius: 10px;
   overflow: auto;
@@ -33,10 +33,10 @@
 
 .closeBtn {
   composes: btnShadow from global;
-  color: #66b58f;
-  position: absolute;
-  top: 20px;
-  right: 25px;
+  color: var(--primaryColor);
+  position: fixed;
+  top: 12%;
+  right: 4%;
   width: 50px;
   height: 50px;
   text-align: center;
@@ -51,6 +51,12 @@
     height: 90vh;
     flex-direction: column;
     padding: 3%;
+  }
+}
+@media screen and (max-width: 900px) {
+  .closeBtn {
+    top: 7%;
+    right: 4%;
   }
 }
 

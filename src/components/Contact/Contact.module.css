@@ -47,8 +47,8 @@
   margin-right: 25px;
 }
 
-.socialContainer button i{
-  font-size: 20px
+.socialContainer button i {
+  font-size: 20px;
 }
 
 .form {
@@ -71,11 +71,11 @@
 .submitBtn {
   composes: btnShadow from global;
   width: 100%;
-  color: #66b58f;
+  color: var(--primaryColor);
 }
 
 .submitBtn:hover {
-  color: white;
+  color: var(--textContrast);
 }
 
 .submitBtn i {

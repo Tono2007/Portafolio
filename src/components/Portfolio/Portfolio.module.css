@@ -45,7 +45,7 @@
   text-transform: uppercase;
 }
 .category span:nth-child(1) {
-  color: #66b58f;
+  color: var(--primaryColor);
   font-size: 13px;
   letter-spacing: 2px;
   font-weight: 500;
@@ -56,7 +56,7 @@
   right: 15px;
   bottom: 15px;
   transform: rotate(-45deg);
-  color: #66b58f;
+  color: var(--primaryColor);
   opacity: 0;
   transition: 0.5s;
 }
@@ -75,7 +75,7 @@
 }
 
 .card:hover h2 {
-  color: #66b58f;
+  color: var(--primaryColor);
 }
 
 .card span i {

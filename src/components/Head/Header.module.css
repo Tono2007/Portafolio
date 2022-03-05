@@ -9,7 +9,7 @@
   top: 0;
   z-index: 1000;
   width: 100%;
-  background-color: #ecf0f3;
+  background-color: var(--backgroundPrimary);
   box-shadow: -1px 11px 24px -11px rgba(0, 0, 0, 0.75);
   transition: 0.5s;
 }
@@ -32,13 +32,13 @@ nav li a::after {
   left: 0;
   width: 0;
   height: 2px;
-  background: #66b58f;
+  background: var(--primaryColor);
 }
 :global nav li.active a::after {
   width: 100%;
 }
 :global nav li.active a {
-  color: #66b58f;
+  color: var(--primaryColor);
 }
 
 .logo {
@@ -52,7 +52,7 @@ nav li a::after {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  composes: uppercase from global;
+  text-transform: uppercase;
 }
 .navLinks li {
   position: relative;
@@ -67,7 +67,7 @@ nav li a::after {
 }
 
 .navLinks li a:hover {
-  color: #66b58f;
+  color: var(--primaryColor);
 }
 
 .homeBtn {
@@ -76,13 +76,12 @@ nav li a::after {
   transition: 0.3s all ease;
   cursor: pointer;
   height: fit-content;
-  color: #66b58f;
-  background: linear-gradient(145deg, #e2e8ec, #ffffff);
-  box-shadow: 4px 4px 8px #cbcbcb, 4px -4px 8px #ffffff;
+  color: var(--primaryColor);
+  composes: boxShadow from global;
 }
 .homeBtn:hover {
-  background: #66b58f;
-  color: #fff;
+  background: var(--primaryColor);
+  color: var(--textContrast);
 }
 
 .navMobileLinks {
@@ -103,7 +102,6 @@ nav li a::after {
 .navMobileLinks li {
   width: 100%;
   transition: 0.5s;
-  text-transform: uppercase;
   line-height: 70px;
 }
 .navMobileLinks li a::after {
@@ -116,7 +114,7 @@ nav li a::after {
 .mobileBtns {
   transition: 0.5s;
   position: absolute;
-  color: #66b58f;
+  color: var(--primaryColor);
   font-size: 25px;
   z-index: 999;
   composes: showMobile;
