@@ -35,7 +35,7 @@
   transition: 0.5s;
   overflow: hidden;
   border-radius: 10px;
-  background: #000;
+  box-shadow: 10px 15px 20px -15px rgba(0, 0, 0, 0.459);
 }
 
 .img img {
@@ -52,7 +52,7 @@
 .category {
   display: flex;
   justify-content: space-between;
-  margin: 10px 0 20px 0;
+  margin: 15px 0 15px 0;
   text-transform: uppercase;
 }
 .category span:nth-child(1) {
@@ -82,7 +82,7 @@
 .card h2 {
   font-size: 18px;
   transition: 0.5s;
-  padding-bottom: 30px;
+  padding-bottom: 20px;
 }
 
 .card:hover h2 {

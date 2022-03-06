@@ -4,8 +4,10 @@ import Modal from '../Modal/Modal';
 import ModalCard from './ModalCard';
 
 const Card = ({ project }) => {
-  const { id, category, totalLike, title, image } = project;
+  const { id, category, date, title, image } = project;
   const [modal, setModal] = useState(false);
+  // eslint-disable-next-line import/no-dynamic-require
+  const img = require(`../../assets/portafolio/${image}`);
 
   return (
     <>
@@ -20,13 +22,12 @@ const Card = ({ project }) => {
         tabIndex={0}
       >
         <div className={styles.img}>
-          <img src={image} alt="" />
+          <img src={img} alt="" />
         </div>
         <div className={styles.category}>
           <span>{category}</span>
           <span>
-            <i className="fas fa-heart" />
-            {totalLike}
+            <i className="fas fa-calendar-alt" />•{` ${date}`}
           </span>
         </div>
         <div>

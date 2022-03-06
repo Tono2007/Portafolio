@@ -121,11 +121,17 @@
   margin: 20px 0;
 }
 .skillsContainer a {
+  transition: 0.3s;
+  border-radius: 10px;
+  padding: 6px;
   color: var(--textPrimary);
-  margin-top: 20px;
-  margin-right: 20px;
+  margin-top: 10px;
+  margin-right: 10px;
   display: flex;
   align-items: center;
+}
+.skillsContainer a:hover {
+  box-shadow: -1px 11px 24px -11px rgba(0, 0, 0, 0.75);
 }
 .studiesContainer {
   display: flex;

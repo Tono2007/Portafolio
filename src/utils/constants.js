@@ -2,7 +2,7 @@ export const constants = {
   name: 'Antonio Ayola',
   avatar: 'https://avatars.githubusercontent.com/u/35477201?v=4',
   profilesUrls: {
-    linkedin: 'https://www.linkedin.com/in/antonio-ayola-7737191b0/',
+    linkedin: 'https://www.linkedin.com/in/antonio-ayola/',
     github: 'https://github.com/Tono2007',
     email: 'antonio.ayola.cortes@gmail.com',
     cv: '/04/03/2022.pdf',
@@ -36,12 +36,9 @@ export const constants = {
     computacionBasica:
       'https://platzi.com/p/AntonioAyola/curso/1741-computacion-basica-2019/diploma/detalle/',
   },
-  imgs: {
-    heroBG: '/heroBG.jpeg',
-  },
   language: 'es_mx',
   siteData: {
-    siteUrl: 'https://antonioAyola.com',
+    siteUrl: 'antonioayola.netlify.app/',
     siteRepo: 'https://github.com/Tono2007/portafolio',
   },
 };

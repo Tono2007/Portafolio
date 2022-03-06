@@ -1,25 +1,25 @@
 import { useState, useEffect } from 'react';
 import Slide from './Slide';
 import styles from './Testimonial.module.css';
+import testimonialData from './TestimonialData';
 
 const Testimonial = () => {
-  const [data, setdata] = useState([0, 1, 2, 3, 4, 5, 6, 7]);
   const [index, setIndex] = useState(0);
 
   useEffect(() => {
-    const lastIndex = data.length - 1;
+    const lastIndex = testimonialData.length - 1;
     if (index < 0) {
       setIndex(lastIndex);
     }
     if (index > lastIndex) {
       setIndex(0);
     }
-  }, [index, data]);
+  }, [index, testimonialData]);
 
   useEffect(() => {
     const slider = setInterval(() => {
       setIndex(index + 1);
-    }, 4000);
+    }, 6000);
 
     return () => clearInterval(slider);
   }, [index]);
@@ -28,16 +28,17 @@ const Testimonial = () => {
     <section id="clients" className={styles.testimonial}>
       <div className="container">
         <div className={styles.heading}>
-          <h4>WHAT CLIENTS SAY</h4>
-          <h1>Testimonial</h1>
+          <h4>QUE DICEN DE MI TRABAJO</h4>
+          <h1>Testimonios</h1>
         </div>
         <div className={styles.slider}>
-          {data.map((id) => (
+          {testimonialData.map((data) => (
             <Slide
-              valueIndex={id}
-              key={id}
+              data={data}
+              valueIndex={data.id}
+              key={data.id}
               index={index}
-              dataLength={data.legth}
+              dataLength={testimonialData.legth}
             />
           ))}
 

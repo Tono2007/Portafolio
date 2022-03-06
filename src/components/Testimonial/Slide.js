@@ -1,6 +1,11 @@
 import styles from './Testimonial.module.css';
+/* 
+const img = require.context('../../assets', true); */
+const Slide = ({ valueIndex, index, dataLength, data }) => {
+  const { id, company, name, level, work, testimony, date, profileImg } = data;
 
-const Slide = ({ valueIndex, index, dataLength }) => {
+  // eslint-disable-next-line import/no-dynamic-require
+  const img = require(`../../assets/testimonial/${profileImg}`);
   let position = 'nextSlide';
   if (valueIndex === index) {
     position = 'activeSlide';
@@ -16,15 +21,13 @@ const Slide = ({ valueIndex, index, dataLength }) => {
     <article className={`${styles.slide} ${styles[position]}`}>
       <div className={styles.left}>
         <div className={styles.slideImg}>
-          <img
-            src={`https://picsum.photos/400/250?random=${valueIndex}`}
-            alt=""
-          />
+          {/* <img src={img('./testimonial/appdt.jpg').default} alt="fsf" /> */}
+          <img src={img} alt="company" />
         </div>
         <div className={styles.details}>
-          <span>AppDT Software</span>
-          <h2>Miguel Cortes</h2>
-          <p>Operating Officer</p>
+          <span>{company}</span>
+          <h2>{name}</h2>
+          <p>{level}</p>
         </div>
       </div>
       <div className={styles.right}>
@@ -32,14 +35,9 @@ const Slide = ({ valueIndex, index, dataLength }) => {
           <i className="fas fa-quote-right" />
         </div>
         <div className={styles.content}>
-          <h1>Android App Design</h1>
-          <h3>Fiver - 17 Septiembre 2097</h3>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere,
-            cumque? Tempore magnam sed necessitatibus dolorem, unde minima
-            perspiciatis adipisci ex reiciendis explicabo nam eveniet id placeat
-            repudiandae ad hic nesciunt!
-          </p>
+          <h1>{work}</h1>
+          <h3>{date}</h3>
+          <p>{testimony}</p>
         </div>
       </div>
     </article>

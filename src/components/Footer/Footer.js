@@ -35,7 +35,7 @@ const Footer = () => {
             >
               @AntonioAyola{' '}
             </button>{' '}
-            con 🖤 en 2022
+            con 🖤 en 2022 &#x1F1F2;&#x1F1FD;
           </p>
           <img src={line} alt="" className={styles.svg} />
           <img src={line} alt="" className={styles.svg} />

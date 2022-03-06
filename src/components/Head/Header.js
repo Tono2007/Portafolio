@@ -77,7 +77,7 @@ const Header = () => {
             </li>
             <li className="clients">
               <a href="#!" onClick={() => handleLink('clients')}>
-                clients
+                Recomendaciones
               </a>
             </li>
             <li className="blog">
@@ -129,7 +129,7 @@ const Header = () => {
               </li>
               <li className="clients">
                 <a href="#!" onClick={() => handleLink('clients')}>
-                  clients
+                  Recomendaciones
                 </a>
               </li>
               <li className="blog">

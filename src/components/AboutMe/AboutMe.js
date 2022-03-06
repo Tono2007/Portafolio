@@ -52,6 +52,7 @@ function Skills() {
       <h2>Habilidades – Tecnologías - Herramientas</h2>
       <div className={styles.skillsContainer}>
         <a
+          className={styles.a}
           href="https://www.w3schools.com/css/"
           target="_blank"
           rel="noreferrer noopener"
@@ -252,6 +253,11 @@ function Education() {
         Universidad Politécnica de Pachuca - Carretera Pachuca – Ciudad Sahagún
         Km. 20, Ex-Hacienda de Santa Bárbara, 43830
       </p>
+      <p>
+        Durante mis estudios en la UPP obtuve capacidad de responsabilida,
+        esfuerzo y sacrificio, forme parte de equipos de trabajo y trabaje en
+        proyectos de IA.
+      </p>
     </>
   );
 }
@@ -267,7 +273,7 @@ function Studies() {
             rel="noreferrer noopener"
             href={constants.cursos.inglesB1}
           >
-            • Ingles B1 - CENLEX IPN - 11 de Enero 2022
+            • Ingles B1 MCER - CENLEX IPN - 11 de Enero 2022
           </a>
         </li>
         <li>
@@ -322,7 +328,7 @@ function Studies() {
 function CV() {
   return (
     <>
-      <h2>CV Privado</h2>
+      <h2>Por ahora CV Privado</h2>
       <p>Dirigete a la sección de contacto.</p>
       <button type="button" className="boxShadow" disabled>
         DESCARGA CV
@@ -344,6 +350,7 @@ function AboutMe() {
               APOYAME
             </button>
             <p>Desarrollo software con ❤️ y ☕️</p>
+            <p> &#x1F1F2;&#x1F1FD;</p>
           </div>
         </div>
         <div className={styles.AboutRight}>
@@ -375,6 +382,12 @@ function AboutMe() {
               </li>
               <li className={activeSection === 4 ? styles.active : null}>
                 <button type="button" onClick={() => setActiveSection(4)}>
+                  Experiencia
+                </button>
+                <span className={styles.divider}>|</span>
+              </li>
+              <li className={activeSection === 5 ? styles.active : null}>
+                <button type="button" onClick={() => setActiveSection(5)}>
                   CV
                 </button>
                 <span className={styles.divider}>|</span>
@@ -389,7 +402,8 @@ function AboutMe() {
             {activeSection === 1 && <Skills />}
             {activeSection === 2 && <Education />}
             {activeSection === 3 && <Studies />}
-            {activeSection === 4 && <CV />}
+            {activeSection === 4 && <p>Privado</p>}
+            {activeSection === 5 && <CV />}
           </div>
         </div>
       </div>

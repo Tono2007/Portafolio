@@ -24,6 +24,29 @@ const data = [
     description:
       'Los sitios web de alto rendimiento para los usuarios son un punto a favor, yo me encargo de eso.',
   },
+  /* {
+    id: 4,
+    image: 'https://picsum.photos/50/50?random=3',
+    icon: 'fas fa-globe main',
+    title: 'Mejor Diseño Mejor Experiencia',
+    description: 'Muestra diseños innovadores y experiencia de usuario únicos',
+  },
+  {
+    id: 5,
+    image: 'https://picsum.photos/50/50?random=3',
+    icon: 'fas fa-globe main',
+    title: 'Patrones',
+    description:
+      'Estudio de diseño de patrones para resolución persistentes en el desarrollo web',
+  },
+  {
+    id: 6,
+    image: 'https://picsum.photos/50/50?random=3',
+    icon: 'fas fa-globe main',
+    title: 'Web App',
+    description:
+      'El uso de nuevas tecnologías para la resolución de problemas en aplicaciones web',
+  }, */
 ];
 
 export default data;
