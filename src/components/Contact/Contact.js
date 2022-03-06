@@ -4,7 +4,65 @@ import { constants } from '../../utils/constants';
 import me from '../../assets/me.jpg';
 
 const Contact = () => {
-  const [formValues, setFormValues] = useState({});
+  const [formValues, setFormValues] = useState({
+    name: '',
+    number: '',
+    email: '',
+    subject: '',
+    message: '',
+  });
+  const [isLoading, setIsLoading] = useState(false);
+  const [error, setError] = useState(false);
+  const [success, setSuccess] = useState(false);
+
+  const submit = async (e) => {
+    e.preventDefault();
+    setSuccess(false);
+    setError(false);
+    console.log(formValues);
+    setIsLoading(true);
+
+    try {
+      const response = await fetch('https://formspree.io/f/xknybpbr', {
+        method: 'POST',
+        body: JSON.stringify(formValues),
+        /*    body: { fd: 'd' }, */
+        headers: {
+          Accept: 'application/json',
+        },
+      });
+      console.log(response);
+      if (response.status !== 200) {
+        throw new Error();
+      }
+
+      if (response.status === 200) {
+        setSuccess(true);
+        alert('Mensaje Enviado');
+        setFormValues({
+          name: '',
+          number: '',
+          email: '',
+          subject: '',
+          message: '',
+        });
+      }
+    } catch (error) {
+      setError(true);
+      console.log(error);
+      console.log(error.response);
+    } finally {
+      setIsLoading(false);
+    }
+  };
+
+  const handleChange = (e) => {
+    setFormValues({
+      ...formValues,
+      [e.target.name]: e.target.value,
+    });
+  };
+
   return (
     <section className={styles.contact} id="contact">
       <div className={styles.heading}>
@@ -87,30 +145,85 @@ const Contact = () => {
         </div>
 
         <div className={styles.right}>
-          <form onSubmit={() => console.log('df')} className={styles.form}>
+          <form onSubmit={submit} className={styles.form}>
             <div className={`${styles.input} ${styles.inputRow}`}>
-              <span>NOMBRE</span>
-              <input type="text" name="nombre" id="2" />
+              <input
+                type="text"
+                name="name"
+                id="name"
+                required
+                value={formValues.name}
+                onChange={handleChange}
+              />
+              <label htmlFor="name">NOMBRE</label>
             </div>
             <div className={`${styles.input} ${styles.inputRow}`}>
-              <span>NUMERO</span>
-              <input type="phone" name="nombre" id="2" />
+              <input
+                type="number"
+                name="number"
+                id="number"
+                value={formValues.number}
+                onChange={handleChange}
+              />
+              <label htmlFor="number">NUMERO </label>
             </div>
             <div className={styles.input}>
-              <span>EMAIL</span>
-              <input type="email" name="email" id="2" />
+              <input
+                type="email"
+                name="email"
+                id="email"
+                required
+                value={formValues.email}
+                onChange={handleChange}
+              />
+              <label htmlFor="email">EMAIL </label>
             </div>
             <div className={styles.input}>
-              <span>ASUNTO</span>
-              <input type="text" name="nombre" id="2" />
+              <input
+                id="subject"
+                type="text"
+                name="subject"
+                required
+                value={formValues.subject}
+                onChange={handleChange}
+              />
+              <label htmlFor="subject">ASUNTO </label>
             </div>
             <div className={styles.input}>
-              <span>MENSAJE</span>
-              <textarea type="text" name="nombre" id="2" cols="10" rows="10" />
+              <textarea
+                type="text"
+                name="message"
+                id="message"
+                cols="10"
+                rows="10"
+                required
+                value={formValues.message}
+                onChange={handleChange}
+              />
+              <label htmlFor="message">MENSAJE </label>
             </div>
-            <button className={styles.submitBtn} type="button">
-              ENVIAR MENSAJE <i className="fas fa-long-arrow-right" />
-            </button>
+            {!isLoading && (
+              <button className={styles.submitBtn} type="submit">
+                ENVIAR MENSAJE <i className="fas fa-long-arrow-right" />
+              </button>
+            )}
+
+            {isLoading && (
+              <>
+                <div className={styles.loader} />
+                <p>Enviando Formulario</p>
+              </>
+            )}
+
+            {error && (
+              <span className={styles.errorMsg}>
+                Error al enviar formulario intentalo mas tarde
+              </span>
+            )}
+
+            {success && (
+              <span className={styles.successMsg}>Formulario Enviado</span>
+            )}
           </form>
         </div>
       </div>
