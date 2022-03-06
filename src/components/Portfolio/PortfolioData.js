@@ -8,13 +8,19 @@ const data = [
     totalLike: '280',
     title: 'Mi Portafolio',
     image: 'portafolio.png',
-    technologies: ['React', 'CSS Modules', 'Responsive', 'neumorphism'],
+    technologies: [
+      'React',
+      'CSS Modules',
+      'Responsive',
+      'Neumorphism',
+      'Netlify',
+    ],
     desc: `Mi sitio web personal estilo Neumorfismo.
      Este proyecto me tomo mucho trabajo solo para poder experesar lo que hago y lo que me gusta hacer. 
      Junto con un pequeño blog. Espero que te guste <3`,
     links: {
       code: 'https://github.com/Tono2007/portafolio',
-      page: 'antonioayola.netlify.app/',
+      page: 'https://antonioayola.netlify.app/',
     },
   },
   /* {

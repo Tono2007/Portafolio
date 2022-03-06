@@ -27,6 +27,7 @@
     "react/react-in-jsx-scope": "off",
     "react/function-component-definition": 0,
     "global-require": 0,
+    "jsx-a11y/label-has-associated-control": 0,
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
     "prettier/prettier": "error"
   }
