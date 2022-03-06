@@ -6,6 +6,8 @@ Este proyecto es mi portafolio profesional donde muestro mis skills, que experie
 
 ![img](src/assets/logo_fondo_blanco_4.png)
 
+![img](src/assets/portafolio/portafolio.png)
+
 ## **DEMO**
 
 Puede ver el demo de este haciendo accediendo [aquí](https://github.com/Tono2007/portafolio/).
