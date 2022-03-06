@@ -2,6 +2,7 @@
 
 .modalContainer {
   display: flex;
+  white-space: pre-line;
 }
 
 .modalImg {

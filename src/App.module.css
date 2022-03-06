@@ -31,10 +31,18 @@ p {
   color: var(--textPrimary);
 }
 
+:global .bgPattern {
+  background-image: radial-gradient(
+    var(--primaryColor) 1.4500000000000002px,
+    rgba(255, 255, 255, 0) 1.4500000000000002px
+  );
+}
+
 :global .container {
   width: 95%;
   max-width: 1300px;
   margin: auto;
+  position: relative;
 }
 
 :global .hideScroll {

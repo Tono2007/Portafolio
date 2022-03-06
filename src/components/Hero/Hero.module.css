@@ -102,9 +102,11 @@
   left: -2px;
   box-shadow: 14px 14px 8px var(--backgroundTertiary), 14px -9px 8px #ffffff;
 }
-.rightImg img {
+.img {
   max-width: 100%;
   height: 100%;
+  composes: bgPattern from global;
+  background-size: 50px 50px;
 }
 
 @media screen and (max-width: 768px) {

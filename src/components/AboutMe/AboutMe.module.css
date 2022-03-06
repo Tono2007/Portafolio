@@ -9,6 +9,7 @@
 .AboutLeft {
   width: 40%;
   height: auto;
+  text-align: center;
 }
 .AboutRight {
   width: 60%;
@@ -75,14 +76,22 @@
   border-radius: 10px;
   padding: 10%;
   margin-right: 10%;
+  composes: bgPattern from global;
+  background-size: 18px 18px;
 }
 
 .img {
+  border: 1px solid var(--primaryColor);
   composes: boxShadow from global;
   border-radius: 8px;
   object-fit: cover;
   max-width: 100%;
   height: auto;
+}
+.supportBtn {
+  margin: 10px 0;
+  composes: smallBtnShadow from global;
+  color: var(--primaryColor);
 }
 
 .aboutContainer h1 {
@@ -161,7 +170,7 @@
   }
   .leftImg {
     padding: 0;
-    padding-top: 5%;
+    padding: 5% 0;
     margin-right: 0;
   }
 }

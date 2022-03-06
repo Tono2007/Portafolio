@@ -1,5 +1,7 @@
 import { useState } from 'react';
 import logo1 from '../../assets/logo_fondo_blanco_1.png';
+import line from '../../assets/llline.svg';
+
 import styles from './Footer.module.css';
 import scrollTop from '../../utils/helpers/scrollTop';
 
@@ -35,6 +37,11 @@ const Footer = () => {
             </button>{' '}
             con 🖤 en 2022
           </p>
+          <img src={line} alt="" className={styles.svg} />
+          <img src={line} alt="" className={styles.svg} />
+          <img src={line} alt="" className={styles.svg} />
+          <img src={line} alt="" className={styles.svg} />
+
           <button type="button" className={styles.floatBtn} onClick={scrollTop}>
             <i className="fas fa-angle-double-up" />
           </button>

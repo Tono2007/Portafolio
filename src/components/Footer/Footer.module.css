@@ -1,14 +1,38 @@
 .footer {
-  composes: container from global;
   text-align: center;
   margin: 10% 0 5% 0;
 }
 .footerContainer {
+  composes: container from global;
   position: relative;
 }
 
 .footer img {
   width: 350px;
+}
+
+.svg {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+}
+.svg:nth-of-type(1) {
+  top: 0;
+  right: 0;
+}
+.svg:nth-of-type(2) {
+  top: 80px;
+  left: 80px;
+  transform: rotate(45deg) skew(20deg);
+}
+.svg:nth-of-type(3) {
+  bottom: 0;
+  left: 0;
+}
+.svg:nth-of-type(4) {
+  bottom: 80px;
+  right: 80px;
+  transform: rotate(45deg) skew(20deg);
 }
 
 .floatBtn i {
@@ -23,6 +47,7 @@
   color: var(--textContrast);
 }
 .floatBtn {
+  transition: 0.5s;
   composes: boxShadow from global;
   padding: 18px 25px;
   position: absolute;

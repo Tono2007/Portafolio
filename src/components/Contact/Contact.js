@@ -89,27 +89,27 @@ const Contact = () => {
         <div className={styles.right}>
           <form onSubmit={() => console.log('df')} className={styles.form}>
             <div className={`${styles.input} ${styles.inputRow}`}>
-              <span>YOUR NAME</span>
+              <span>NOMBRE</span>
               <input type="text" name="nombre" id="2" />
             </div>
             <div className={`${styles.input} ${styles.inputRow}`}>
-              <span>YOUR NUMBER</span>
+              <span>NUMERO</span>
               <input type="phone" name="nombre" id="2" />
             </div>
             <div className={styles.input}>
-              <span>YOUR EMAIL</span>
+              <span>EMAIL</span>
               <input type="email" name="email" id="2" />
             </div>
             <div className={styles.input}>
-              <span>SUBJECT</span>
+              <span>ASUNTO</span>
               <input type="text" name="nombre" id="2" />
             </div>
             <div className={styles.input}>
-              <span>YOUR MESSAGE</span>
+              <span>MENSAJE</span>
               <textarea type="text" name="nombre" id="2" cols="10" rows="10" />
             </div>
             <button className={styles.submitBtn} type="button">
-              SEND MESSAGE <i className="fas fa-long-arrow-right" />
+              ENVIAR MENSAJE <i className="fas fa-long-arrow-right" />
             </button>
           </form>
         </div>

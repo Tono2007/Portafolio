@@ -8,7 +8,9 @@ const data = [
     title: 'Mi Portafolio',
     image: 'https://picsum.photos/900/500?random=1',
     tecnologies: ['React', 'CSS Modules'],
-    desc: 'Este proyecto me tomo mucho trabajo solo para poder experesar lo que hago y lo que me gusta hacer.Juanto con un pequeño blosg. Espero que te guste <3',
+    desc: `Mi sitio web personal estilo Neumorfismo.
+     Este proyecto me tomo mucho trabajo solo para poder experesar lo que hago y lo que me gusta hacer. 
+     Junto con un pequeño blog. Espero que te guste <3`,
   },
   {
     id: 2,
@@ -16,7 +18,7 @@ const data = [
     totalLike: '780',
     title: 'Mobile Restaurant App Landing design complete',
     image: 'https://picsum.photos/600/500?random=2',
-    des: 'Landing page made for promoting physical therapist services, this project was made using html, and css',
+    desc: 'Landing page made for promoting physical therapist services, this project was made using html, and css',
   },
   {
     id: 3,

@@ -4,7 +4,7 @@ import hero from '../../assets/hero8.svg';
 import styles from './Hero.module.css';
 import { constants } from '../../utils/constants';
 
-const Hero = () => {
+function Hero() {
   const [activeNav, setActiveNav] = useState(false);
   useEffect(() => {
     function handleScroll() {
@@ -60,14 +60,6 @@ const Hero = () => {
               <h4>ENCUENTRAME AQUI</h4>
               <div className={styles.socialContainer}>
                 <a
-                  href={constants.profilesUrls.facebook}
-                  className={styles.socialBtn}
-                  target="_blank"
-                  rel="noreferrer noopener"
-                >
-                  <i className="fa-brands fa-facebook-f" />
-                </a>
-                <a
                   href={constants.profilesUrls.github}
                   className={styles.socialBtn}
                   target="_blank"
@@ -82,6 +74,14 @@ const Hero = () => {
                   rel="noreferrer noopener"
                 >
                   <i className="fa-brands fa-linkedin-in" />
+                </a>
+                <a
+                  href={constants.profilesUrls.facebook}
+                  className={styles.socialBtn}
+                  target="_blank"
+                  rel="noreferrer noopener"
+                >
+                  <i className="fa-brands fa-facebook-f" />
                 </a>
               </div>
             </div>
@@ -110,12 +110,12 @@ const Hero = () => {
         </div>
         <div className={styles.heroRight}>
           <div className={styles.rightImg}>
-            <img src={hero} alt="hero" />
+            <img src={hero} alt="hero" className={styles.img} />
           </div>
         </div>
       </div>
     </section>
   );
-};
+}
 
 export default Hero;

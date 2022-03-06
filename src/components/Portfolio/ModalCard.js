@@ -12,11 +12,8 @@ function ModalCard({ project }) {
         <span>2022 - Design</span>
         <h1>{title}</h1>
         <p>{desc}</p>
-        <h4>Tecnologias Usadas</h4>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione
-          nobis optio, dolor ea molestias ullam sequi omnis libero
-        </p>
+        <h4>Tecnologias - Herramientas Usadas</h4>
+        <p>• React | • css | • sd</p>
         <div className={styles.modalActions}>
           <button className={styles.actionBtn} type="button">
             VER CODIGO <i className="fab fa-github" />

@@ -340,6 +340,10 @@ function AboutMe() {
           <div className={styles.leftImg}>
             <img src={hero} alt="hero" className={styles.img} />
             <h1>{'<Antonio Ayola/>'}</h1>
+            <button className={styles.supportBtn} type="button">
+              APOYAME
+            </button>
+            <p>Desarrollo software con ❤️ y ☕️</p>
           </div>
         </div>
         <div className={styles.AboutRight}>
