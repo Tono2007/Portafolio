@@ -8,7 +8,7 @@ import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { coldarkDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
 function ModalCard({ data }) {
-  const { id, title, date, banner, md, author } = data;
+  const { id, title, date, banner, md, author, tags } = data;
   const [post, setPost] = useState('');
 
   //console.log(md);
@@ -30,6 +30,13 @@ function ModalCard({ data }) {
       <h1>
         {id}.-{`   ${title}`}
       </h1>
+      <div className={styles.tagsContainer}>
+        <p>Tags-&gt;</p>
+
+        {tags.map((tag, index) => (
+          <span key={index}>{tag}</span>
+        ))}
+      </div>
 
       <div className={styles.modalImg}>
         <img src={img} alt="" />
@@ -41,9 +48,8 @@ function ModalCard({ data }) {
         </div>
         <span>Publicado el {date}</span>
       </div>
+      <hr />
       <div className={styles.modalText}>
-        <hr />
-
         <ReactMarkdown
           remarkPlugins={[remarkGfm]}
           components={{
