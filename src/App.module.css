@@ -23,6 +23,9 @@ button {
   outline: none;
   background: none;
 }
+hr {
+  border-top: 1px solid var(--backgroundTertiary);
+}
 h1 {
   color: var(--textPrimary);
 }

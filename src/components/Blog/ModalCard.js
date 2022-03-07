@@ -1,6 +1,7 @@
 /* eslint-disable import/no-dynamic-require */
 import { useEffect, useState } from 'react';
 import styles from './ModalCard.module.css';
+import me from '../../assets/me.jpg';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
@@ -33,8 +34,16 @@ function ModalCard({ data }) {
       <div className={styles.modalImg}>
         <img src={img} alt="" />
       </div>
+      <div className={styles.header}>
+        <div className={styles.avatar}>
+          <img src={me} alt="" />
+          <p>• {author} •</p>
+        </div>
+        <span>Publicado el {date}</span>
+      </div>
       <div className={styles.modalText}>
-        <span>Publicado el {date}</span> por Antonio Ayola
+        <hr />
+
         <ReactMarkdown
           remarkPlugins={[remarkGfm]}
           components={{
@@ -52,7 +61,7 @@ function ModalCard({ data }) {
                     PreTag="div"
                     {...props}
                   />
-                  <div>copiar</div>
+                  <div>boton para copiar proximamente</div>
                 </>
               ) : (
                 <code className={className} {...props}>
@@ -64,29 +73,7 @@ function ModalCard({ data }) {
         >
           {post}
         </ReactMarkdown>
-        <h1>{title}</h1>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem ut
-          deserunt repellat modi explicabo omnis officia, reprehenderit
-          deleniti, fugiat quasi mollitia nesciunt velit est, consequatur amet
-          eius vero voluptatum commodi! Lorem ipsum dolor sit amet consectetur,
-          adipisicing elit. Ratione nobis optio, dolor ea molestias ullam sequi
-          omnis libero
-        </p>
-        <h1>Titulo1</h1>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-          Exercitationem animi ut porro voluptate facere tenetur eum quas
-          cupiditate saepe est quis placeat similique modi natus nulla, quia
-          autem rem ab.
-        </p>
-        <h1>Titulo3</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores
-          adipisci tempora sunt sit neque, est sint facilis illo, quidem harum
-          assumenda exercitationem totam eum voluptates veniam a excepturi nulla
-          fugiat! Si llegaste hasta aquí... Gracias por leer &lt;3
-        </p>
+
         {/* <div className="contact mtop">
           <h1>Leave a Reply</h1>
           <form action="" className="blog_contact d_flex">

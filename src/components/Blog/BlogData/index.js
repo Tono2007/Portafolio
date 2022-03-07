@@ -6,7 +6,7 @@ const data = [
     date: '19 de Septiembre, 2022',
     banner: 'npm/banner.png',
     tags: ['a', 'ff', 'dfd'],
-    md: 'npm/npm.md',
+    md: 'demo.md',
   },
   {
     id: 2,

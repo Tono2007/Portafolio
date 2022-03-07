@@ -153,6 +153,11 @@
   color: var(--primaryColor);
 }
 
+.educationSection span {
+  font-size: 14px;
+  color: var(--textTertiary);
+}
+
 @media screen and (max-width: 768px) {
   .AboutRight,
   .AboutLeft {

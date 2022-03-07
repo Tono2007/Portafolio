@@ -17,7 +17,7 @@ const data = [
       'Markdown',
     ],
     desc: `Mi sitio web personal estilo Neumorfismo.
-     Este proyecto me tomo mucho trabajo solo para poder experesar lo que hago y lo que me gusta hacer. 
+     Este proyecto me tomo mucho trabajo solo para poder expresar lo que hago y lo que me gusta hacer. 
      Junto con un pequeño blog usando markdown. Espero que te guste <3`,
     links: {
       code: 'https://github.com/Tono2007/portafolio',
