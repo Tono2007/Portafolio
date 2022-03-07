@@ -1,8 +1,8 @@
 import Card from './Card';
 import styles from './Blog.module.css';
+import data from './BlogData';
 
 const Blog = () => {
-  const data = [0, 1, 2, 3, 4, 5, 6];
   return (
     <section className={styles.blog} id="blog">
       <div className="container">
@@ -11,8 +11,11 @@ const Blog = () => {
           <h1>Mi Blog</h1>
         </div>
         <div className={styles.contentGrid}>
-          {data.slice(0, 3).map((value) => (
-            <Card key={value} id={value} />
+          {/* {data.slice(0, 3).map((post) => (
+            <Card key={post.id} data={post} />
+          ))} */}
+          {data.map((post) => (
+            <Card key={post.id} data={post} />
           ))}
         </div>
       </div>

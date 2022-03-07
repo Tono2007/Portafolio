@@ -4,6 +4,15 @@
   display: flex;
   flex-direction: column;
 }
+.modalContainer h1 {
+  font-size: 2.5rem;
+}
+
+.modalContainer hr {
+  margin: 15px 0;
+}
+
+/*--------------------------*/
 
 .modalImg {
   width: 100%;
@@ -19,21 +28,130 @@
   object-fit: cover;
 }
 
+.header {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.avatar p {
+  font-weight: bold;
+  font-size: 18px;
+  margin-left: 20px;
+}
+
+.avatar img {
+  border: 1px solid var(--primaryColor);
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+}
+.header span {
+  color: var(--textTertiary);
+}
+/* ----------------Markdown style ------------------------- */
+
 .modalText {
   width: 100%;
   padding: 0;
-  margin-top: 30px;
+  margin-top: 0px;
+  color: var(--textPrimary);
+}
+
+.modalText h1,
+.modalText h2,
+.modalText h3,
+.modalText h4,
+.modalText h5,
+.modalText h6 {
+  font-weight: 500;
+  margin: 10px 0;
 }
 
 .modalText h1 {
-  margin: 35px 0 35px 0;
-  font-size: 30px;
+  margin: 10px 0;
+  font-size: 35.2px;
+  margin: 30px 0;
+}
+
+.modalText h2 {
+  margin: 5px 0;
+  font-size: 26.4px;
+  margin: 20px 0;
 }
 
 .modalText p {
-  font-size: 17px;
-  margin-bottom: 20px;
-  line-height: 25px;
+  font-size: 15.5px;
+  line-height: 27px;
+  margin: 10px 0;
+}
+
+.modalText blockquote {
+  border-left: 10px solid var(--primaryColor);
+  display: flex;
+  align-items: center;
+  align-content: center;
+  background: var(--backgroundSecondary);
+  padding: 20px;
+  margin: 10px 0;
+  display: block;
+}
+
+.modalText ul {
+  margin-left: 15px;
+}
+
+.modalText ul li::before {
+  content: '\2022';
+  color: var(--textPrimary);
+  font-weight: bold;
+  font-size: 15pt;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+.modalText code {
+  padding: 7px;
+  margin: 0 5px;
+  color: var(--textPrimary);
+
+  border-radius: 5px;
+  font-weight: 600;
+  background: var(--backgroundTertiary);
+}
+
+.modalText a {
+  color: var(--primaryColor);
+  font-weight: 500;
+  font-size: 16px;
+}
+.modalText a:hover {
+  color: var(--primaryDark);
+  text-decoration: underline;
+}
+
+.modalText table {
+  border-collapse: collapse;
+  width: 100%;
+}
+.modalText table,
+.modalText th,
+.modalText td {
+  border: 1px solid var(--textTertiary);
+}
+.modalText thead {
+  background: var(--backgroundTertiary);
+  border: 1px solid var(--textSecondary);
+}
+.modalText th,
+.modalText td {
+  padding: 10px;
 }
 
 .blog_contact .right,
@@ -42,3 +160,9 @@
 }
 
 /*-----Modal----*/
+
+@media screen and (max-width: 600px) {
+  .modalContainer h1 {
+    font-size: 2rem;
+  }
+}

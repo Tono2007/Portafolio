@@ -1,36 +1,79 @@
+/* eslint-disable import/no-dynamic-require */
+import { useEffect, useState } from 'react';
 import styles from './ModalCard.module.css';
+import me from '../../assets/me.jpg';
+import ReactMarkdown from 'react-markdown';
+import remarkGfm from 'remark-gfm';
+import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
+import { coldarkDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
-function ModalCard() {
+function ModalCard({ data }) {
+  const { id, title, date, banner, md, author } = data;
+  const [post, setPost] = useState('');
+
+  //console.log(md);
+  const img = require(`./BlogData/${banner}`);
+
+  useEffect(() => {
+    import(`./BlogData/${md}`)
+      .then((res) => {
+        fetch(res.default)
+          .then((res) => res.text())
+          .then((res) => setPost(res))
+          .catch((err) => console.log(err));
+      })
+      .catch((err) => console.log(err));
+  }, []);
+
   return (
     <div className={styles.modalContainer}>
+      <h1>
+        {id}.-{`   ${title}`}
+      </h1>
+
       <div className={styles.modalImg}>
-        <img src="https://picsum.photos/900/500?random=1" alt="" />
+        <img src={img} alt="" />
+      </div>
+      <div className={styles.header}>
+        <div className={styles.avatar}>
+          <img src={me} alt="" />
+          <p>• {author} •</p>
+        </div>
+        <span>Publicado el {date}</span>
       </div>
       <div className={styles.modalText}>
-        <span>17 de Septiembre, 2022</span>
-        <h1>Digital Marketing for developers</h1>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem ut
-          deserunt repellat modi explicabo omnis officia, reprehenderit
-          deleniti, fugiat quasi mollitia nesciunt velit est, consequatur amet
-          eius vero voluptatum commodi! Lorem ipsum dolor sit amet consectetur,
-          adipisicing elit. Ratione nobis optio, dolor ea molestias ullam sequi
-          omnis libero
-        </p>
-        <h1>Titulo1</h1>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-          Exercitationem animi ut porro voluptate facere tenetur eum quas
-          cupiditate saepe est quis placeat similique modi natus nulla, quia
-          autem rem ab.
-        </p>
-        <h1>Titulo3</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores
-          adipisci tempora sunt sit neque, est sint facilis illo, quidem harum
-          assumenda exercitationem totam eum voluptates veniam a excepturi nulla
-          fugiat! Si llegaste hasta aquí... Gracias por leer &lt;3
-        </p>
+        <hr />
+
+        <ReactMarkdown
+          remarkPlugins={[remarkGfm]}
+          components={{
+            // eslint-disable-next-line react/no-unstable-nested-components
+            code({ node, inline, className, children, ...props }) {
+              const match = /language-(\w+)/.exec(className || '');
+              return !inline && match ? (
+                <>
+                  <SyntaxHighlighter
+                    showLineNumbers
+                    // eslint-disable-next-line react/no-children-prop
+                    children={String(children).replace(/\n$/, '')}
+                    style={coldarkDark}
+                    language={match[1]}
+                    PreTag="div"
+                    {...props}
+                  />
+                  <div>boton para copiar proximamente</div>
+                </>
+              ) : (
+                <code className={className} {...props}>
+                  {children}
+                </code>
+              );
+            },
+          }}
+        >
+          {post}
+        </ReactMarkdown>
+
         {/* <div className="contact mtop">
           <h1>Leave a Reply</h1>
           <form action="" className="blog_contact d_flex">

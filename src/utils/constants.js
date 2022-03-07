@@ -35,6 +35,7 @@ export const constants = {
       'https://platzi.com/p/AntonioAyola/curso/2218-pensamiento-logico/diploma/detalle/',
     computacionBasica:
       'https://platzi.com/p/AntonioAyola/curso/1741-computacion-basica-2019/diploma/detalle/',
+    IntroduccionAPIRest: 'https://ed.team/@antonioayola/curso/api-rest',
   },
   language: 'es_mx',
   siteData: {

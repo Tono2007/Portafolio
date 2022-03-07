@@ -20,6 +20,9 @@
   width: 60%;
   composes: boxShadow from global;
   padding: 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .box {
@@ -29,14 +32,16 @@
 .img {
   composes: boxShadow from global;
   max-height: 400px;
+  width: 100%;
+  margin: auto;
 }
 
 .img img {
   border: 1px solid var(--primaryColor);
-  max-height: 400px;
 
   width: 100%;
   height: 100%;
+  height: 400px;
   object-fit: cover;
   border-radius: 5px;
 }
@@ -50,7 +55,6 @@
 
 .socialContainer {
   margin-top: 20px;
-
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -68,6 +72,7 @@
 }
 
 .form {
+  margin-top: 60px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;

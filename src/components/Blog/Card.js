@@ -3,8 +3,11 @@ import styles from './Blog.module.css';
 import Modal from '../Modal/Modal';
 import ModalCard from './ModalCard';
 
-const Card = (props) => {
+const Card = ({ data }) => {
   const [modal, setModal] = useState(false);
+  const { id, title, date, banner } = data;
+  // eslint-disable-next-line import/no-dynamic-require
+  const img = require(`./BlogData/${banner}`);
 
   return (
     <>
@@ -13,7 +16,7 @@ const Card = (props) => {
         fnCloseModal={() => setModal(false)}
         style={styles.modalContent}
       >
-        <ModalCard />
+        <ModalCard data={data} />
       </Modal>
       <div
         className={styles.card}
@@ -23,16 +26,13 @@ const Card = (props) => {
         tabIndex={0}
       >
         <div className={styles.img}>
-          <img
-            src={`https://picsum.photos/600/400?random=${props.id}`}
-            alt=""
-          />
+          <img src={img} alt="" />
         </div>
         <div className={styles.date}>
-          <span>17 de Septiembre, 2022</span>
+          <span>{date}</span>
         </div>
         <div className={styles.title}>
-          <h2>Digital Marketing for developers</h2>
+          <h2>{title}</h2>
           <span className={styles.arrow}>
             <i className="fas fa-arrow-right" />
           </span>

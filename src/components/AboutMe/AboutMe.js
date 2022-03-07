@@ -29,6 +29,9 @@ function About() {
         adaptarme rapido a otras tecnologias. Estoy buscando un proyecto
         adecuado a mis habilidades que me permita desarrollarme, que me ponga
         nuevos retos y nuevos aprendizajes.
+        <br /> <br />I have a basic level of english, knowing the necessary for
+        communication, as well as consume documentation content in this
+        language.
       </p>
       <h2>Intereses y Hobbies</h2>
       <p>
@@ -246,19 +249,19 @@ function Skills() {
 
 function Education() {
   return (
-    <>
+    <div className={styles.educationSection}>
       <h2>Ingeniería en Software (2015-2019) (Titulado)</h2>
       <h4>Universidad Politécnica de Pachuca</h4>
-      <p>
+      <span>
         Universidad Politécnica de Pachuca - Carretera Pachuca – Ciudad Sahagún
         Km. 20, Ex-Hacienda de Santa Bárbara, 43830
-      </p>
+      </span>
       <p>
-        Durante mis estudios en la UPP obtuve capacidad de responsabilida,
+        Durante mis estudios en la UPP obtuve capacidad de responsabilidad,
         esfuerzo y sacrificio, forme parte de equipos de trabajo y trabaje en
         proyectos de IA.
       </p>
-    </>
+    </div>
   );
 }
 
@@ -282,7 +285,7 @@ function Studies() {
             rel="noreferrer noopener"
             href={constants.cursos.ingSoftware}
           >
-            • Titulo Ing. en Software - UPP - 1 de Enero 2020
+            • Titulo Ing. en Software - UPP - 17 de Enero 2020
           </a>
         </li>
         <li>
@@ -319,6 +322,15 @@ function Studies() {
             href={constants.cursos.computacionBasica}
           >
             • Curso de Computación Básica - Platzi
+          </a>
+        </li>
+        <li>
+          <a
+            target="_blank"
+            rel="noreferrer noopener"
+            href={constants.cursos.IntroduccionAPIRest}
+          >
+            • Curso de Introducción a API REST - EDTeam
           </a>
         </li>
       </ul>

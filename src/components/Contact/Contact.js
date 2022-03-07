@@ -145,6 +145,10 @@ const Contact = () => {
         </div>
 
         <div className={styles.right}>
+          <p>
+            <i className="fas fa-envelope" /> Llena este formulario y mandame un
+            mensaje
+          </p>
           <form onSubmit={submit} className={styles.form}>
             <div className={`${styles.input} ${styles.inputRow}`}>
               <input
@@ -207,20 +211,17 @@ const Contact = () => {
                 ENVIAR MENSAJE <i className="fas fa-long-arrow-right" />
               </button>
             )}
-
             {isLoading && (
               <>
                 <div className={styles.loader} />
                 <p>Enviando Formulario</p>
               </>
             )}
-
             {error && (
               <span className={styles.errorMsg}>
                 Error al enviar formulario intentalo mas tarde
               </span>
             )}
-
             {success && (
               <span className={styles.successMsg}>Formulario Enviado</span>
             )}
