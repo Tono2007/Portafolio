@@ -1,14 +1,39 @@
+/* eslint-disable import/no-dynamic-require */
+import { useEffect, useState } from 'react';
 import styles from './ModalCard.module.css';
+import ReactMarkdown from 'react-markdown';
 
-function ModalCard() {
+function ModalCard({ data }) {
+  const { id, title, date, banner, md, author } = data;
+  const [post, setPost] = useState('');
+
+  //console.log(md);
+  const img = require(`./BlogData/${banner}`);
+
+  useEffect(() => {
+    import(`./BlogData/${md}`)
+      .then((res) => {
+        fetch(res.default)
+          .then((res) => res.text())
+          .then((res) => setPost(res))
+          .catch((err) => console.log(err));
+      })
+      .catch((err) => console.log(err));
+  }, []);
+
   return (
     <div className={styles.modalContainer}>
+      <h1>
+        {id}.-{`   ${title}`}
+      </h1>
+
       <div className={styles.modalImg}>
-        <img src="https://picsum.photos/900/500?random=1" alt="" />
+        <img src={img} alt="" />
       </div>
       <div className={styles.modalText}>
-        <span>17 de Septiembre, 2022</span>
-        <h1>Digital Marketing for developers</h1>
+        <span>Publicado el {date}</span> por Antonio Ayola
+        <ReactMarkdown>{post}</ReactMarkdown>
+        <h1>{title}</h1>
         <p>
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem ut
           deserunt repellat modi explicabo omnis officia, reprehenderit

@@ -29,6 +29,9 @@ function About() {
         adaptarme rapido a otras tecnologias. Estoy buscando un proyecto
         adecuado a mis habilidades que me permita desarrollarme, que me ponga
         nuevos retos y nuevos aprendizajes.
+        <br /> <br />I have a basic level of english, knowing the necessary for
+        communication, as well as consume documentation content in this
+        language.
       </p>
       <h2>Intereses y Hobbies</h2>
       <p>

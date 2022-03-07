@@ -35,6 +35,9 @@
   margin-bottom: 20px;
   line-height: 25px;
 }
+.modalText span {
+  color: var(--textTertiary);
+}
 
 .blog_contact .right,
 .blog_contact .left {
