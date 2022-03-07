@@ -2,6 +2,9 @@
 import { useEffect, useState } from 'react';
 import styles from './ModalCard.module.css';
 import ReactMarkdown from 'react-markdown';
+import remarkGfm from 'remark-gfm';
+import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
+import { coldarkDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
 function ModalCard({ data }) {
   const { id, title, date, banner, md, author } = data;
@@ -32,7 +35,35 @@ function ModalCard({ data }) {
       </div>
       <div className={styles.modalText}>
         <span>Publicado el {date}</span> por Antonio Ayola
-        <ReactMarkdown>{post}</ReactMarkdown>
+        <ReactMarkdown
+          remarkPlugins={[remarkGfm]}
+          components={{
+            // eslint-disable-next-line react/no-unstable-nested-components
+            code({ node, inline, className, children, ...props }) {
+              const match = /language-(\w+)/.exec(className || '');
+              return !inline && match ? (
+                <>
+                  <SyntaxHighlighter
+                    showLineNumbers
+                    // eslint-disable-next-line react/no-children-prop
+                    children={String(children).replace(/\n$/, '')}
+                    style={coldarkDark}
+                    language={match[1]}
+                    PreTag="div"
+                    {...props}
+                  />
+                  <div>copiar</div>
+                </>
+              ) : (
+                <code className={className} {...props}>
+                  {children}
+                </code>
+              );
+            },
+          }}
+        >
+          {post}
+        </ReactMarkdown>
         <h1>{title}</h1>
         <p>
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem ut

@@ -4,6 +4,16 @@
   display: flex;
   flex-direction: column;
 }
+.modalContainer h1 {
+  font-size: 3rem;
+}
+
+.modalContainer h2 {
+  font-size: 3rem;
+}
+
+
+/*--------------------------*/
 
 .modalImg {
   width: 100%;
