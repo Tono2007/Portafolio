@@ -10,7 +10,7 @@ Mi idea era tener un espacio para mostrar mis proyectos y mi información de con
 
 La idea de este blog no es hablar tanto de mi, va mas enfocado al desarrollo de software tal vez haciendo tutoriales o promocionando alguno de mis proyectos, mejorar mi escritura y tal vez en algun momento escribir anécdoas, aventuras y esas cosillas.
 
-Lo mas complicado fué decidirse a hacerlo, tecnicamente tambien fue complicado ya que no era la idea al principio por lo que no hay backend ni base de datos, todo esta localmente.
+Lo mas complicado fué decidirse a hacerlo, tecnicamente tambien fue complicado ya que no era la idea al principio por lo que no hay backend ni base de datos, ni herramientas como **docusaurus** para facilitar el desarrollo, todo esta localmente.
 
 &nbsp;&nbsp;
 

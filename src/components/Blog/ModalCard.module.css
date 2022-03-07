@@ -90,7 +90,7 @@
 .modalText h4,
 .modalText h5,
 .modalText h6 {
-  font-weight: 500;
+  font-weight: 400;
   margin: 10px 0;
 }
 
@@ -110,8 +110,10 @@
   margin: 20px 0;
 }
 
-.modalText p {
-  font-size: 16.5px;
+.modalText p,
+a {
+  font-weight: 300;
+  font-size: 17px;
   line-height: 27px;
   margin: 15px 0;
 }
@@ -152,8 +154,6 @@
 
 .modalText a {
   color: var(--primaryColor);
-  font-weight: 500;
-  font-size: 16px;
 }
 .modalText a:hover {
   color: var(--primaryDark);

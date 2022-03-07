@@ -4,6 +4,8 @@ import styles from './ModalCard.module.css';
 import me from '../../assets/me.jpg';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
+import rehypeSlug from 'rehype-slug';
+
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { coldarkDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
@@ -52,6 +54,7 @@ function ModalCard({ data }) {
       <div className={styles.modalText}>
         <ReactMarkdown
           remarkPlugins={[remarkGfm]}
+          rehypePlugins={[rehypeSlug]}
           components={{
             // eslint-disable-next-line react/no-unstable-nested-components
             code({ node, inline, className, children, ...props }) {

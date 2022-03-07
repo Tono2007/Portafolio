@@ -20,7 +20,17 @@
 
 ##### Implementación
 
+- [## **Twitch**](#codigo-especifico)
+- [## Twitch](#codigo-especifico)
+- [## Twitch](#codigo-especifico)
+- [## Twitch](#codigo-especifico)
+- [## Twitch](#codigo-especifico)
+
 p -> Lorem ipsum dolor, sit amet consectetur adipisicing elit.<br/><br/><br/> Autem ut deserunt repellat modi ss explicabo omnis officia, reprehenderit deleniti, fugiat quasi mollitia nesciunv\ velit estconsequatur amet eius vero voluptatum commodi! Lorem ipsum dolor sit amet consectetur, adipisicing elit.Ratione nobis optio, dolor ea molestias \s\s ullam sequi omnis
+
+<script>console.log("dfdfd")</script>
+
+<h1>sdsds</h1>
 
 p -> espacios y saltos del linea-> asi nó <br/> ni así \n -> usar **\&nbsp;**
 
