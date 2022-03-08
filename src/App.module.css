@@ -73,6 +73,10 @@ p {
   color: var(--textContrast);
   transform: translateY(-10px);
 }
+:global .btnShadow:active {
+  transform: scale(1.02) translateY(-10px);
+  background: var(--primaryDark);
+}
 
 :global .smallBtnShadow {
   padding: 10px 15px;
@@ -87,6 +91,10 @@ p {
   background: var(--primaryColor);
   color: var(--textContrast);
   transform: translateY(-10px);
+}
+:global .smallBtnShadow:active {
+  transform: scale(1.02) translateY(-10px);
+  background: var(--primaryDark);
 }
 
 :global .heading {

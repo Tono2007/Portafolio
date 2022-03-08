@@ -18,17 +18,19 @@
 
 #### Implementación
 
-lorem␠␠
+##### Implementaciónlorem␠␠
+
 ipsum
+
+- [x] yet another
+- [ ] to do
 
 lorem\
 ipsum
 
 U+2029 &U+2029; &#8233; &#8233;
 
-
-
-##### Implementación
+[Link with rel="noopener noreferrer"](https://github.com/remarkjs/react-markdown/issues/12)`
 
 - [## **Twitch**](#codigo-especifico)
 - [## Twitch](#codigo-especifico)
@@ -81,9 +83,11 @@ fsdfs **_bold and italic text_** -> \*\*\*fdf\*\*\*
 
 sdfsdf`> git init` comillas -> &nbsp;&nbsp;&nbsp; **\`> git init\`**
 
+sdfsdf`> git init` Lorem ipsum dolor, sit amet consectetur adipisicing elit.`> git init` Autem ut deserunt repellat modi ss explicabo omnis officia, reprehenderit deleniti, `> git init` fugiat quasi mollitia nesciunv\ velit estconsequatur amet eius vero voluptatum comm
+
 ## Codigo especifico
 
-```js
+```jsx
 import React from 'react';
 import ReactDOM from 'react-dom';
 import ReactMarkdown from 'react-markdown';
@@ -95,6 +99,20 @@ ReactDOM.render(
   </ReactMarkdown>,
   document.querySelector('#content'),
 );
+ <ReactMarkdown
+          remarkPlugins={[[remarkGfm]]}
+          rehypePlugins={[rehypeSlug]}
+          components={{
+            // eslint-disable-next-line react/no-unstable-nested-components
+            code({ node, inline, className, children, ...props }) {
+              const match = /language-(\w+)/.exec(className || '');
+              return !inline && match ? (
+                <>
+                  <SyntaxHighlighter
+                    showLineNumbers
+                    // eslint-disable-next-line react/no-children-prop
+                    children={String(children).replace(/\n$/, '')}
+                    style={pris
 ```
 
 ## Crear y anidarListas
@@ -120,7 +138,7 @@ ReactDOM.render(
 
 [Twitch](https://www.twitch.tv) entre texto [Twitch](https://www.twitch.tv) sfd
 
-[Twitch](https://www.twitch.tv)
+[Twitch](https://www.twitch.tv){name:value} l
 
 \[Twitch]\(https://www.twitch.tv)
 

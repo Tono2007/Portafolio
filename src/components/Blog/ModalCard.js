@@ -2,12 +2,15 @@
 import { useEffect, useState } from 'react';
 import styles from './ModalCard.module.css';
 import me from '../../assets/me.jpg';
+//MdComponents
+import { Link, Code } from './Renderers/Renderers';
+//Plugins
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import rehypeSlug from 'rehype-slug';
-
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
-import { coldarkDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
+import { prism } from 'react-syntax-highlighter/dist/esm/styles/prism';
+//coldarkDark ,hopscotch,materialDark,okaidia,tomorrow,coldarkCold
 
 function ModalCard({ data }) {
   const { id, title, date, banner, md, author, tags } = data;
@@ -52,31 +55,15 @@ function ModalCard({ data }) {
       <hr />
       <div className={styles.modalText}>
         <ReactMarkdown
+          className={styles.mdContainer}
           remarkPlugins={[[remarkGfm]]}
           rehypePlugins={[rehypeSlug]}
+          /* linkTarget="_blank" */
           components={{
             // eslint-disable-next-line react/no-unstable-nested-components
-            code({ node, inline, className, children, ...props }) {
-              const match = /language-(\w+)/.exec(className || '');
-              return !inline && match ? (
-                <>
-                  <SyntaxHighlighter
-                    showLineNumbers
-                    // eslint-disable-next-line react/no-children-prop
-                    children={String(children).replace(/\n$/, '')}
-                    style={coldarkDark}
-                    language={match[1]}
-                    PreTag="div"
-                    {...props}
-                  />
-                  <div>boton para copiar proximamente</div>
-                </>
-              ) : (
-                <code className={className} {...props}>
-                  {children}
-                </code>
-              );
-            },
+            code: ({ ...props }) => <Code {...props} />,
+            // eslint-disable-next-line react/no-unstable-nested-components
+            a: ({ ...props }) => <Link {...props} />,
           }}
         >
           {post}

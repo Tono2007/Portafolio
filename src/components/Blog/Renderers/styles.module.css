@@ -1,0 +1,37 @@
+.link i {
+  font-size: 13px;
+  color: var(--textTertiary);
+}
+
+/* -------------------------------------------------*/
+
+.highlighter {
+  margin-top: 0 !important;
+}
+
+.codeActions {
+  border-bottom: 1px solid var(--backgroundTertiary);
+  border-bottom: 2px solid var(--primaryColor);
+  background: var(--backgroundPrimary);
+  padding: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.codeActions span {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.codeActions button {
+  color: var(--primaryColor);
+}
+
+.copyBtn {
+  composes: smallBtnShadow from global;
+}
+
+/* -------------------------------------------------*/

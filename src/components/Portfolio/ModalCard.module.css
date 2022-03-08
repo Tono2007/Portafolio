@@ -63,7 +63,7 @@
     width: 100%;
 
     padding: 0;
-    padding-bottom: 10px;
+    margin-bottom: 20px;
   }
 
   .modalText {
@@ -75,6 +75,9 @@
   }
 }
 @media screen and (max-width: 450px) {
+  .modalContainer {
+    padding: 3%;
+  }
   .modalActions {
     flex-direction: column;
     justify-content: space-between;

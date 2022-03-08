@@ -91,7 +91,7 @@
 .rightImg {
   top: 0;
   left: 0;
-  transition: 0.5s;
+  transition: 0.3s;
   position: relative;
   composes: boxShadow from global;
   border-radius: 10px;
@@ -102,6 +102,7 @@
   top: -2px;
   left: -2px;
   box-shadow: 14px 14px 8px var(--backgroundTertiary), 14px -9px 8px #ffffff;
+  transform: skew(0deg, 5deg);
 }
 .img {
   max-width: 100%;

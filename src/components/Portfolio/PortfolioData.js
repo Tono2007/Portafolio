@@ -15,6 +15,8 @@ const data = [
       'Neumorphism',
       'Netlify',
       'Markdown',
+      'HTML',
+      'JS',
     ],
     desc: `Mi sitio web personal estilo Neumorfismo.
      Este proyecto me tomo mucho trabajo solo para poder expresar lo que hago y lo que me gusta hacer. 

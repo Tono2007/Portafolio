@@ -408,6 +408,7 @@ function AboutMe() {
                 <span>Actualizado el 5 de Marzo, 2022</span>
               </li>
             </ul>
+            <hr />
           </div>
           <div className={styles.tabContent}>
             {activeSection === 0 && <About />}

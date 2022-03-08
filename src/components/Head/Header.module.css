@@ -97,11 +97,10 @@ nav li a::after {
   cursor: pointer;
   height: fit-content;
   color: var(--primaryColor);
-  composes: boxShadow from global;
+  composes: btnShadow from global;
 }
 .homeBtn:hover {
-  background: var(--primaryColor);
-  color: var(--textContrast);
+  transform: translateY(0px);
 }
 
 .navMobileLinks {
@@ -158,13 +157,17 @@ nav li a::after {
   top: 35px;
   right: 45%;
 }
-@media (max-width: 1150px) {
-  .cogBtn {
+
+@media (max-width: 1250px) {
+  .homeBtn {
     display: none;
   }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1100px) {
+  .homeBtn {
+    display: block;
+  }
   .showMobile {
     display: block;
   }
@@ -180,4 +183,4 @@ nav li a::after {
 
 .modalContent {
   height: 85vh;
- }
+}

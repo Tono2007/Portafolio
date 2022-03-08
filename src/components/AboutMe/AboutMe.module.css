@@ -78,6 +78,12 @@
   margin-right: 10%;
   composes: bgPattern from global;
   background-size: 18px 18px;
+  position: sticky;
+  top: 0;
+}
+.leftImg h1,
+.leftImg p {
+  backdrop-filter: blur(1px);
 }
 
 .img {
