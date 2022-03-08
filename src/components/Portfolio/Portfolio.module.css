@@ -109,3 +109,7 @@
     right: 3%;
   }
 }
+
+.modalContent {
+  max-height: 85vh;
+}

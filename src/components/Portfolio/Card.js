@@ -11,15 +11,18 @@ const Card = ({ project }) => {
 
   return (
     <>
-      <Modal openModal={modal} fnCloseModal={() => setModal(false)}>
+      <Modal
+        openModal={modal}
+        fnCloseModal={() => setModal(false)}
+        style={styles.modalContent}
+      >
         <ModalCard project={project} />
       </Modal>
-      <div
+      <article
         className={styles.card}
         onClick={() => setModal(true)}
         onKeyPress={() => setModal(true)}
-        role="button"
-        tabIndex={0}
+        role="presentation"
       >
         <div className={styles.img}>
           <img src={img} alt="" />
@@ -37,7 +40,7 @@ const Card = ({ project }) => {
             <i className="fas fa-arrow-right" />
           </span>
         </div>
-      </div>
+      </article>
     </>
   );
 };

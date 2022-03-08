@@ -26,7 +26,6 @@ function ModalCard({ data }) {
       })
       .catch((err) => console.log(err));
   }, []);
-
   return (
     <div className={styles.modalContainer}>
       <h1>
@@ -53,7 +52,7 @@ function ModalCard({ data }) {
       <hr />
       <div className={styles.modalText}>
         <ReactMarkdown
-          remarkPlugins={[remarkGfm]}
+          remarkPlugins={[[remarkGfm]]}
           rehypePlugins={[rehypeSlug]}
           components={{
             // eslint-disable-next-line react/no-unstable-nested-components
@@ -82,7 +81,6 @@ function ModalCard({ data }) {
         >
           {post}
         </ReactMarkdown>
-
         {/* <div className="contact mtop">
           <h1>Leave a Reply</h1>
           <form action="" className="blog_contact d_flex">

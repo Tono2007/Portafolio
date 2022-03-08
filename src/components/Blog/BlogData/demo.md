@@ -18,6 +18,16 @@
 
 #### Implementación
 
+lorem␠␠
+ipsum
+
+lorem\
+ipsum
+
+U+2029 &U+2029; &#8233; &#8233;
+
+
+
 ##### Implementación
 
 - [## **Twitch**](#codigo-especifico)
@@ -26,7 +36,11 @@
 - [## Twitch](#codigo-especifico)
 - [## Twitch](#codigo-especifico)
 
-p -> Lorem ipsum dolor, sit amet consectetur adipisicing elit.<br/><br/><br/> Autem ut deserunt repellat modi ss explicabo omnis officia, reprehenderit deleniti, fugiat quasi mollitia nesciunv\ velit estconsequatur amet eius vero voluptatum commodi! Lorem ipsum dolor sit amet consectetur, adipisicing elit.Ratione nobis optio, dolor ea molestias \s\s ullam sequi omnis
+sdfdf \n \\\n \
+
+p -> Lorem ipsum dolor, sit amet consectetur adipisicing elit.<br/><br/><br/> Autem ut deserunt repellat modi ss explicabo omnis officia, reprehenderit deleniti, fugiat quasi mollitia nesciunv\ velit estconsequatur amet eius vero voluptatum comm
+
+odi! Lorem ipsum dolor sit amet consectetur, adipisicing elit.Ratione nobis optio, dolor ea molestias \s\s ullam sequi omnis
 
 <script>console.log("dfdfd")</script>
 
@@ -120,7 +134,7 @@ ReactDOM.render(
 
 ## Videos
 
-[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](http://www.youtube.com/watch?v=oxaH9CFpeEE)
+[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/oxaH9CFpeEE/0.jpg)](http://www.youtube.com/watch?v=oxaH9CFpeEE)
 
 ---
 

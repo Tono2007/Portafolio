@@ -23,6 +23,8 @@
 .modalContent {
   composes: container from global;
   composes: boxShadow from global;
+  /*   background: #fff; */
+
   position: relative;
   z-index: 9999;
   padding: 50px;

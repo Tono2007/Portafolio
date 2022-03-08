@@ -62,14 +62,15 @@
 }
 
 .socialBtn {
-  margin-right: 30px;
   composes: btnShadow from global;
+  margin: 0;
+  margin-right: 30px;
 }
 .skillBtn {
   margin-right: 30px;
 
-  width: 60px;
-  height: 60px;
+  width: 63px;
+  height: 63px;
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -77,7 +78,7 @@
 }
 
 .socialSkills i {
-  font-size: 20px;
+  font-size: 22px;
 }
 .socialSkills button img {
   object-fit: cover;

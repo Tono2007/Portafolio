@@ -18,12 +18,11 @@ const Card = ({ data }) => {
       >
         <ModalCard data={data} />
       </Modal>
-      <div
+      <article
         className={styles.card}
         onClick={() => setModal(true)}
         onKeyPress={() => setModal(true)}
-        role="button"
-        tabIndex={0}
+        role="presentation"
       >
         <div className={styles.img}>
           <img src={img} alt="" />
@@ -37,7 +36,7 @@ const Card = ({ data }) => {
             <i className="fas fa-arrow-right" />
           </span>
         </div>
-      </div>
+      </article>
     </>
   );
 };
