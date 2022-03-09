@@ -30,9 +30,10 @@
   color: var(--primaryColor);
 }
 .hero h2 {
-  font-size: 50px;
+  font-size: 40px;
   font-weight: bold;
   color: var(--primaryColor);
+  min-height: 85px;
 }
 .hero h2 span {
   color: var(--textSecondary);
@@ -41,7 +42,6 @@
   color: var(--textTertiary);
   font-size: 18px;
   line-height: 30px;
-  margin-top: 30px;
 }
 .socialSkills {
   display: flex;
@@ -111,7 +111,20 @@
   background-size: 50px 50px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1150px) {
+  .socialSkills {
+    flex-direction: column;
+  }
+  .hero h2 {
+    font-size: 40px;
+    min-height: 120px;
+  }
+  .hero h1 {
+    font-size: 50px;
+  }
+}
+
+@media screen and (max-width: 800px) {
   .heroLeft,
   .heroRight {
     width: 100%;
@@ -120,6 +133,7 @@
 
   .heroContainer {
     flex-direction: column-reverse;
+    padding: 20px;
   }
 
   .hero h1 {

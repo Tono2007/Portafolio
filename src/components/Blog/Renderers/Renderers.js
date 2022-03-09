@@ -1,6 +1,7 @@
 import styles from './styles.module.css';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
-import { prism } from 'react-syntax-highlighter/dist/esm/styles/prism';
+import { coldarkCold } from 'react-syntax-highlighter/dist/esm/styles/prism';
+//coldarkDark ,hopscotch,materialDark,okaidia,tomorrow,coldarkCold,prism
 
 export function Link({ node, children, ...props }) {
   const linkProps = props;
@@ -29,7 +30,7 @@ export function Code({ node, inline, className, children, ...props }) {
           className={styles.copyBtn}
           onClick={() => {
             navigator.clipboard.writeText(String(children).replace(/\n$/, ''));
-            alert('Text copiado');
+            alert('Texto Copiado :)');
           }}
         >
           Copiar <i className="fas fa-link" />
@@ -39,7 +40,7 @@ export function Code({ node, inline, className, children, ...props }) {
         showLineNumbers
         // eslint-disable-next-line react/no-children-prop
         children={String(children).replace(/\n$/, '')}
-        style={prism}
+        style={coldarkCold}
         language={match[1]}
         PreTag="div"
         {...props}

@@ -10,7 +10,7 @@ Este proyecto es mi portafolio profesional donde muestro mis skills, que experie
 
 ## **DEMO**
 
-Puede ver el demo de este haciendo accediendo [aquí](https://antonioayola.netlify.app/).
+Puede ver el demo de este haciendo click [aquí](https://antonioayola.netlify.app/).
 
 ## **TECNOLOGIAS**
 

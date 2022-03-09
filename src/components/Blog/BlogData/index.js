@@ -17,6 +17,15 @@ const data = [
     tags: ['blog', 'post', 'hablando', 'portafolio'],
     md: 'miPrimer/miPrimer.md',
   },
+  {
+    id: 2,
+    author: 'Antonio Ayola',
+    title: 'ECMAScript 6+',
+    date: '10 de Marzo, 2022',
+    banner: 'ecmascript/banner.png',
+    tags: ['js', 'javascript', 'ecmascript'],
+    md: 'ecmascript/ecmascript.md',
+  },
 ];
 
 export default data;

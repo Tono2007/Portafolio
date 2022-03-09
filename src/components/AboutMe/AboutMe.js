@@ -333,6 +333,15 @@ function Studies() {
             • Curso de Introducción a API REST - EDTeam
           </a>
         </li>
+        {/*  <li>
+          <a
+            target="_blank"
+            rel="noreferrer noopener"
+            href={constants.cursos.IntroduccionAPIRest}
+          >
+            • Escuela Js - Platzi - 20%
+          </a>
+        </li> */}
       </ul>
     </>
   );

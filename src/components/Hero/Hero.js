@@ -33,21 +33,19 @@ function Hero() {
 
           <h2>
             a
-            <span>
-              <Typewriter
-                words={[
-                  ' Profesional Coder',
-                  ' Frontend Developer',
-                  ' Software Developer',
-                ]}
-                loop={5}
-                cursor
-                cursorStyle="|"
-                typeSpeed={70}
-                deleteSpeed={50}
-                delaySpeed={1000}
-              />
-            </span>
+            <Typewriter
+              words={[
+                ' Profesional Coder',
+                ' Frontend Developer',
+                ' Software Developer',
+              ]}
+              loop={5}
+              cursor
+              cursorStyle="|"
+              typeSpeed={70}
+              deleteSpeed={50}
+              delaySpeed={1000}
+            />
           </h2>
           <p>
             Con gran afición al mundo Tecnológico, tanto Frontend como Backend;
