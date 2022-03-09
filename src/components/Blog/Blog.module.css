@@ -2,6 +2,14 @@
   composes: heading from global;
   text-align: center;
 }
+
+.seeAllBtn {
+  composes: smallBtnShadow from global;
+  color: var(--primaryColor);
+  position: absolute;
+  top: 110px;
+  right: 3%;
+}
 .contentGrid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -19,6 +27,10 @@
   .contentGrid {
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 30px;
+  }
+  .seeAllBtn {
+    top: 105px;
+    right: 3%;
   }
 }
 
@@ -95,4 +107,8 @@
 .modalContent {
   max-height: 85vh;
   background: #fff;
+}
+
+.modalContentAB {
+  max-height: 85vh;
 }

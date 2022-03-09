@@ -38,7 +38,9 @@ function ModalCard({ data }) {
         <p>Tags-&gt;</p>
 
         {tags.map((tag, index) => (
-          <span key={index}>{tag}</span>
+          <span key={index} className={styles.tag}>
+            {tag}
+          </span>
         ))}
       </div>
 

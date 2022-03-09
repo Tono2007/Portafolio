@@ -18,15 +18,8 @@
   display: flex;
   flex-wrap: wrap;
 }
-.tagsContainer span {
-  margin: 3px 10px;
-  padding: 2px 10px;
-  margin: 3px 5px;
-  color: #fff;
-  border-radius: 7px;
-  font-weight: 500;
-  background: var(--primaryColor);
-  box-shadow: 4px 4px 8px var(--backgroundTertiary), 4px -4px 8px #ffffff;
+.tag {
+  composes: tag from global;
 }
 
 .tagsContainer p {
