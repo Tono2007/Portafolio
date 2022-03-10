@@ -11,8 +11,10 @@
     var(--backgroundSecondary),
     var(--contrastBackground)
   );
-  --boxShadow: 4px 4px 8px var(--backgroundTertiary),
-    4px -4px 8px var(--contrastBackground);
+  /* --boxShadow: 4px 4px 8px var(--backgroundTertiary),
+    4px -4px 8px var(--contrastBackground); */
+  --boxShadow: 5px 4px 8px var(--backgroundTertiary),
+    5px -4px 8px var(--contrastBackground);
   --textPrimary: #3c3e41;
   --textSecondary: #000;
   --textTertiary: #878e99;

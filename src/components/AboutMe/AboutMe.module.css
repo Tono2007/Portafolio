@@ -11,34 +11,41 @@
   height: auto;
   text-align: center;
 }
+.AboutLeft span {
+  color: var(--primaryColor);
+}
 .AboutRight {
   width: 60%;
 }
 
 .tabs {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   flex-wrap: wrap;
   align-items: center;
-  margin-bottom: 1rem;
 }
 .tabs li {
   position: relative;
 }
 .tabs .divider {
   color: var(--textPrimary);
-  margin: 0 15px;
 }
 
 .tabs li button {
+  border-radius: 25px;
   text-transform: uppercase;
   cursor: pointer;
-  transition: 0.1s;
-  font-size: 13px;
+  transition: 0.5s;
+  font-size: 12px;
   font-weight: 500;
   letter-spacing: 1px;
   text-transform: uppercase;
   color: var(--textSecondary);
+  margin: 5px 2px;
+  padding: 8px 10px;
+}
+.tabBtn {
+  composes: boxShadow from global;
 }
 
 .tabs li button:hover {
@@ -57,10 +64,13 @@
   background: var(--primaryColor);
 }
 .tabs li.active button::after {
-  width: 65%;
+  width: 0%;
 }
 .tabs li.active button {
+  background: rgba(255, 255, 255, 0.548);
+  background: var(--primaryColor);
   color: var(--primaryColor);
+  color: var(--textContrast);
 }
 
 .tabContent {
@@ -68,6 +78,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding-top: 20px;
 }
 
 .leftImg {
@@ -88,7 +99,7 @@
 }
 
 .img {
-  border: 1px solid var(--primaryColor);
+  border: 1px solid var(--textTertiary);
   composes: boxShadow from global;
   border-radius: 8px;
   object-fit: cover;

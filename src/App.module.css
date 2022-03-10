@@ -181,7 +181,7 @@ textarea:focus {
   }
 
   ::-webkit-scrollbar-button:single-button:vertical:decrement:hover {
-    border-color: transparent transparent #428866 transparent;
+    border-color: transparent transparent var(--primaryDark) transparent;
   }
   /* Down */
   ::-webkit-scrollbar-button:single-button:vertical:increment {
@@ -190,6 +190,6 @@ textarea:focus {
   }
 
   ::-webkit-scrollbar-button:vertical:single-button:increment:hover {
-    border-color: #428866 transparent transparent transparent;
+    border-color: var(--primaryDark) transparent transparent transparent;
   }
 }

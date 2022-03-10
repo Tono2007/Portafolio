@@ -9,9 +9,9 @@ function About() {
     <div className={styles.me}>
       <h2>Quien soy y mas sobre mi</h2>
       <p>
-        Me llamo Antonio Ayola soy un desarrollador de Software con gran afición
-        al mundo Tecnológico, autodidacta y apasionado por aprender más todos
-        los días sobre nuevas tecnologias. <br />
+        Me llamo Antonio Ayola soy un desarrollador de Software de México con
+        gran afición al mundo Tecnológico, autodidacta y apasionado por aprender
+        más todos los días sobre nuevas tecnologias. <br />
         <br />A lo largo de mi aventura en el mundo del desarrollo web, me
         involucre en el desarrollo de varios proyectos, proponiéndome retos, los
         cuales me enseñaron a corregir mis propios errores al desarrollar
@@ -364,6 +364,7 @@ function AboutMe() {
     <section className={styles.aboutMe} id="about">
       <div className={styles.aboutContainer}>
         <div className={styles.AboutLeft}>
+          <span>Actualizado el 5 de Marzo, 2022</span>
           <div className={styles.leftImg}>
             <img src={hero} alt="hero" className={styles.img} />
             <h1>{'<Antonio Ayola/>'}</h1>
@@ -376,46 +377,71 @@ function AboutMe() {
         </div>
         <div className={styles.AboutRight}>
           <div>
+            {/* <span>Actualizado el 5 de Marzo, 2022</span> */}
             <ul className={styles.tabs}>
               <li className={activeSection === 0 ? styles.active : null}>
-                <button type="button" onClick={() => setActiveSection(0)}>
+                <button
+                  type="button"
+                  onClick={() => setActiveSection(0)}
+                  className={styles.tabBtn}
+                >
                   about
                 </button>
-                <span className={styles.divider}>|</span>
+                {/* <span className={styles.divider}>|</span> */}
               </li>
               <li className={activeSection === 1 ? styles.active : null}>
-                <button type="button" onClick={() => setActiveSection(1)}>
+                <button
+                  type="button"
+                  onClick={() => setActiveSection(1)}
+                  className={styles.tabBtn}
+                >
                   skills
                 </button>
-                <span className={styles.divider}>|</span>
+                {/* <span className={styles.divider}>|</span> */}
               </li>
               <li className={activeSection === 2 ? styles.active : null}>
-                <button type="button" onClick={() => setActiveSection(2)}>
+                <button
+                  type="button"
+                  onClick={() => setActiveSection(2)}
+                  className={styles.tabBtn}
+                >
                   formación
                 </button>
-                <span className={styles.divider}>|</span>
+                {/* <span className={styles.divider}>|</span> */}
               </li>
               <li className={activeSection === 3 ? styles.active : null}>
-                <button type="button" onClick={() => setActiveSection(3)}>
+                <button
+                  type="button"
+                  onClick={() => setActiveSection(3)}
+                  className={styles.tabBtn}
+                >
                   Certificados
                 </button>
-                <span className={styles.divider}>|</span>
+                {/* <span className={styles.divider}>|</span> */}
               </li>
               <li className={activeSection === 4 ? styles.active : null}>
-                <button type="button" onClick={() => setActiveSection(4)}>
+                <button
+                  type="button"
+                  onClick={() => setActiveSection(4)}
+                  className={styles.tabBtn}
+                >
                   Experiencia
                 </button>
-                <span className={styles.divider}>|</span>
+                {/* <span className={styles.divider}>|</span> */}
               </li>
               <li className={activeSection === 5 ? styles.active : null}>
-                <button type="button" onClick={() => setActiveSection(5)}>
+                <button
+                  type="button"
+                  onClick={() => setActiveSection(5)}
+                  className={styles.tabBtn}
+                >
                   CV
                 </button>
-                <span className={styles.divider}>|</span>
+                {/* <span className={styles.divider}>|</span> */}
               </li>
-              <li>
+              {/* <li>
                 <span>Actualizado el 5 de Marzo, 2022</span>
-              </li>
+              </li> */}
             </ul>
             <hr />
           </div>

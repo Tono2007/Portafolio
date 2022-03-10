@@ -94,8 +94,8 @@ function ModalConfig() {
         <span
           onClick={changeColor}
           role="presentation"
-          data-color="#0277bd"
-          data-dark="#01579b"
+          data-color="#00b8d4 "
+          data-dark="#00b0ff"
         />
         <span
           onClick={changeColor}
