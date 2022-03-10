@@ -14,7 +14,7 @@ const Blog = () => {
       <Modal
         openModal={modal}
         fnCloseModal={() => setModal(false)}
-        style={styles.modalContentAB}
+        styleContent={styles.modalContentAB}
       >
         <AllBlogPosts />
       </Modal>

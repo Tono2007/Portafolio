@@ -7,6 +7,8 @@ Este proyecto es mi portafolio profesional donde muestro mis skills, que experie
 ![img](src/assets/logo_fondo_blanco_4.png)
 
 ![img](src/assets/portafolio/portafolio.png)
+![img](src/assets/portafolio/portafolioBlack.png)
+
 
 ## **DEMO**
 

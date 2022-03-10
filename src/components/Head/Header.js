@@ -9,11 +9,12 @@ import scrollTop from '../../utils/helpers/scrollTop';
 import useToggle from '../../utils/hooks/useToggle';
 import useScrollInto from '../../utils/hooks/useScrollInto';
 import useScrollSpy from '../../utils/hooks/useScrollSpy';
+import ModalConfig from './ModalConfig';
 
 const Header = () => {
   const [modal, setModal] = useState(false);
 
-  const { open, handleOpen, handleClose } = useToggle();
+  const { open, handleOpen, handleClose, handleToggle } = useToggle();
   const [Mobile, setMobile] = useState(false);
   const [activeNav, setActiveNav] = useState(false);
   const scrollTo = useScrollInto();
@@ -45,9 +46,17 @@ const Header = () => {
       <Modal
         openModal={modal}
         fnCloseModal={() => setModal(false)}
-        style={styles.modalContent}
+        styleContent={styles.modalContent}
       >
         <AboutMe />
+      </Modal>
+      <Modal
+        openModal={open}
+        fnCloseModal={() => handleClose()}
+        styleOverlay={styles.modalContentConfigOverlay}
+        styleContent={styles.modalContentConfig}
+      >
+        <ModalConfig />
       </Modal>
       <header className={activeNav ? styles.headerActive : styles.header}>
         <nav className={styles.nav}>
@@ -91,7 +100,7 @@ const Header = () => {
               </a>
             </li>
             <li>
-              <a href="#!" onClick={() => setModal(true)}>
+              <a href="#!" onClick={() => handleOpen()}>
                 <i className={styles.cogBtn} />
               </a>
             </li>
@@ -143,7 +152,7 @@ const Header = () => {
                 </a>
               </li>
               <li>
-                <a href="#!" onClick={() => setModal(true)}>
+                <a href="#!" onClick={() => handleOpen()}>
                   <i className={styles.cogBtn} />
                 </a>
               </li>

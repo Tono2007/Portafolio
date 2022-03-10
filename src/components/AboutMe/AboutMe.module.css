@@ -38,6 +38,7 @@
   font-weight: 500;
   letter-spacing: 1px;
   text-transform: uppercase;
+  color: var(--textSecondary);
 }
 
 .tabs li button:hover {
@@ -162,6 +163,9 @@
 .educationSection span {
   font-size: 14px;
   color: var(--textTertiary);
+}
+.educationSection h4 {
+  color: var(--textSecondary);
 }
 
 @media screen and (max-width: 768px) {

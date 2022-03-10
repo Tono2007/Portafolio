@@ -15,7 +15,7 @@ function Card({ data }) {
       <Modal
         openModal={modal}
         fnCloseModal={() => setModal(false)}
-        style={styles.modalContent}
+        styleContent={styles.modalContent}
       >
         <ModalCard data={data} />
       </Modal>
@@ -39,7 +39,7 @@ function Card({ data }) {
             <br />@{author}
           </p>
           <div className={styles.tagsContainer}>
-            {tags.map((tag, index) => (
+            {tags.slice(1, 4).map((tag, index) => (
               <span key={index} className={styles.tag}>
                 {tag}
               </span>

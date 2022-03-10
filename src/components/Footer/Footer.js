@@ -16,7 +16,7 @@ const Footer = () => {
       <Modal
         openModal={modal}
         fnCloseModal={() => setModal(false)}
-        style={styles.modalContent}
+        styleContent={styles.modalContent}
       >
         <AboutMe />
       </Modal>

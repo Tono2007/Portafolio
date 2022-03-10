@@ -115,7 +115,7 @@ nav li a::after {
   transition: all 0.5s ease-in-out;
   width: 60%;
   height: 110vh;
-  background-color: white;
+  background-color: var(--backgroundPrimary);
   z-index: 888;
 }
 .navMobileLinks li {
@@ -183,4 +183,17 @@ nav li a::after {
 
 .modalContent {
   height: 85vh;
+}
+
+.modalContentConfig {
+  width: auto;
+}
+@media screen and (max-width: 900px) {
+  .modalContentConfig {
+    height: auto;
+    padding: 8%;
+  }
+}
+.modalContentConfigOverlay {
+  background: rgba(0, 0, 0, 0.24);
 }

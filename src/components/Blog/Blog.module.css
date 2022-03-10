@@ -79,6 +79,7 @@
   font-size: 18px;
   transition: 0.5s;
   padding-bottom: 30px;
+  color: var(--textSecondary);
 }
 
 .card:hover h2 {
@@ -106,7 +107,7 @@
 
 .modalContent {
   max-height: 85vh;
-  background: #fff;
+  background: var(--contrastBackground);
 }
 
 .modalContentAB {

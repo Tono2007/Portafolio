@@ -14,7 +14,7 @@ const Card = ({ data }) => {
       <Modal
         openModal={modal}
         fnCloseModal={() => setModal(false)}
-        style={styles.modalContent}
+        styleContent={styles.modalContent}
       >
         <ModalCard data={data} />
       </Modal>

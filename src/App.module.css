@@ -105,7 +105,8 @@ p {
   border-radius: 7px;
   font-weight: 500;
   background: var(--primaryColor);
-  box-shadow: 4px 4px 8px var(--backgroundTertiary), 4px -4px 8px #ffffff;
+  box-shadow: 4px 4px 8px var(--backgroundTertiary),
+    4px -4px 8px var(--contrastBackground);
 }
 
 :global .heading {
@@ -162,6 +163,7 @@ textarea:focus {
   /* Estilos track de scroll */
   ::-webkit-scrollbar-track {
     background-color: rgba(27, 30, 50, 0.15);
+    background-color: #d3d3d3;
   }
   ::-webkit-scrollbar-button:single-button {
     /*     background-color: #428866;

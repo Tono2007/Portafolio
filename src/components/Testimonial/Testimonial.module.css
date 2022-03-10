@@ -90,6 +90,7 @@
 }
 .details h2 {
   margin: 15px 0 0 0;
+  color: var(--textSecondary);
 }
 
 .right {
@@ -103,6 +104,7 @@
 .quote i {
   font-size: 150px;
   opacity: 0.1;
+  color: var(--textSecondary);
 }
 .content {
   composes: boxShadow from global;
@@ -119,6 +121,7 @@
   font-size: 18px;
   font-weight: 400;
   margin-bottom: 40px;
+  color: var(--textTertiary);
 }
 
 @media screen and (max-width: 1150px) {

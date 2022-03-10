@@ -4,7 +4,7 @@ import styles from './Modal.module.css';
 
 function Modal(props) {
   const [modal, setModal] = useState(true);
-  const { openModal, fnCloseModal, style } = props;
+  const { openModal, fnCloseModal, styleContent, styleOverlay } = props;
 
   useEffect(() => {
     openModal && openModalHandler();
@@ -26,10 +26,10 @@ function Modal(props) {
       <div className={styles.modal}>
         <div
           onClick={closeModalHandler}
-          className={styles.overlay}
+          className={`${styles.overlay} ${styleOverlay}`}
           role="none"
         />
-        <div className={`${styles.modalContent} ${style}`}>
+        <div className={`${styles.modalContent} ${styleContent}`}>
           {props.children}
           <div className={styles.btnWrapper}>
             <button

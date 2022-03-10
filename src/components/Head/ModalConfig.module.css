@@ -1,0 +1,105 @@
+.config {
+  color: var(--textSecondary);
+}
+.config h2 {
+  color: var(--textPrimary);
+  margin-bottom: 30px;
+  border-bottom: 3px solid var(--primaryColor);
+}
+.config h3 {
+}
+.switchContainer {
+  margin: 0px 0 30px 0;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+}
+.switchMode {
+  display: inline-block;
+  height: 34px;
+  position: relative;
+  width: 60px;
+  margin-right: 10px;
+}
+
+.switchMode input {
+  display: none;
+}
+
+.slider {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  background-color: #81d4fa;
+  cursor: pointer;
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+.icon {
+  content: '';
+  position: absolute;
+  left: 4px;
+  bottom: 4px;
+  background-color: #fff;
+  height: 26px;
+  transition: 0.4s;
+  width: 26px;
+  border-radius: 50%;
+}
+.icon i {
+  margin-top: 5px;
+  margin-left: 5px;
+  color: #ffd600;
+}
+
+.switchContainer input:checked + .slider {
+  background-color: #01579b;
+}
+
+.switchContainer input:checked + .slider .icon {
+  background-color: #000;
+  transform: translateX(26px);
+}
+.switchContainer input:checked + .slider .icon i {
+  color: #fff;
+}
+
+.colorsContainer {
+  margin-top: 10px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  composes: boxShadow from global;
+}
+.colorsContainer span {
+  margin: 5px;
+  transition: 0.2s;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #000;
+}
+.colorsContainer span:hover {
+  transform: scale(1.2);
+}
+
+.colorsContainer span:nth-child(1) {
+  background: #546e7a;
+}
+.colorsContainer span:nth-child(2) {
+  background: #0277bd;
+}
+.colorsContainer span:nth-child(3) {
+  background: #ffa726;
+}
+.colorsContainer span:nth-child(4) {
+  background: #ff014f;
+}
+.colorsContainer span:nth-child(5) {
+  background: #66b58f;
+}

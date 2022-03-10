@@ -52,6 +52,9 @@
 .details p {
   font-style: 17px;
 }
+.details span {
+  color: var(--textSecondary);
+}
 
 .socialContainer {
   margin-top: 20px;
@@ -100,6 +103,10 @@
 
 .inputRow {
   width: 50%;
+}
+.inputRow,
+.input {
+  color: var(--textSecondary);
 }
 .submitBtn {
   composes: btnShadow from global;

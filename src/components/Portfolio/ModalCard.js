@@ -16,8 +16,8 @@ function ModalCard({ project }) {
         </span>
         <h1>{title}</h1>
         <p>{desc}</p>
-        <h4>Tecnologias - Herramientas Usadas- Features </h4>
-        <p>{technologies.map((tech) => `• ${tech} | `)}</p>
+        <h4>Tecnologias | Herramientas Usadas | Features </h4>
+        <p>{technologies.map((tech) => `${tech} • `)}</p>
         <div className={styles.modalActions}>
           <a
             className={styles.actionBtn}
