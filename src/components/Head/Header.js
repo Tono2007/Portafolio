@@ -108,7 +108,7 @@ const Header = () => {
               <button
                 className={styles.homeBtn}
                 type="button"
-                onClick={() => setMobile(false)}
+                onClick={() => setModal(true)}
               >
                 APOYAME
               </button>
