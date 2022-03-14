@@ -1,5 +1,4 @@
-import { useState, useEffect } from 'react';
-import { Typewriter } from 'react-simple-typewriter';
+import { useState } from 'react';
 import hero from '../../assets/me.jpg';
 import styles from './AboutMe.module.css';
 import { constants } from '../../utils/constants';

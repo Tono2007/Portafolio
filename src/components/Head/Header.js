@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect } from 'react';
 import logo1 from '../../assets/logo_fondo_blanco_4.png';
 import styles from './Header.module.css';
 

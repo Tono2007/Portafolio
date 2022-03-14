@@ -17,6 +17,9 @@ const data = [
       'Markdown',
       'HTML',
       'JS',
+      'Formspree',
+      'Eslint',
+      'Prettier',
     ],
     desc: `Mi sitio web personal estilo Neumorfismo.
      Este proyecto me tomo mucho trabajo solo para poder expresar lo que hago y lo que me gusta hacer. 

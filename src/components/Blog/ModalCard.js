@@ -8,8 +8,6 @@ import { Link, Code } from './Renderers/Renderers';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import rehypeSlug from 'rehype-slug';
-import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
-import { prism } from 'react-syntax-highlighter/dist/esm/styles/prism';
 //coldarkDark ,hopscotch,materialDark,okaidia,tomorrow,coldarkCold
 
 function ModalCard({ data }) {

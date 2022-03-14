@@ -1,13 +1,8 @@
-import { useEffect, useState } from 'react';
 import data from '../Blog/BlogData';
 import styles from './styles.module.css';
 import Card from './Card';
 
 function Index() {
-  const [modal, setModal] = useState(false);
-
-  const [post, setPost] = useState('');
-
   return (
     <section className={styles.allBlog}>
       <div className="container">
