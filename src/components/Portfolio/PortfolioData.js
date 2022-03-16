@@ -1,4 +1,10 @@
-const categories = ['DEVELOPMENT', 'WEB DESIGN', 'APPLICATION', 'DESIGN'];
+const categories = [
+  'DEVELOPMENT',
+  'WEB DESIGN',
+  'APPLICATION',
+  'DESIGN',
+  'MOBILE',
+];
 
 const data = [
   {
