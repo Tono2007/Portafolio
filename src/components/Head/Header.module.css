@@ -112,11 +112,16 @@ nav li a::after {
     0 30px 60px -30px rgb(0, 0, 0);
   left: 0;
   top: 0;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.5s;
   width: 60%;
+  width: 0;
+  overflow: hidden;
   height: 110vh;
   background-color: var(--backgroundPrimary);
   z-index: 888;
+}
+.navMobileLinksWidth {
+  width: 60%;
 }
 .navMobileLinks li {
   width: 100%;

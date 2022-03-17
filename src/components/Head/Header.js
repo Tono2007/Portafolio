@@ -22,6 +22,7 @@ const Header = () => {
 
   useEffect(() => {
     function handleScroll() {
+      setMobile(false);
       window.scrollY > 100 ? setActiveNav(true) : setActiveNav(false);
     }
     window.addEventListener('scroll', handleScroll);
@@ -114,8 +115,13 @@ const Header = () => {
               </button>
             </li>
           </ul>
-          {Mobile && (
-            <ul className={styles.navMobileLinks}>
+          {/*  {Mobile && ( */}
+          {true && (
+            <ul
+              className={`${styles.navMobileLinks} ${
+                Mobile ? styles.navMobileLinksWidth : ''
+              }`}
+            >
               <li className="home">
                 <a href="#!" onClick={() => handleLink('home')}>
                   inicio
@@ -132,7 +138,13 @@ const Header = () => {
                 </a>
               </li>
               <li className="about">
-                <a href="#!" onClick={() => setModal(true)}>
+                <a
+                  href="#!"
+                  onClick={() => {
+                    setMobile(false);
+                    setModal(true);
+                  }}
+                >
                   sobre mi
                 </a>
               </li>
@@ -160,7 +172,10 @@ const Header = () => {
                 <button
                   className={styles.homeBtn}
                   type="button"
-                  onClick={() => setMobile(false)}
+                  onClick={() => {
+                    setMobile(false);
+                    setModal(true);
+                  }}
                 >
                   APOYAME
                 </button>

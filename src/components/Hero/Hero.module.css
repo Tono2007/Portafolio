@@ -109,6 +109,8 @@
 .img {
   max-width: 100%;
   height: 100%;
+  width: 100%;
+  object-fit: cover;
   composes: bgPattern from global;
   background-size: 50px 50px;
 }
