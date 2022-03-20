@@ -50,8 +50,9 @@ function Hero() {
           <p>
             Con gran afición al mundo Tecnológico, tanto Frontend como Backend;
             persiguiendo nuevos retos y explorando continuamente las nuevas
-            tendencias. Experiencia en Creación, prototipado y desarrollo de
-            productos digitales innovadores centrados en el usuario.
+            tendencias.
+            {/* Experiencia en Creación, prototipado y desarrollo de
+            productos digitales innovadores centrados en el usuario. */}
           </p>
           <div className={styles.socialSkills}>
             <div className="col_1">

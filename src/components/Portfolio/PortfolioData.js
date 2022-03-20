@@ -11,7 +11,6 @@ const data = [
     id: 1,
     date: '2022',
     category: 'DEVELOPMENT',
-    totalLike: '280',
     title: 'Mi Portafolio',
     image: 'portafolio.png',
     technologies: [
@@ -33,6 +32,33 @@ const data = [
     links: {
       code: 'https://github.com/Tono2007/portafolio',
       page: 'https://antonioayola.netlify.app/',
+    },
+  },
+  {
+    id: 2,
+    date: '2022',
+    category: 'WEB DESIGN',
+    title: 'Cars Landing Page',
+    image: 'carsLandingPage.png',
+    technologies: [
+      'Webpack',
+      'Yarn',
+      'Sass(scss)',
+      'Babel',
+      'BEM',
+      'SwiperJs',
+      'Github Pages',
+      'Responsive',
+      'HTML',
+      'CSS',
+      'JS',
+    ],
+    desc: `Este proyecto es una landing page con tematica de carros algo simple, me sirvio principalmente para practicar y entender mejor webpack, antes de pasar a Vite D:
+    Tambien para ver como funciona sass junto con la metodologia BEM, implementar un efecto parallax de otra manera y un slider con SwiperJs.
+    Esta vez lo subi a Github Pages, usando github actions, creando un pequeño workflow que crea el build y lo mueve a la rama de gh-pages para el deploy.`,
+    links: {
+      code: 'https://github.com/Tono2007/CarsLandingPage',
+      page: 'https://tono2007.github.io/CarsLandingPage/',
     },
   },
   /* {
