@@ -86,6 +86,10 @@
   color: var(--textPrimary);
 }
 
+.modalText img {
+  width: 100%;
+}
+
 .modalText h1,
 .modalText h2,
 .modalText h3,

@@ -38,7 +38,7 @@ const Contact = () => {
 
       if (response.status === 200) {
         setSuccess(true);
-        alert('Mensaje Enviado');
+        alert('Mensaje Enviado :)');
         setFormValues({
           name: '',
           number: '',
@@ -223,7 +223,7 @@ const Contact = () => {
               </span>
             )}
             {success && (
-              <span className={styles.successMsg}>Formulario Enviado</span>
+              <span className={styles.successMsg}>Formulario Enviado!</span>
             )}
           </form>
         </div>

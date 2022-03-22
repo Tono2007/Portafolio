@@ -42,6 +42,9 @@
 .card:hover .arrow {
   color: var(--primaryColor);
 }
+.card:hover .title {
+  text-decoration: underline;
+}
 
 .img {
   height: 170px;

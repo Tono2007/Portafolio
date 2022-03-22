@@ -1,5 +1,5 @@
 const data = [
-  {
+  /*  {
     id: 0,
     author: 'Antonio Ayola',
     title: 'Demo post for styles',
@@ -7,7 +7,7 @@ const data = [
     banner: 'npm/banner.png',
     tags: ['demo', 'md', 'markdown'],
     md: 'demo.md',
-  },
+  }, */
   {
     id: 1,
     author: 'Antonio Ayola',
@@ -25,6 +25,15 @@ const data = [
     banner: 'ecmascript/banner.png',
     tags: ['js', 'javascript', 'ecmascript'],
     md: 'ecmascript/ecmascript.md',
+  },
+  {
+    id: 3,
+    author: 'Antonio Ayola',
+    title: 'Gestión de Dependencias y Paquetes con NPM',
+    date: '24 de Marzo, 2022',
+    banner: 'npm/banner.png',
+    tags: ['npm', 'node', 'js', 'javascript'],
+    md: 'npm/npm.md',
   },
 ];
 

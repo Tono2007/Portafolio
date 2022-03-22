@@ -35,7 +35,7 @@ const Blog = () => {
             {/* {data.slice(0, 3).map((post) => (
             <Card key={post.id} data={post} />
           ))} */}
-            {data.slice(1, 4).map((post) => (
+            {data.slice(0, 3).map((post) => (
               <Card key={post.id} data={post} />
             ))}
           </div>

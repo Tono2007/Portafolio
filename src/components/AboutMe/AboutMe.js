@@ -3,6 +3,83 @@ import hero from '../../assets/me.jpg';
 import styles from './AboutMe.module.css';
 import { constants } from '../../utils/constants';
 
+const skills = [
+  {
+    name: 'CSS',
+    img: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg',
+    href: 'https://www.w3schools.com/css/',
+  },
+  {
+    name: 'Git',
+    img: 'https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg',
+    href: 'https://git-scm.com/',
+  },
+  {
+    name: 'HTML',
+    img: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg',
+    href: 'https://www.w3.org/html/',
+  },
+  {
+    name: 'Javascript',
+    img: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg',
+    href: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript',
+  },
+  {
+    name: 'MySQL',
+    img: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg',
+    href: 'https://www.mysql.com/',
+  },
+  {
+    name: 'NodeJS',
+    img: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg',
+    href: 'https://nodejs.org',
+  },
+  {
+    name: 'Postman',
+    img: 'https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg',
+    href: 'https://postman.com',
+  },
+  {
+    name: 'Python',
+    img: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg',
+    href: 'https://www.python.org',
+  },
+  {
+    name: 'React',
+    img: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg',
+    href: 'https://reactjs.org/',
+  },
+  {
+    name: 'Bootstrap',
+    img: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg',
+    href: 'https://getbootstrap.com',
+  },
+  {
+    name: 'Java',
+    img: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg',
+    href: 'https://www.java.com',
+  },
+  {
+    name: 'Materialize',
+    img: 'https://raw.githubusercontent.com/prplx/svg-logos/5585531d45d294869c4eaab4d7cf2e9c167710a9/svg/materialize.svg',
+    href: 'https://materializecss.com/',
+  },
+  {
+    name: 'React Native',
+    img: 'https://reactnative.dev/img/header_logo.svg',
+    href: 'https://reactnative.dev/',
+  },
+  {
+    name: 'Redux',
+    img: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg',
+    href: 'https://redux.js.org',
+  },
+  {
+    name: 'Webpack',
+    img: 'https://raw.githubusercontent.com/devicons/devicon/d00d0969292a6569d45b06d3f350f463a0107b0d/icons/webpack/webpack-original-wordmark.svg',
+    href: 'https://webpack.js.org',
+  },
+];
 function About() {
   return (
     <div className={styles.me}>
@@ -53,194 +130,18 @@ function Skills() {
     <>
       <h2>Habilidades – Tecnologías - Herramientas</h2>
       <div className={styles.skillsContainer}>
-        <a
-          className={styles.a}
-          href="https://www.w3schools.com/css/"
-          target="_blank"
-          rel="noreferrer noopener"
-        >
-          <img
-            src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg"
-            alt="css3"
-            width="40"
-            height="40"
-          />
-          CSS
-        </a>
-        <a
-          href="https://git-scm.com/"
-          target="_blank"
-          rel="noreferrer noopener"
-        >
-          <img
-            src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg"
-            alt="git"
-            width="40"
-            height="40"
-          />
-          Git
-        </a>
-        <a
-          href="https://www.w3.org/html/"
-          target="_blank"
-          rel="noreferrer noopener"
-        >
-          <img
-            src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg"
-            alt="html5"
-            width="40"
-            height="40"
-          />
-          HTML
-        </a>
-        <a
-          href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
-          target="_blank"
-          rel="noreferrer noopener"
-        >
-          <img
-            src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"
-            alt="javascript"
-            width="40"
-            height="40"
-          />
-          javascript
-        </a>
-        <a
-          href="https://www.mysql.com/"
-          target="_blank"
-          rel="noreferrer noopener"
-        >
-          <img
-            src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg"
-            alt="mysql"
-            width="40"
-            height="40"
-          />
-          MySQL
-        </a>
-        <a href="https://nodejs.org" target="_blank" rel="noreferrer noopener">
-          <img
-            src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg"
-            alt="nodejs"
-            width="40"
-            height="40"
-          />
-          NodeJS
-        </a>
-        <a href="https://postman.com" target="_blank" rel="noreferrer noopener">
-          <img
-            src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg"
-            alt="postman"
-            width="40"
-            height="40"
-          />
-          Postman
-        </a>
-        <a
-          href="https://www.python.org"
-          target="_blank"
-          rel="noreferrer noopener"
-        >
-          <img
-            src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg"
-            alt="python"
-            width="40"
-            height="40"
-          />
-          Python
-        </a>
-        <a
-          href="https://reactjs.org/"
-          target="_blank"
-          rel="noreferrer noopener"
-        >
-          <img
-            src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg"
-            alt="react"
-            width="40"
-            height="40"
-          />
-          React
-        </a>
-        <a
-          href="https://getbootstrap.com"
-          target="_blank"
-          rel="noreferrer noopener"
-        >
-          <img
-            src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg"
-            alt="bootstrap"
-            width="40"
-            height="40"
-          />
-          Bootstrap
-        </a>
-        <a
-          href="https://www.java.com"
-          target="_blank"
-          rel="noreferrer noopener"
-        >
-          <img
-            src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg"
-            alt="java"
-            width="40"
-            height="40"
-          />
-          Java
-        </a>
-        <a
-          href="https://materializecss.com/"
-          target="_blank"
-          rel="noreferrer noopener"
-        >
-          <img
-            src="https://raw.githubusercontent.com/prplx/svg-logos/5585531d45d294869c4eaab4d7cf2e9c167710a9/svg/materialize.svg"
-            alt="materialize"
-            width="40"
-            height="40"
-          />
-          materialize
-        </a>
-        <a
-          href="https://reactnative.dev/"
-          target="_blank"
-          rel="noreferrer noopener"
-        >
-          <img
-            src="https://reactnative.dev/img/header_logo.svg"
-            alt="reactnative"
-            width="40"
-            height="40"
-          />
-          React Native
-        </a>
-        <a
-          href="https://redux.js.org"
-          target="_blank"
-          rel="noreferrer noopener"
-        >
-          <img
-            src="https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg"
-            alt="redux"
-            width="40"
-            height="40"
-          />
-          Redux
-        </a>
-        <a
-          href="https://webpack.js.org"
-          target="_blank"
-          rel="noreferrer noopener"
-        >
-          <img
-            src="https://raw.githubusercontent.com/devicons/devicon/d00d0969292a6569d45b06d3f350f463a0107b0d/icons/webpack/webpack-original-wordmark.svg"
-            alt="webpack"
-            width="40"
-            height="40"
-          />
-          Webpack
-        </a>
+        {skills.map((skill) => (
+          <a
+            className={styles.a}
+            href={skill.href}
+            alt=" "
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            <img src={skill.img} alt="css3" width="40" height="40" />
+            {skill.name}
+          </a>
+        ))}
       </div>
     </>
   );
@@ -348,10 +249,21 @@ function Studies() {
 function CV() {
   return (
     <>
-      <h2>Por ahora CV Privado</h2>
+      <h2>CV Privado</h2>
       <p>Dirigete a la sección de contacto.</p>
       <button type="button" className="boxShadow" disabled>
         DESCARGA CV
+      </button>
+    </>
+  );
+}
+function Experience() {
+  return (
+    <>
+      <h2>Privado</h2>
+      <p>Dirigete a la sección de contacto.</p>
+      <button type="button" className="boxShadow" disabled>
+        Timeline...
       </button>
     </>
   );
@@ -449,7 +361,7 @@ function AboutMe() {
             {activeSection === 1 && <Skills />}
             {activeSection === 2 && <Education />}
             {activeSection === 3 && <Studies />}
-            {activeSection === 4 && <p>Privado</p>}
+            {activeSection === 4 && <Experience />}
             {activeSection === 5 && <CV />}
           </div>
         </div>
