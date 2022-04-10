@@ -9,7 +9,8 @@ const categories = [
 const data = [
   {
     id: 1,
-    date: '2022',
+    year: '2022',
+    date: '16/3/2022',
     category: 'DEVELOPMENT',
     title: 'Mi Portafolio',
     image: 'portafolio.png',
@@ -36,7 +37,8 @@ const data = [
   },
   {
     id: 2,
-    date: '2022',
+    year: '2022',
+    date: '21/3/2022',
     category: 'WEB DESIGN',
     title: 'Cars Landing Page',
     image: 'carsLandingPage.png',
@@ -59,6 +61,38 @@ const data = [
     links: {
       code: 'https://github.com/Tono2007/CarsLandingPage',
       page: 'https://tono2007.github.io/CarsLandingPage/',
+    },
+  },
+  {
+    id: 3,
+    year: '2022',
+    date: '10/4/2022',
+    category: 'APPLICATION',
+    title: 'MoviesApp',
+    image: 'movieApp.jpeg',
+    technologies: [
+      'ReactJs',
+      'Material-ui (MUI)',
+      'HTML',
+      'CSS',
+      'JS',
+      'SwiperJs',
+      'Vercel',
+      'Responsive',
+      'TMBD',
+      'Axios',
+      'Moment',
+      'react-router-dom',
+    ],
+    desc: `Este proyecto es un sitio web para navegar entre peliculas y ver detalles de cada una. 
+    Ayudandonos de material-ui(mui) para el diseño y la API de TheMovieDataBase TMDB para obtener información de las peliculas.
+    Fue un proyecto complicado, por el manejo de los datos, principalmente la seccion del buscador.
+    Falta terminar la pestaña de actores y series que seria muy parecida a la de peliculas.
+    El despliegue del sitio esta en vercel, guardo la clave de la api en variables de ambiente.
+    `,
+    links: {
+      code: 'https://github.com/Tono2007/Movies-App',
+      page: 'https://movies-app-tono2007.vercel.app',
     },
   },
   /* {

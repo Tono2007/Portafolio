@@ -12,7 +12,8 @@ function ModalCard({ project }) {
       </div>
       <div className={styles.modalText}>
         <span>
-          <i className="fas fa-calendar-alt" /> {date} - {category}
+          <i className="fas fa-calendar-alt" /> {date} -
+          <span className={styles.category}> {category}</span>
         </span>
         <h1>{title}</h1>
         <p>{desc}</p>
