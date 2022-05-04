@@ -145,6 +145,42 @@ input:focus,
 textarea:focus {
   border: 3px solid var(--primaryColor);
 }
+:global .transition-enter {
+  opacity: 0;
+  transform: translateX(-100%);
+}
+:global .transition-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 300ms, transform 300ms;
+}
+:global .transition-exit {
+  opacity: 1;
+  transform: translateX(0);
+}
+:global .transition-exit-active {
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: opacity 300ms, transform 300ms;
+}
+
+:global .fade-enter {
+  opacity: 0;
+}
+
+:global .fade-enter-active {
+  opacity: 1;
+  transition: all 500ms;
+}
+
+:global .fade-exit {
+  opacity: 1;
+}
+
+:global .fade-exit-active {
+  opacity: 0;
+  transition: all 500ms;
+}
 
 @media screen and (min-width: 400px) {
   /* Tamaño del scroll */

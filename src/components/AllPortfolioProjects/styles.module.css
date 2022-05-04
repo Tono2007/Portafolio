@@ -13,7 +13,8 @@
 .tagsContainer {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 20px;
+  gap: 1rem;
+  margin-bottom: 30px;
 }
 .tag {
   composes: tag from global;
@@ -22,8 +23,63 @@
 .tagsContainer p {
   font-weight: bold;
   margin: 4px 10px;
-
   color: var(--textTertiary);
+}
+
+.tabs {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+}
+.tabs li {
+  position: relative;
+}
+.tabs .divider {
+  color: var(--textPrimary);
+}
+
+.tabs li button {
+  border-radius: 25px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.5s;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--textSecondary);
+  margin: 5px 2px;
+  padding: 8px 10px;
+}
+.tabBtn {
+  composes: boxShadow from global;
+}
+
+.tabs li button:hover {
+  color: var(--primaryColor);
+}
+
+.tabs li button::after {
+  transition: 0.1s ease;
+  content: '';
+  position: absolute;
+  bottom: 0;
+  border-radius: 25px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--primaryColor);
+}
+.tabs li.active button::after {
+  width: 0%;
+}
+.tabs li.active button {
+  background: rgba(255, 255, 255, 0.548);
+  background: var(--primaryColor);
+  color: var(--primaryColor);
+  color: var(--textContrast);
 }
 
 .contentGrid {
@@ -31,7 +87,7 @@
     flex-direction: column;
     align-items: center; */
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-gap: 30px;
 }
 @media screen and (max-width: 1150px) {

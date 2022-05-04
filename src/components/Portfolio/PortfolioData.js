@@ -11,7 +11,7 @@ const data = [
     id: 1,
     year: '2022',
     date: '16/3/2022',
-    category: 'DEVELOPMENT',
+    category: 'WEB DESIGN',
     title: 'Mi Portafolio',
     image: 'portafolio.png',
     technologies: [
@@ -23,6 +23,7 @@ const data = [
       'Markdown',
       'HTML',
       'JS',
+      'react-transition-group',
       'Formspree',
       'Eslint',
       'Prettier',
@@ -39,7 +40,7 @@ const data = [
     id: 2,
     year: '2022',
     date: '21/3/2022',
-    category: 'WEB DESIGN',
+    category: 'DEVELOPMENT',
     title: 'Cars Landing Page',
     image: 'carsLandingPage.png',
     technologies: [
@@ -88,11 +89,57 @@ const data = [
     Ayudandonos de material-ui(mui) para el diseño y la API de TheMovieDataBase TMDB para obtener información de las peliculas.
     Fue un proyecto complicado, por el manejo de los datos, principalmente la seccion del buscador.
     Falta terminar la pestaña de actores y series que seria muy parecida a la de peliculas.
-    El despliegue del sitio esta en vercel, guardo la clave de la api en variables de ambiente.
+    El despliegue del sitio esta en vercel, se guarda la clave de la api en variables de ambiente.
     `,
     links: {
       code: 'https://github.com/Tono2007/Movies-App',
       page: 'https://movies-app-tono2007.vercel.app',
+    },
+  },
+
+  {
+    id: 4,
+    year: '2022',
+    date: '04/5/2022',
+    category: 'WEB DESIGN',
+    title: 'LOL-APP',
+    image: 'lolApp.png',
+    technologies: [
+      'ReactJs',
+      'Styled-Components',
+      'HTML',
+      'CSS',
+      'JS',
+      'GSAP',
+      'Netlify',
+      'Responsive',
+      'Riot API',
+      'Axios',
+    ],
+    desc: `Este proyecto es una aplicación para consultar jugadores y detalles de los campeones del juego.
+    Ocupando Styled Components para el diseño y la API de RIOT para obtener información de los jugadores.
+    Este proyecto fue práctica para aprender Styled Components y la biblioteca GSAP para las animaciones.
+    La clave que tengo para acceder a la api de riot es limitada, en cuanto numero de peticiones y el tiempo que estara activa, puede presentar errores antes que genere otra.
+    El despliegue del sitio esta en Netlify.
+    `,
+    links: {
+      code: null,
+      page: 'https://lol-app.netlify.app/',
+    },
+  },
+  {
+    id: 5,
+    year: '-',
+    date: '-',
+    category: '-',
+    title: 'Proximo Proyecto',
+    image: 'portafolioBlack.png',
+    technologies: ['-'],
+    desc: `Siguiente proyecto proximamente
+    `,
+    links: {
+      code: null,
+      page: null,
     },
   },
   /* {

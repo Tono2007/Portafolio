@@ -20,22 +20,26 @@ function ModalCard({ project }) {
         <h4>Tecnologias | Herramientas Usadas | Features </h4>
         <p>{technologies.map((tech) => `${tech} • `)}</p>
         <div className={styles.modalActions}>
-          <a
-            className={styles.actionBtn}
-            href={links.code}
-            target="_blank"
-            rel="noreferrer noopener"
-          >
-            VER CODIGO <i className="fab fa-github" />
-          </a>
-          <a
-            className={styles.actionBtn}
-            href={links.page}
-            target="_blank"
-            rel="noreferrer noopener"
-          >
-            VISITAR PROYECTO <i className="fas fa-chevron-right" />
-          </a>
+          {links.code && (
+            <a
+              className={styles.actionBtn}
+              href={links.code}
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              VER CODIGO <i className="fab fa-github" />
+            </a>
+          )}
+          {links.page && (
+            <a
+              className={styles.actionBtn}
+              href={links.page}
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              VISITAR PROYECTO <i className="fas fa-chevron-right" />
+            </a>
+          )}
         </div>
       </div>
     </div>

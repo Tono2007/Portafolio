@@ -32,9 +32,15 @@ const Portfolio = () => {
             VER TODOS LOS PROYECTOS
           </button>
           <div className={styles.contentGrid}>
-            {PortfolioData.slice(0, 3).map((project, index) => (
-              <Card key={index} project={project} />
-            ))}
+            {/* {PortfolioData.slice(0) //clonar array para poder usar reverse()
+              .reverse()
+              .slice(0, 3)
+              .map((project, index) => (
+                <Card key={index} project={project} />
+              ))} */}
+            <Card project={PortfolioData[2]} />
+            <Card project={PortfolioData[1]} />
+            <Card project={PortfolioData[3]} />
           </div>
         </div>
       </section>
