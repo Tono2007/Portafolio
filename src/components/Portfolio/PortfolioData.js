@@ -124,7 +124,8 @@ const data = [
     `,
     links: {
       code: null,
-      page: 'https://lol-app.netlify.app/',
+      //page: 'https://lol-app.netlify.app/',
+      page: 'https://master--lol-app.netlify.app/',
     },
   },
   {

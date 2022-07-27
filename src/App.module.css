@@ -192,6 +192,8 @@ textarea:focus {
   ::-webkit-scrollbar-thumb {
     background-color: rgba(27, 30, 50, 0.3);
     border-radius: 8px;
+    border: 3px solid rgba(0, 0, 0, 0);
+    background-clip: padding-box;
   }
   ::-webkit-scrollbar-thumb:hover {
     background-color: var(--primaryDark);
