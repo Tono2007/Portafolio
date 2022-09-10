@@ -15,6 +15,7 @@ const data = [
     title: 'Mi Portafolio',
     image: 'portafolio.png',
     technologies: [
+      'PWA',
       'React',
       'CSS Modules',
       'Responsive',
@@ -30,7 +31,8 @@ const data = [
     ],
     desc: `Mi sitio web personal estilo Neumorfismo.
      Este proyecto me tomo mucho trabajo solo para poder expresar lo que hago y lo que me gusta hacer. 
-     Junto con un pequeño blog usando markdown. Espero que te guste <3.`,
+     Este portafolio es una PWA, asi que puedes instalar la aplicacion en tu dispositivo.
+     Ademas viene con un pequeño blog usando markdown. Espero que te guste <3.`,
     links: {
       code: 'https://github.com/Tono2007/portafolio',
       page: 'https://antonioayola.netlify.app/',
