@@ -2,13 +2,14 @@
 
 Este proyecto es mi portafolio profesional donde muestro mis skills, que experiencia tengo y en que me estoy especializando.
 
+Este portafolio es una PWA, asi que puedes instalar la aplicacion en tu dispositivo.
+
 ## **CAPTURAS**
 
 ![img](src/assets/logo_fondo_blanco_4.png)
 
 ![img](src/assets/portafolio/portafolio.png)
 ![img](src/assets/portafolio/portafolioBlack.png)
-
 
 ## **DEMO**
 
@@ -21,6 +22,7 @@ Para el portafolio utilice las siguientes tecnologias:
 - ReactJS
 - Modules CSS
 - Netlify
+- PWA
 
 ## **USO**
 
