@@ -1,6 +1,6 @@
 {
   "short_name": "Antonio Ayola",
-  "name": "Antonio Ayola",
+  "name": "Antonio Ayola Portafolio",
   "icons": [
     {
       "src": "favicon.ico",
@@ -8,18 +8,79 @@
       "type": "image/x-icon"
     },
     {
-      "src": "logo.png",
+      "src": "logo192.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "logo.png",
+      "src": "logo512.png",
       "type": "image/png",
       "sizes": "512x512"
     }
   ],
-  "start_url": ".",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "display_override": ["standalones", "fullscreen"],
+  "background_color": "#ecf0f3",
+  "theme_color": "#66b58f",
+  "categories": ["education", "entertainment", "lifestyle", "social"],
+  "description": "Antonio Ayola Portafolio",
+  "dir": "ltr",
+  "id": "/v1",
+  "lang": "es-MX",
+  "orientation": "portrait",
+  "scope": "/",
+  "screenshots": [
+    {
+      "src": "screenshot.png",
+      "sizes": "2880x4008",
+      "type": "image/png",
+      "platform": "wide",
+      "label": "Inicio Portafolio"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Inicio",
+      "short-name": "Inicio",
+      "icon": "/logo192.png",
+      "url": "/#home",
+      "description": "Hola mundo"
+    },
+    {
+      "name": "Habilidades",
+      "short-name": "Habilidades",
+      "icon": "/logo192.png",
+      "url": "/#features",
+      "description": "Que hago"
+    },
+    {
+      "name": "Portafolio",
+      "short-name": "Portafolio",
+      "icon": "/logo192.png",
+      "url": "/#portfolio",
+      "description": "Visita los pryectos mas recientes de mi portafolio"
+    },
+    {
+      "name": "Testimonios",
+      "short-name": "Testimonios",
+      "icon": "/logo192.png",
+      "url": "/#clients",
+      "description": "Que dicen de mi trabajo"
+    },
+    {
+      "name": "Blog",
+      "short-name": "Blog",
+      "icon": "/logo192.png",
+      "url": "/#blog",
+      "description": "Visita mi blog y dame feedback"
+    },
+    {
+      "name": "Datos de Contacto",
+      "short-name": "Contacto",
+      "icon": "/logo192.png",
+      "url": "/#contact",
+      "description": "Trabajemos juntos"
+    }
+  ],
+  "start_url": "https://antonioayola.netlify.app?mode=pwa"
 }

@@ -164,12 +164,12 @@ nav li a::after {
 }
 
 @media (max-width: 1250px) {
-  .homeBtn {
+  /* .homeBtn {
     display: none;
-  }
+  }*/
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1250px) {
   .homeBtn {
     display: block;
   }
