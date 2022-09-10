@@ -42,45 +42,45 @@
     {
       "name": "Inicio",
       "short-name": "Inicio",
-      "icon": "/logo192.png",
+      "icon": "logo96.png",
       "url": "/#home",
       "description": "Hola mundo"
     },
     {
       "name": "Habilidades",
       "short-name": "Habilidades",
-      "icon": "/logo192.png",
+      "icon": "logo96.png",
       "url": "/#features",
       "description": "Que hago"
     },
     {
       "name": "Portafolio",
       "short-name": "Portafolio",
-      "icon": "/logo192.png",
+      "icon": "logo96.png",
       "url": "/#portfolio",
       "description": "Visita los pryectos mas recientes de mi portafolio"
     },
     {
       "name": "Testimonios",
       "short-name": "Testimonios",
-      "icon": "/logo192.png",
+      "icon": "logo96.png",
       "url": "/#clients",
       "description": "Que dicen de mi trabajo"
     },
     {
       "name": "Blog",
       "short-name": "Blog",
-      "icon": "/logo192.png",
+      "icon": "logo96.png",
       "url": "/#blog",
       "description": "Visita mi blog y dame feedback"
     },
     {
       "name": "Datos de Contacto",
       "short-name": "Contacto",
-      "icon": "/logo192.png",
+      "icon": "logo96.png",
       "url": "/#contact",
       "description": "Trabajemos juntos"
     }
   ],
-  "start_url": "https://antonioayola.netlify.app?mode=pwa"
+  "start_url": "."
 }
