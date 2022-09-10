@@ -10,7 +10,7 @@ const data = [
     work: 'Programador Analista',
     date: '15 de Abril, 2019',
     testimony: `El proyecto que desarrollo el cual se logró un avance satisfactorio cumpliendo tiempos y objetivos.
-    Cabe mencionar que el trabajo que Antonio realizo fue muy certero creando un excelente equipo de trabajo`,
+    Cabe mencionar que el trabajo que Antonio realizo fue muy certero creando un excelente equipo de trabajo.`,
   },
   {
     id: 1,
@@ -21,7 +21,7 @@ const data = [
     work: 'Programador Analista',
     date: '15 de Abril, 2019',
     testimony:
-      'Cabe mencionar que el trabajo que Antonio realizo fue muy certero creando un excelente equipo de trabajo',
+      'Cabe mencionar que el trabajo que Antonio realizo fue muy certero creando un excelente equipo de trabajo.',
   } /* 
   {
     id: 2,

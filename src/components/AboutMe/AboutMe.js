@@ -201,6 +201,15 @@ function Studies() {
           <a
             target="_blank"
             rel="noreferrer noopener"
+            href={constants.cursos.scrum}
+          >
+            • Curso de SCRUM - Linkedin
+          </a>
+        </li>
+        <li>
+          <a
+            target="_blank"
+            rel="noreferrer noopener"
             href={constants.cursos.ingDeSoftware}
           >
             • Curso de Fundamentos de Ingeniería de Software - Platzi
