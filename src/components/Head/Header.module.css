@@ -186,19 +186,6 @@ nav li a::after {
   }
 }
 
-.modalContent {
-  height: 85vh;
-}
-
-.modalContentConfig {
-  width: auto;
-}
-@media screen and (max-width: 900px) {
-  .modalContentConfig {
-    height: auto;
-    padding: 8%;
-  }
-}
 .modalContentConfigOverlay {
   background: rgba(0, 0, 0, 0.24);
 }

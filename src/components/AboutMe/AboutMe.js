@@ -210,6 +210,16 @@ function Studies() {
           <a
             target="_blank"
             rel="noreferrer noopener"
+            href={constants.cursos.inglesC1}
+          >
+            • EF SET English Certificate 70/100 (C1 Advanced) - EF Standard
+            English Test (EF SET) - 06 de Octubre 2022
+          </a>
+        </li>
+        <li>
+          <a
+            target="_blank"
+            rel="noreferrer noopener"
             href={constants.cursos.ingDeSoftware}
           >
             • Curso de Fundamentos de Ingeniería de Software - Platzi
@@ -288,9 +298,17 @@ function AboutMe() {
           <div className={styles.leftImg}>
             <img src={hero} alt="hero" className={styles.img} />
             <h1>{'<Antonio Ayola/>'}</h1>
-            <button className={styles.supportBtn} type="button">
+            <a
+              className={styles.supportBtn}
+              href={constants.profilesUrls.buymeacoffee}
+              target="_blank"
+              rel="noreferrer noopener"
+            >
               APOYAME
-            </button>
+            </a>
+            {/* <button className={styles.supportBtn} type="button">
+              APOYAME
+            </button> */}
             <p>Desarrollo software con ❤️ y ☕️</p>
             <p> &#x1F1F2;&#x1F1FD;</p>
           </div>

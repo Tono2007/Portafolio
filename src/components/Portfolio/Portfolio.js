@@ -11,11 +11,7 @@ const Portfolio = () => {
 
   return (
     <>
-      <Modal
-        openModal={modal}
-        fnCloseModal={() => setModal(false)}
-        styleContent={styles.modalContentAP}
-      >
+      <Modal openModal={modal} fnCloseModal={() => setModal(false)}>
         <AllPortfolioProjects />
       </Modal>
       <section className={styles.portafolio} id="portfolio">

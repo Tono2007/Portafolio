@@ -107,8 +107,9 @@
   height: auto;
 }
 .supportBtn {
-  margin: 10px 0;
   composes: smallBtnShadow from global;
+  display: inline-block;
+  margin: 10px 0;
   color: var(--primaryColor);
 }
 

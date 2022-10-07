@@ -75,18 +75,13 @@ const Header = () => {
 
   return (
     <>
-      <Modal
-        openModal={modal}
-        fnCloseModal={() => setModal(false)}
-        styleContent={styles.modalContent}
-      >
+      <Modal openModal={modal} fnCloseModal={() => setModal(false)}>
         <AboutMe />
       </Modal>
       <Modal
         openModal={open}
         fnCloseModal={() => handleClose()}
         styleOverlay={styles.modalContentConfigOverlay}
-        styleContent={styles.modalContentConfig}
       >
         <ModalConfig />
       </Modal>
@@ -133,7 +128,7 @@ const Header = () => {
             </li>
             <li>
               <a href="#!" onClick={() => handleOpen()}>
-                <i className={styles.cogBtn} />
+                <i className={styles.cogBtn} title="Theme Config" />
               </a>
             </li>
             {/*  <li>
@@ -162,7 +157,7 @@ const Header = () => {
                   type="button"
                   onClick={() => setModal(true)}
                 >
-                  APOYAME
+                  VER MAS
                 </button>
               </li>
             )}
@@ -217,7 +212,7 @@ const Header = () => {
               </li>
               <li>
                 <a href="#!" onClick={() => handleOpen()}>
-                  <i className={styles.cogBtn} />
+                  <i className={styles.cogBtn} title="Theme Config" />
                 </a>
               </li>
 
@@ -241,7 +236,7 @@ const Header = () => {
                       setModal(true);
                     }}
                   >
-                    APOYAME
+                    VER MAS
                   </button>
                 </li>
               )}

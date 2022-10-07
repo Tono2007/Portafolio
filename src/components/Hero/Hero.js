@@ -63,6 +63,7 @@ function Hero() {
                   className={styles.socialBtn}
                   target="_blank"
                   rel="noreferrer noopener"
+                  aria-label="Github Profile"
                 >
                   <i className="fa-brands fa-github" />
                 </a>
@@ -71,6 +72,7 @@ function Hero() {
                   className={styles.socialBtn}
                   target="_blank"
                   rel="noreferrer noopener"
+                  aria-label="Linkedin Profile"
                 >
                   <i className="fa-brands fa-linkedin-in" />
                 </a>
@@ -79,6 +81,7 @@ function Hero() {
                   className={styles.socialBtn}
                   target="_blank"
                   rel="noreferrer noopener"
+                  aria-label="Facebook Profile"
                 >
                   <i className="fa-brands fa-facebook-f" />
                 </a>

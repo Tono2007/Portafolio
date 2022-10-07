@@ -12,7 +12,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 5% 0;
+  padding: 0;
 }
 
 .overlay {
@@ -24,7 +24,9 @@
   composes: container from global;
   composes: boxShadow from global;
   /*   background: #fff; */
-
+  width: auto;
+  height: auto;
+  max-height: 90vh;
   position: relative;
   z-index: 9999;
   padding: 50px;
@@ -53,15 +55,15 @@
 
 @media screen and (max-width: 900px) {
   .modalContent {
-    height: 90vh;
+    max-height: 100vh;
     flex-direction: column;
-    padding: 3%;
+    padding: 4%;
   }
 }
 @media screen and (max-width: 900px) {
-  .closeBtn {
-    top: 7%;
-    right: 4%;
+  .btnWrapper {
+    top: 2%;
+    right: 15%;
   }
 }
 

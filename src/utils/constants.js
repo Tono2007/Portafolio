@@ -11,6 +11,7 @@ export const constants = {
     whatsapp: 'https://wa.me/527711825937',
     instagram: 'https://www.instagram.com/antonioayola1/',
     facebook: 'https://www.facebook.com/tono2007/',
+    buymeacoffee: 'https://www.buymeacoffee.com/antonioayola',
   },
   icons: {
     linkedin: 'https://i.imgur.com/z5abyyx.png',
@@ -21,6 +22,7 @@ export const constants = {
   cursos: {
     inglesB1:
       'https://drive.google.com/file/d/1UY3Q3zcZI4OoRFyfLIVFZaJb2qCRIkPm/view?usp=sharing',
+    inglesC1: 'https://www.efset.org/cert/7oD4Fh',
     ingSoftware:
       'https://drive.google.com/file/d/1X-8ZCh0IoXh4Qup_sWYPSkaVnyisXjKI/view?usp=sharing',
     frontendDeveloper:
