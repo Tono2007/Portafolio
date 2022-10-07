@@ -1,9 +1,12 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import Slide from './Slide';
 import styles from './Testimonial.module.css';
 import testimonialData from './TestimonialData';
+import useIsInViewportOnce from '../../utils/hooks/useIsInViewportOnce';
 
 const Testimonial = () => {
+  const sectionRef = useRef();
+  const isInViewportOnce = useIsInViewportOnce(sectionRef);
   const [index, setIndex] = useState(0);
 
   useEffect(() => {
@@ -25,9 +28,13 @@ const Testimonial = () => {
   }, [index]);
 
   return (
-    <section id="clients" className={styles.testimonial}>
+    <section id="clients" className={styles.testimonial} ref={sectionRef}>
       <div className="container">
-        <div className={styles.heading}>
+        <div
+          className={`${styles.heading} ${
+            isInViewportOnce ? 'useSlideInLeft' : 'useSlideInLeftEnter'
+          }`}
+        >
           <h4>QUE DICEN DE MI TRABAJO</h4>
           <h1>Testimonios</h1>
         </div>

@@ -33,8 +33,18 @@
   border-radius: 10px;
   overflow: auto;
   scroll-behavior: smooth;
+  animation: fadeIn 0.4s ease-in 1 both;
 }
 
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
 .btnWrapper {
   position: absolute;
   top: 2%;

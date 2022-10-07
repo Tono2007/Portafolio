@@ -7,6 +7,20 @@
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 30px;
   column-gap: 45px;
+  -webkit-perspective: 1000;
+}
+
+.slideIn {
+  /* composes: slideAnimation; */
+  composes: useSlideAnimation from global;
+}
+.slideIn:nth-child(3) {
+  animation-delay: 0.4s;
+}
+.slideIn:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.slideIn:nth-child(1) {
 }
 
 .card {

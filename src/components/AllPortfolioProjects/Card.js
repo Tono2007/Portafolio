@@ -11,11 +11,7 @@ const Card = ({ project }) => {
 
   return (
     <>
-      <Modal
-        openModal={modal}
-        fnCloseModal={() => setModal(false)}
-        styleContent={styles.modalContent}
-      >
+      <Modal openModal={modal} fnCloseModal={() => setModal(false)}>
         <ModalCard project={project} />
       </Modal>
       <article

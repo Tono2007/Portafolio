@@ -81,7 +81,7 @@
 .socialSkills i {
   font-size: 22px;
 }
-.socialSkills button img {
+.socialSkills figure img {
   object-fit: cover;
   width: 50px;
   height: 50px;

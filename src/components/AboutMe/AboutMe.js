@@ -296,7 +296,11 @@ function AboutMe() {
         <div className={styles.AboutLeft}>
           <span>Actualizado el 5 de Marzo, 2022</span>
           <div className={styles.leftImg}>
-            <img src={hero} alt="hero" className={styles.img} />
+            <img
+              src={hero}
+              alt="antonio Ayola Profile"
+              className={styles.img}
+            />
             <h1>{'<Antonio Ayola/>'}</h1>
             <a
               className={styles.supportBtn}
@@ -322,6 +326,7 @@ function AboutMe() {
                   type="button"
                   onClick={() => setActiveSection(0)}
                   className={styles.tabBtn}
+                  aria-label="about"
                 >
                   about
                 </button>
@@ -332,6 +337,7 @@ function AboutMe() {
                   type="button"
                   onClick={() => setActiveSection(1)}
                   className={styles.tabBtn}
+                  aria-label="skills"
                 >
                   skills
                 </button>
@@ -342,6 +348,7 @@ function AboutMe() {
                   type="button"
                   onClick={() => setActiveSection(2)}
                   className={styles.tabBtn}
+                  aria-label="formación"
                 >
                   formación
                 </button>
@@ -352,6 +359,7 @@ function AboutMe() {
                   type="button"
                   onClick={() => setActiveSection(3)}
                   className={styles.tabBtn}
+                  aria-label="certificados"
                 >
                   Certificados
                 </button>
@@ -362,6 +370,7 @@ function AboutMe() {
                   type="button"
                   onClick={() => setActiveSection(4)}
                   className={styles.tabBtn}
+                  aria-label="experiencia"
                 >
                   Experiencia
                 </button>
@@ -372,6 +381,7 @@ function AboutMe() {
                   type="button"
                   onClick={() => setActiveSection(5)}
                   className={styles.tabBtn}
+                  aria-label="cv"
                 >
                   CV
                 </button>

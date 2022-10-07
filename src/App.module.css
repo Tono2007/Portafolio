@@ -11,6 +11,7 @@ body {
   font-family: 'Poppins', sans-serif;
   background-color: var(--backgroundPrimary);
   overflow-x: hidden;
+  overflow-wrap: break-word;
 }
 a {
   text-decoration: none;
@@ -181,6 +182,53 @@ textarea:focus {
 :global .fade-exit-active {
   opacity: 0;
   transition: all 500ms;
+}
+:global .useSlideAnimation {
+  -webkit-animation: slideInFwd 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slideInFwd 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  /* animation-name: slideInFwd;
+  animation-duration: 0.4s;
+  animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  animation-iteration-count: infinite; */
+  /*  animation-direction: alternate;
+  animation-timing-function: ease; */
+}
+:global .useSlideInLeft {
+  -webkit-animation: slideInLef 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slideInLef 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+:global .useSlideInLeftEnter {
+  transition: 1s;
+  -webkit-transform: translateX(-1000px);
+  transform: translateX(-1000px);
+  opacity: 0;
+}
+
+@keyframes :global(slideInFwd) {
+  0% {
+    -webkit-transform: translateZ(-1400px);
+    transform: translateZ(-1400px);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 1;
+  }
+}
+
+@keyframes :global(slideInLef) {
+  0% {
+    -webkit-transform: translateX(-1000px);
+    transform: translateX(-1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
 @media screen and (min-width: 400px) {

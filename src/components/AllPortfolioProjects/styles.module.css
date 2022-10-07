@@ -111,8 +111,3 @@
 }
 
 /*----------------------------------*/
-
-.modalContent {
-  max-height: 85vh;
-  background: var(--contrastBackground);
-}

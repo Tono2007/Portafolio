@@ -18,24 +18,27 @@ const Card = ({ data }) => {
       >
         <ModalCard data={data} />
       </Modal>
-      <article
-        className={styles.card}
-        onClick={() => setModal(true)}
-        onKeyPress={() => setModal(true)}
-        role="presentation"
-      >
-        <div className={styles.img}>
-          <img src={img} alt="" />
-        </div>
-        <div className={styles.date}>
-          <span>{date}</span>
-        </div>
-        <div className={styles.title}>
-          <h2>{title}</h2>
-          <span className={styles.arrow}>
-            <i className="fas fa-arrow-right" />
-          </span>
-        </div>
+      <article role="presentation">
+        <button
+          type="button"
+          className={styles.card}
+          onClick={() => setModal(true)}
+          onKeyPress={() => setModal(true)}
+          aria-label={`Ver blog ${title}`}
+        >
+          <div className={styles.img}>
+            <img src={img} alt={`Banner ${title}`} />
+          </div>
+          <div className={styles.date}>
+            <span>{date}</span>
+          </div>
+          <div className={styles.title}>
+            <h2>{title}</h2>
+            <span className={styles.arrow}>
+              <i className="fas fa-arrow-right" />
+            </span>
+          </div>
+        </button>
       </article>
     </>
   );

@@ -1,22 +1,29 @@
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 
 import Card from './Card';
 import PortfolioData from './PortfolioData';
 import styles from './Portfolio.module.css';
 import AllPortfolioProjects from '../AllPortfolioProjects';
 import Modal from '../Modal/Modal';
+import useIsInViewportOnce from '../../utils/hooks/useIsInViewportOnce';
 
 const Portfolio = () => {
+  const sectionRef = useRef();
+  const isInViewportOnce = useIsInViewportOnce(sectionRef);
   const [modal, setModal] = useState(false);
-
+  console.log(String(isInViewportOnce));
   return (
     <>
       <Modal openModal={modal} fnCloseModal={() => setModal(false)}>
         <AllPortfolioProjects />
       </Modal>
-      <section className={styles.portafolio} id="portfolio">
+      <section className={styles.portafolio} id="portfolio" ref={sectionRef}>
         <div className="container">
-          <div className={styles.heading}>
+          <div
+            className={`${styles.heading} ${
+              isInViewportOnce ? 'useSlideInLeft' : 'useSlideInLeftEnter'
+            }`}
+          >
             <h4>VISITA LOS PROYECTOS MAS RECIENTES DE MI PORTAFOLIO</h4>
             <h1>Mi Portafolio</h1>
           </div>
@@ -24,6 +31,7 @@ const Portfolio = () => {
             type="button"
             className={styles.seeAllBtn}
             onClick={() => setModal(true)}
+            aria-label="ver todos los proyectos"
           >
             VER TODOS LOS PROYECTOS
           </button>

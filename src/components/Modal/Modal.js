@@ -36,6 +36,7 @@ function Modal(props) {
               className={styles.closeBtn}
               onClick={closeModalHandler}
               type="button"
+              aria-label="Cerrar modal"
             >
               <i className="fas fa-times" />
             </button>

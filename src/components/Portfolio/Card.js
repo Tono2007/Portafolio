@@ -18,28 +18,31 @@ const Card = ({ project }) => {
       >
         <ModalCard project={project} />
       </Modal>
-      <article
-        className={styles.card}
-        onClick={() => setModal(true)}
-        onKeyPress={() => setModal(true)}
-        role="presentation"
-      >
-        <div className={styles.img}>
-          <img src={img} alt="" />
-        </div>
-        <div className={styles.category}>
-          <span>{category}</span>
-          <span>
-            <i className="fas fa-calendar-alt" />•{` ${date}`}
-          </span>
-        </div>
-        <div>
-          <h2>{title}</h2>
+      <article role="presentation">
+        <button
+          type="button"
+          className={styles.card}
+          onClick={() => setModal(true)}
+          onKeyPress={() => setModal(true)}
+          aria-label={`Ver proyecto ${title}`}
+        >
+          <div className={styles.img}>
+            <img src={img} alt={`Screenshot ${title}`} />
+          </div>
+          <div className={styles.category}>
+            <span>{category}</span>
+            <span>
+              <i className="fas fa-calendar-alt" />•{` ${date}`}
+            </span>
+          </div>
+          <div>
+            <h2>{title}</h2>
 
-          <span className={styles.arrow}>
-            <i className="fas fa-arrow-right" />
-          </span>
-        </div>
+            <span className={styles.arrow}>
+              <i className="fas fa-arrow-right" />
+            </span>
+          </div>
+        </button>
       </article>
     </>
   );

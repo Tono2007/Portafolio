@@ -41,6 +41,7 @@
   padding: 18px 25px;
   cursor: pointer;
   position: relative;
+  height: 100%;
 }
 
 .img {
@@ -76,6 +77,7 @@
 }
 
 .card h2 {
+  text-align: left;
   font-size: 18px;
   transition: 0.5s;
   padding-bottom: 30px;
@@ -106,10 +108,5 @@
 /*          Card            */
 
 .modalContent {
-  max-height: 85vh;
   background: var(--contrastBackground);
-}
-
-.modalContentAB {
-  max-height: 85vh;
 }
