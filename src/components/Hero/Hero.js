@@ -6,8 +6,8 @@ import { constants } from '../../utils/constants';
 import useIsInViewport from '../../utils/hooks/useIsInViewport';
 
 function Hero() {
-  const titleRef = useRef();
-  const isInViewport = useIsInViewport(titleRef);
+  const sectionRef = useRef();
+  const isInViewport = useIsInViewport(sectionRef);
   const [activeNav, setActiveNav] = useState(false);
   useEffect(() => {
     function handleScroll() {
@@ -22,7 +22,7 @@ function Hero() {
         activeNav ? `${styles.hero} ${styles.heroActive}` : styles.hero
       }
       id="home"
-      ref={titleRef}
+      ref={sectionRef}
     >
       {/*       <div className={styles.boxP}>ss</div>
       <div className={styles.boxS}>f</div> */}

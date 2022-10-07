@@ -1,0 +1,84 @@
+.particleContainer {
+  width: 95%;
+  max-width: 1300px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  overflow-x: visible;
+}
+
+.particle {
+  composes: boxShadow from global;
+  position: absolute;
+  border-radius: 50%;
+  border: 10px solid var(--backgroundPrimary);
+  width: 700px;
+  height: 700px;
+  animation: downHide 20s linear infinite both;
+
+  z-index: -1;
+  filter: blur(23px);
+  /* -webkit-transform: translateY(-3000px);
+  transform: translateY(-3000px); */
+}
+.particle:nth-child(4) {
+  right: -20%;
+  animation-delay: 15s;
+}
+
+.particle:nth-child(3) {
+  left: -20%;
+  animation-delay: 10s;
+}
+.particle:nth-child(2) {
+  animation-delay: 5s;
+  right: -20%;
+}
+.particle:nth-child(1) {
+  left: -20%;
+  animation-delay: 0s;
+}
+
+@keyframes downHide {
+  0% {
+    filter: blur(23px);
+    width: 700px;
+    height: 700px;
+    -webkit-transform: translateY(-800px);
+    transform: translateY(-800px);
+    opacity: 1;
+  }
+  25% {
+    width: 600px;
+    height: 600px;
+    filter: blur(13px);
+  }
+  50% {
+    width: 700px;
+    height: 700px;
+    filter: blur(23px);
+  }
+  75% {
+    width: 600px;
+    height: 600px;
+    filter: blur(13px);
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    filter: blur(23px);
+    width: 700px;
+    height: 700px;
+    -webkit-transform: translateY(4000px);
+    transform: translateY(4000px);
+    opacity: 0;
+  }
+}
+@media screen and (max-width: 450px) {
+  .particleContainer {
+    display: none;
+  }
+}

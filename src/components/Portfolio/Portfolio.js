@@ -11,7 +11,6 @@ const Portfolio = () => {
   const sectionRef = useRef();
   const isInViewportOnce = useIsInViewportOnce(sectionRef);
   const [modal, setModal] = useState(false);
-  console.log(String(isInViewportOnce));
   return (
     <>
       <Modal openModal={modal} fnCloseModal={() => setModal(false)}>
