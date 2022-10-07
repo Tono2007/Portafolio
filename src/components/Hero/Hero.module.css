@@ -21,6 +21,7 @@
   font-weight: 100;
   letter-spacing: 2px;
   color: var(--textSecondary);
+  animation-delay: 0.4s;
 }
 
 .hero h1 {
@@ -48,6 +49,7 @@
   display: flex;
   justify-content: space-between;
   margin-top: 5%;
+  -webkit-perspective: 1000;
 }
 .socialContainer {
   display: flex;
@@ -113,6 +115,15 @@
   object-fit: cover;
   composes: bgPattern from global;
   background-size: 50px 50px;
+}
+
+.slideIn {
+  /* composes: slideAnimation; */
+  composes: useSlideAnimation from global;
+  animation-delay: 0.2s;
+}
+.slideIn:nth-child(2) {
+  animation-delay: 0.5s;
 }
 
 @media screen and (max-width: 1150px) {

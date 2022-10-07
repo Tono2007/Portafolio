@@ -1,10 +1,13 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { Typewriter } from 'react-simple-typewriter';
 import hero from '../../assets/hero8.svg';
 import styles from './Hero.module.css';
 import { constants } from '../../utils/constants';
+import useIsInViewport from '../../utils/hooks/useIsInViewport';
 
 function Hero() {
+  const titleRef = useRef();
+  const isInViewport = useIsInViewport(titleRef);
   const [activeNav, setActiveNav] = useState(false);
   useEffect(() => {
     function handleScroll() {
@@ -19,6 +22,7 @@ function Hero() {
         activeNav ? `${styles.hero} ${styles.heroActive}` : styles.hero
       }
       id="home"
+      ref={titleRef}
     >
       {/*       <div className={styles.boxP}>ss</div>
       <div className={styles.boxS}>f</div> */}
@@ -26,7 +30,11 @@ function Hero() {
        */}{' '}
       <div className={styles.heroContainer}>
         <div className={styles.heroLeft}>
-          <h3>¡HOLA MUNDO!</h3>
+          <h3
+            className={isInViewport ? 'useSlideInLeft' : 'useSlideInLeftEnter'}
+          >
+            ¡HOLA MUNDO!
+          </h3>
           <h1>
             Hi, I&#39;m <span>Antonio Ayola</span>
           </h1>
@@ -55,7 +63,7 @@ function Hero() {
             productos digitales innovadores centrados en el usuario. */}
           </p>
           <div className={styles.socialSkills}>
-            <div className="col_1">
+            <div className={`col_1 ${isInViewport ? styles.slideIn : ''}`}>
               <h4>ENCUENTRAME AQUI</h4>
               <div className={styles.socialContainer}>
                 <a
@@ -87,7 +95,7 @@ function Hero() {
                 </a>
               </div>
             </div>
-            <div className="col_1">
+            <div className={`col_1 ${isInViewport ? styles.slideIn : ''}`}>
               <h4>APRENDIENDO</h4>
               <figure className={styles.skillBtn}>
                 <img
