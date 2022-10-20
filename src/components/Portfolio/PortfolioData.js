@@ -53,12 +53,13 @@ const data = [
       'BEM',
       'SwiperJs',
       'Github Pages',
+      'Github Actions',
       'Responsive',
       'HTML',
       'CSS',
       'JS',
     ],
-    desc: `Este proyecto es una landing page con tematica de carros algo simple, me sirvio principalmente para practicar y entender mejor webpack, antes de pasar a Vite D:
+    desc: `Este proyecto es una landing page con tematica de carros algo simple, me sirvio principalmente para practicar y entender mejor webpack, antes de pasar a esbuild con Vite D:
     Tambien para ver como funciona sass junto con la metodologia BEM, implementar un efecto parallax de otra manera y un slider con SwiperJs.
     Esta vez lo subi a Github Pages, usando github actions, creando un pequeño workflow que crea el build y lo mueve a la rama de gh-pages para el deploy.`,
     links: {
@@ -89,7 +90,7 @@ const data = [
     ],
     desc: `Este proyecto es un sitio web para navegar entre peliculas y ver detalles de cada una. 
     Ayudandonos de material-ui(mui) para el diseño y la API de TheMovieDataBase TMDB para obtener información de las peliculas.
-    Fue un proyecto complicado, por el manejo de los datos, principalmente la seccion del buscador.
+    Fue un proyecto complicado, por el manejo de los datos, principalmente la seccion del buscador; ademas de que el diseño fue completamente pensado por mi.
     Falta terminar la pestaña de actores y series que seria muy parecida a la de peliculas.
     El despliegue del sitio esta en vercel, se guarda la clave de la api en variables de ambiente.
     `,
@@ -98,7 +99,6 @@ const data = [
       page: 'https://movies-app-tono2007.vercel.app',
     },
   },
-
   {
     id: 4,
     year: '2022',

@@ -247,9 +247,18 @@ function Studies() {
           <a
             target="_blank"
             rel="noreferrer noopener"
-            href={constants.cursos.IntroduccionAPIRest}
+            href={constants.cursos.introduccionAPIRest}
           >
             • Curso de Introducción a API REST - EDTeam
+          </a>
+        </li>
+        <li>
+          <a
+            target="_blank"
+            rel="noreferrer noopener"
+            href={constants.cursos.git}
+          >
+            • Curso de GIT - Udemy
           </a>
         </li>
         {/*  <li>
