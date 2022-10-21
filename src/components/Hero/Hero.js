@@ -67,6 +67,7 @@ function Hero() {
               <h4>ENCUENTRAME AQUI</h4>
               <div className={styles.socialContainer}>
                 <a
+                  title="github contact"
                   href={constants.profilesUrls.github}
                   className={styles.socialBtn}
                   target="_blank"
@@ -76,6 +77,7 @@ function Hero() {
                   <i className="fa-brands fa-github" />
                 </a>
                 <a
+                  title="Linkedin contact"
                   href={constants.profilesUrls.linkedin}
                   className={styles.socialBtn}
                   target="_blank"
@@ -85,6 +87,7 @@ function Hero() {
                   <i className="fa-brands fa-linkedin-in" />
                 </a>
                 <a
+                  title="Facebook contact"
                   href={constants.profilesUrls.facebook}
                   className={styles.socialBtn}
                   target="_blank"

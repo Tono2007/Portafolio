@@ -1,8 +1,8 @@
-import data from '../Blog/BlogData';
 import styles from './styles.module.css';
 import Card from './Card';
+import data from '../Blog/BlogData';
 
-function Index() {
+function AllBlogPosts() {
   return (
     <section className={styles.allBlog}>
       <div className="container">
@@ -23,4 +23,4 @@ function Index() {
   );
 }
 
-export default Index;
+export default AllBlogPosts;

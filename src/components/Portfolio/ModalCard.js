@@ -22,6 +22,7 @@ function ModalCard({ project }) {
         <div className={styles.modalActions}>
           {links.code && (
             <a
+              title="github code"
               className={styles.actionBtn}
               href={links.code}
               target="_blank"
@@ -32,6 +33,7 @@ function ModalCard({ project }) {
           )}
           {links.page && (
             <a
+              title="view project"
               className={styles.actionBtn}
               href={links.page}
               target="_blank"

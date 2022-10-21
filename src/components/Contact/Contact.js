@@ -93,6 +93,7 @@ const Contact = () => {
               <p>
                 Numero:{' '}
                 <a
+                  title="contact number whatsapp"
                   href={constants.profilesUrls.whatsapp}
                   target="_blank"
                   rel="noreferrer noopener"
@@ -103,6 +104,7 @@ const Contact = () => {
               <p>
                 Correo:{' '}
                 <a
+                  title="contact email"
                   href={`mailto: ${constants.profilesUrls.email}`}
                   target="_blank"
                   rel="noreferrer noopener"
@@ -115,6 +117,7 @@ const Contact = () => {
               <span> CONTÁCTAME AQUÍ</span>
               <div className={styles.socialContainer}>
                 <a
+                  title="contact facebook"
                   href={constants.profilesUrls.facebook}
                   className="btnShadow"
                   target="_blank"
@@ -123,6 +126,7 @@ const Contact = () => {
                   <i className="fa-brands fa-facebook-f" />
                 </a>
                 <a
+                  title="contact github"
                   href={constants.profilesUrls.github}
                   className="btnShadow"
                   target="_blank"
@@ -131,6 +135,7 @@ const Contact = () => {
                   <i className="fa-brands fa-github" />
                 </a>
                 <a
+                  title="contact linkedin"
                   href={constants.profilesUrls.linkedin}
                   className="btnShadow"
                   target="_blank"
@@ -139,6 +144,7 @@ const Contact = () => {
                   <i className="fa-brands fa-linkedin-in" />
                 </a>
                 <a
+                  title="contact whatsapp"
                   href={constants.profilesUrls.whatsapp}
                   className="btnShadow"
                   target="_blank"

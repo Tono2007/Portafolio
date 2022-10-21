@@ -92,42 +92,58 @@ const Header = () => {
           </button>
           <ul className={styles.navLinks}>
             <li className="home">
-              <a href="#!" onClick={() => handleLink('home')}>
+              <a title="inicio" href="#!" onClick={() => handleLink('home')}>
                 inicio
               </a>
             </li>
             <li className="features">
-              <a href="#!" onClick={() => handleLink('features')}>
+              <a
+                title="habilidades"
+                href="#!"
+                onClick={() => handleLink('features')}
+              >
                 habilidades
               </a>
             </li>
             <li className="portfolio">
-              <a href="#!" onClick={() => handleLink('portfolio')}>
+              <a
+                title="portafolio"
+                href="#!"
+                onClick={() => handleLink('portfolio')}
+              >
                 portafolio
               </a>
             </li>
             <li className="about">
-              <a href="#!" onClick={() => setModal(true)}>
+              <a title="SOBRE MI" href="#!" onClick={() => setModal(true)}>
                 SOBRE MI
               </a>
             </li>
             <li className="clients">
-              <a href="#!" onClick={() => handleLink('clients')}>
+              <a
+                title="Recomendaciones"
+                href="#!"
+                onClick={() => handleLink('clients')}
+              >
                 Recomendaciones
               </a>
             </li>
             <li className="blog">
-              <a href="#!" onClick={() => handleLink('blog')}>
+              <a title="blog" href="#!" onClick={() => handleLink('blog')}>
                 blog
               </a>
             </li>
             <li className="contact">
-              <a href="#!" onClick={() => handleLink('contact')}>
+              <a
+                title="contacto"
+                href="#!"
+                onClick={() => handleLink('contact')}
+              >
                 contacto
               </a>
             </li>
             <li>
-              <a href="#!" onClick={() => handleOpen()}>
+              <a title="config" href="#!" onClick={() => handleOpen()}>
                 <i className={styles.cogBtn} title="Theme Config" />
               </a>
             </li>
@@ -170,22 +186,31 @@ const Header = () => {
               }`}
             >
               <li className="home">
-                <a href="#!" onClick={() => handleLink('home')}>
+                <a title="inicio" href="#!" onClick={() => handleLink('home')}>
                   inicio
                 </a>
               </li>
               <li className="features">
-                <a href="#!" onClick={() => handleLink('features')}>
+                <a
+                  title="habilidades"
+                  href="#!"
+                  onClick={() => handleLink('features')}
+                >
                   habilidades
                 </a>
               </li>
               <li className="portfolio">
-                <a href="#!" onClick={() => handleLink('portfolio')}>
+                <a
+                  title="portafolio"
+                  href="#!"
+                  onClick={() => handleLink('portfolio')}
+                >
                   portafolio
                 </a>
               </li>
               <li className="about">
                 <a
+                  title="sobre mi"
                   href="#!"
                   onClick={() => {
                     setMobile(false);
@@ -195,23 +220,31 @@ const Header = () => {
                   sobre mi
                 </a>
               </li>
-              <li className="clients">
-                <a href="#!" onClick={() => handleLink('clients')}>
+              <li className="Recomendaciones">
+                <a
+                  title="contacto"
+                  href="#!"
+                  onClick={() => handleLink('clients')}
+                >
                   Recomendaciones
                 </a>
               </li>
               <li className="blog">
-                <a href="#!" onClick={() => handleLink('blog')}>
+                <a title="blog" href="#!" onClick={() => handleLink('blog')}>
                   blog
                 </a>
               </li>
               <li className="contact">
-                <a href="#!" onClick={() => handleLink('contact')}>
+                <a
+                  title="contacto"
+                  href="#!"
+                  onClick={() => handleLink('contact')}
+                >
                   contacto
                 </a>
               </li>
               <li>
-                <a href="#!" onClick={() => handleOpen()}>
+                <a title="config" href="#!" onClick={() => handleOpen()}>
                   <i className={styles.cogBtn} title="Theme Config" />
                 </a>
               </li>

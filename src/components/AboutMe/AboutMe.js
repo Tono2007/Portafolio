@@ -118,8 +118,11 @@ function About() {
           src="https://img.icons8.com/ios/20/000000/rubiks-cube.png"
           alt="rubik"
         />{' '}
-        , hacer <a href={constants.profilesUrls.instagram}> origami</a> 🪁 y
-        jugar videojuegos 🎮.
+        , hacer{' '}
+        <a href={constants.profilesUrls.instagram} title="Instagram Profile">
+          origami
+        </a>{' '}
+        🪁 y jugar videojuegos 🎮.
       </p>
     </div>
   );
@@ -134,7 +137,7 @@ function Skills() {
           <a
             className={styles.a}
             href={skill.href}
-            alt=" "
+            title={`${skill.name} Site`}
             target="_blank"
             rel="noreferrer noopener"
           >
@@ -172,6 +175,7 @@ function Studies() {
       <ul className={styles.studiesContainer}>
         <li>
           <a
+            title="Certificado Ingles"
             target="_blank"
             rel="noreferrer noopener"
             href={constants.cursos.inglesB1}
@@ -181,6 +185,7 @@ function Studies() {
         </li>
         <li>
           <a
+            title="Titulo Ing. en Software"
             target="_blank"
             rel="noreferrer noopener"
             href={constants.cursos.ingSoftware}
@@ -190,6 +195,7 @@ function Studies() {
         </li>
         <li>
           <a
+            title="Certificado Frontend"
             target="_blank"
             rel="noreferrer noopener"
             href={constants.cursos.frontendDeveloper}
@@ -199,6 +205,7 @@ function Studies() {
         </li>
         <li>
           <a
+            title="Certificado SCRUM"
             target="_blank"
             rel="noreferrer noopener"
             href={constants.cursos.scrum}
@@ -208,6 +215,7 @@ function Studies() {
         </li>
         <li>
           <a
+            title="Certificado Ingles"
             target="_blank"
             rel="noreferrer noopener"
             href={constants.cursos.inglesC1}
@@ -218,6 +226,7 @@ function Studies() {
         </li>
         <li>
           <a
+            title="Certificado Fundamentos ing."
             target="_blank"
             rel="noreferrer noopener"
             href={constants.cursos.ingDeSoftware}
@@ -227,6 +236,7 @@ function Studies() {
         </li>
         <li>
           <a
+            title="Certificado Algoritmos"
             target="_blank"
             rel="noreferrer noopener"
             href={constants.cursos.algoritmosPensamientoLogico}
@@ -236,6 +246,7 @@ function Studies() {
         </li>
         <li>
           <a
+            title="Certificado Computación"
             target="_blank"
             rel="noreferrer noopener"
             href={constants.cursos.computacionBasica}
@@ -245,6 +256,7 @@ function Studies() {
         </li>
         <li>
           <a
+            title="Certificado API REST"
             target="_blank"
             rel="noreferrer noopener"
             href={constants.cursos.introduccionAPIRest}
@@ -254,6 +266,7 @@ function Studies() {
         </li>
         <li>
           <a
+            title="Certificado GIT"
             target="_blank"
             rel="noreferrer noopener"
             href={constants.cursos.git}
@@ -312,6 +325,7 @@ function AboutMe() {
             />
             <h1>{'<Antonio Ayola/>'}</h1>
             <a
+              title="Buy me a coffe"
               className={styles.supportBtn}
               href={constants.profilesUrls.buymeacoffee}
               target="_blank"
