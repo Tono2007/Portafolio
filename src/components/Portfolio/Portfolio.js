@@ -1,11 +1,13 @@
-import { useState, useRef } from 'react';
+import { useState, lazy, Suspense, useRef } from 'react';
+
+import PortfolioData from './PortfolioData';
+import useIsInViewportOnce from '../../utils/hooks/useIsInViewportOnce';
+import styles from './Portfolio.module.css';
 
 import Card from './Card';
-import PortfolioData from './PortfolioData';
-import styles from './Portfolio.module.css';
-import AllPortfolioProjects from '../AllPortfolioProjects';
 import Modal from '../Modal/Modal';
-import useIsInViewportOnce from '../../utils/hooks/useIsInViewportOnce';
+
+const AllPortfolioProjects = lazy(() => import('../AllPortfolioProjects'));
 
 const Portfolio = () => {
   const sectionRef = useRef();
@@ -14,7 +16,9 @@ const Portfolio = () => {
   return (
     <>
       <Modal openModal={modal} fnCloseModal={() => setModal(false)}>
-        <AllPortfolioProjects />
+        <Suspense fallback={<p className="loadingLabel">Cargando...</p>}>
+          <AllPortfolioProjects />
+        </Suspense>
       </Modal>
       <section className={styles.portafolio} id="portfolio" ref={sectionRef}>
         <div className="container">

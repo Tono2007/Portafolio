@@ -21,7 +21,6 @@ const categories = [
 function Index() {
   const [activeSection, setActiveSection] = useState(0);
   const [projectsList, setProjectsList] = useState(PortfolioData);
-  const [SearchList, setSearchList] = useState([]);
 
   function filterProjects(category) {
     if (category !== 'TODOS') {
@@ -96,7 +95,7 @@ function Index() {
               timeout={500}
               classNames="transition"
             >
-              <Card key={index} project={project} />
+              <Card key={project.id} project={project} />
             </CSSTransition>
           ))}
         </TransitionGroup>

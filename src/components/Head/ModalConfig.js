@@ -3,7 +3,6 @@ import styles from './ModalConfig.module.css';
 
 function ModalConfig() {
   const [mode, setMode] = useState(false);
-
   useEffect(() => {
     const r = document.querySelector(':root');
     const rs = getComputedStyle(r);

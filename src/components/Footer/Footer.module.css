@@ -72,6 +72,14 @@
 .modalContent {
   height: 85vh;
 }
+.visitas {
+  font-size: 0.7rem;
+}
+.visitas img {
+  margin-left: 7px;
+  width: auto;
+  height: 10px;
+}
 
 @keyframes up {
   0% {

@@ -129,6 +129,18 @@ p {
   }
 }
 
+:global .loadingLabel {
+  position: fixed;
+  text-align: center;
+  font-size: 2rem;
+  color: var(--textPrimary);
+  top: 30%;
+  width: 100vw;
+  z-index: 999999;
+  padding: 1rem;
+  background: var(--backgroundPrimary);
+}
+
 textarea,
 input {
   transition: 0.1s;

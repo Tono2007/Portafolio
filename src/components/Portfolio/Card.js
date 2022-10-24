@@ -1,7 +1,10 @@
-import { useState } from 'react';
-import styles from './Portfolio.module.css';
+import { useState, memo, lazy, Suspense } from 'react';
+
 import Modal from '../Modal/Modal';
-import ModalCard from './ModalCard';
+
+import styles from './Portfolio.module.css';
+
+const ModalCard = lazy(() => import('./ModalCard'));
 
 const Card = ({ project }) => {
   const { id, category, date, title, image } = project;
@@ -16,7 +19,9 @@ const Card = ({ project }) => {
         fnCloseModal={() => setModal(false)}
         styleContent={styles.modalContent}
       >
-        <ModalCard project={project} />
+        <Suspense fallback={<p className="loadingLabel">Cargando...</p>}>
+          <ModalCard project={project} />
+        </Suspense>
       </Modal>
       <article role="presentation">
         <button
@@ -48,4 +53,4 @@ const Card = ({ project }) => {
   );
 };
 
-export default Card;
+export default memo(Card);

@@ -1,13 +1,19 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, memo } from 'react';
 
 import styles from './Modal.module.css';
 
 function Modal(props) {
-  const [modal, setModal] = useState(true);
-  const { openModal, fnCloseModal, styleContent, styleOverlay } = props;
+  const {
+    openModal = false,
+    fnCloseModal,
+    styleContent = '',
+    styleOverlay = '',
+    children,
+  } = props;
+  const [modal, setModal] = useState(openModal);
 
   useEffect(() => {
-    openModal && openModalHandler();
+    if (openModal) openModalHandler();
   }, [openModal]);
 
   const openModalHandler = () => {
@@ -21,6 +27,8 @@ function Modal(props) {
     body[0].classList.remove('hideScroll');
   };
 
+  if (!openModal) return null;
+
   return (
     openModal && (
       <div className={styles.modal}>
@@ -30,7 +38,7 @@ function Modal(props) {
           role="none"
         />
         <div className={`${styles.modalContent} ${styleContent}`}>
-          {props.children}
+          {children}
           <div className={styles.btnWrapper}>
             <button
               className={styles.closeBtn}
@@ -45,8 +53,6 @@ function Modal(props) {
       </div>
     )
   );
-  // eslint-disable-next-line no-unreachable
-  return null;
 }
 
-export default Modal;
+export default memo(Modal);

@@ -1,7 +1,9 @@
-import { useState } from 'react';
-import styles from './styles.module.css';
+import { useState, memo, lazy, Suspense } from 'react';
 import Modal from '../Modal/Modal';
-import ModalCard from '../Blog/ModalCard';
+
+import styles from './styles.module.css';
+
+const ModalCard = lazy(() => import('../Blog/ModalCard'));
 
 function Card({ data }) {
   const [modal, setModal] = useState(false);
@@ -17,7 +19,9 @@ function Card({ data }) {
         fnCloseModal={() => setModal(false)}
         styleContent={styles.modalContent}
       >
-        <ModalCard data={data} />
+        <Suspense fallback={<p className="loadingLabel">Cargando...</p>}>
+          <ModalCard data={data} />
+        </Suspense>
       </Modal>
       <div
         className={styles.card}
@@ -54,4 +58,4 @@ function Card({ data }) {
   );
 }
 
-export default Card;
+export default memo(Card);

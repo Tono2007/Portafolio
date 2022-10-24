@@ -1,15 +1,17 @@
-import { useState, useEffect } from 'react';
-import logo1 from '../../assets/logo_fondo_blanco_4.png';
-import styles from './Header.module.css';
-
-import Modal from '../Modal/Modal';
-import AboutMe from '../AboutMe/AboutMe';
+import { useState, lazy, Suspense, useEffect } from 'react';
 
 import scrollTop from '../../utils/helpers/scrollTop';
 import useToggle from '../../utils/hooks/useToggle';
 import useScrollInto from '../../utils/hooks/useScrollInto';
 import useScrollSpy from '../../utils/hooks/useScrollSpy';
-import ModalConfig from './ModalConfig';
+
+import logo1 from '../../assets/logo_fondo_blanco_4.png';
+import styles from './Header.module.css';
+
+import Modal from '../Modal/Modal';
+
+const ModalConfig = lazy(() => import('./ModalConfig'));
+const AboutMe = lazy(() => import('../AboutMe/AboutMe'));
 
 const Header = () => {
   const [modal, setModal] = useState(false);
@@ -28,7 +30,7 @@ const Header = () => {
     }
     window.addEventListener('scroll', handleScroll);
 
-    window.addEventListener('beforeinstallprompt', (event) => {
+    function handlePWAInit(event) {
       // Prevent the mini-infobar from appearing on mobile.
       /* event.preventDefault(); */
       console.log('👍', 'beforeinstallprompt', event);
@@ -36,8 +38,13 @@ const Header = () => {
       window.deferredPrompt = event;
       // Remove the 'hidden' class from the install button container.
       setIsReadyForInstall(true);
-    });
-    return () => window.removeEventListener('scroll', handleScroll);
+    }
+
+    window.addEventListener('beforeinstallprompt', handlePWAInit);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener('beforeinstallprompt', handlePWAInit);
+    };
   }, []);
 
   const toogleMobileNav = () => {
@@ -75,16 +82,18 @@ const Header = () => {
 
   return (
     <>
-      <Modal openModal={modal} fnCloseModal={() => setModal(false)}>
-        <AboutMe />
-      </Modal>
-      <Modal
-        openModal={open}
-        fnCloseModal={() => handleClose()}
-        styleOverlay={styles.modalContentConfigOverlay}
-      >
-        <ModalConfig />
-      </Modal>
+      <Suspense fallback={<p className="loadingLabel">Cargando...</p>}>
+        <Modal openModal={modal} fnCloseModal={() => setModal(false)}>
+          <AboutMe />
+        </Modal>
+        <Modal
+          openModal={open}
+          fnCloseModal={() => handleClose()}
+          styleOverlay={styles.modalContentConfigOverlay}
+        >
+          <ModalConfig />
+        </Modal>
+      </Suspense>
       <header className={activeNav ? styles.headerActive : styles.header}>
         <nav className={styles.nav}>
           <button type="button" onClick={scrollTop}>

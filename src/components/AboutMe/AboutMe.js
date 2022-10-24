@@ -133,8 +133,9 @@ function Skills() {
     <>
       <h2>Habilidades – Tecnologías - Herramientas</h2>
       <div className={styles.skillsContainer}>
-        {skills.map((skill) => (
+        {skills.map((skill, index) => (
           <a
+            key={index}
             className={styles.a}
             href={skill.href}
             title={`${skill.name} Site`}

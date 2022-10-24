@@ -1,4 +1,4 @@
-import { useState, useRef } from 'react';
+import { useState, useRef, lazy, Suspense } from 'react';
 import styles from './Blog.module.css';
 import data from './BlogData';
 
@@ -6,7 +6,8 @@ import useIsInViewportOnce from '../../utils/hooks/useIsInViewportOnce';
 
 import Card from './Card';
 import Modal from '../Modal/Modal';
-import AllBlogPosts from '../AllBlogPosts';
+
+const AllBlogPosts = lazy(() => import('../AllBlogPosts'));
 
 const Blog = () => {
   const sectionRef = useRef();
@@ -20,7 +21,9 @@ const Blog = () => {
         fnCloseModal={() => setModal(false)}
         styleContent={styles.modalContentAB}
       >
-        <AllBlogPosts />
+        <Suspense fallback={<p className="loadingLabel">Cargando...</p>}>
+          <AllBlogPosts />
+        </Suspense>
       </Modal>
       <section className={styles.blog} id="blog" ref={sectionRef}>
         <div className="container">

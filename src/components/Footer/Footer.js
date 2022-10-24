@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, lazy, Suspense } from 'react';
 import logo1 from '../../assets/logo_fondo_blanco_1.png';
 import line from '../../assets/llline.svg';
 
@@ -6,7 +6,8 @@ import styles from './Footer.module.css';
 import scrollTop from '../../utils/helpers/scrollTop';
 
 import Modal from '../Modal/Modal';
-import AboutMe from '../AboutMe/AboutMe';
+
+const AboutMe = lazy(() => import('../AboutMe/AboutMe'));
 
 const Footer = () => {
   const [modal, setModal] = useState(false);
@@ -18,7 +19,9 @@ const Footer = () => {
         fnCloseModal={() => setModal(false)}
         styleContent={styles.modalContent}
       >
-        <AboutMe />
+        <Suspense fallback={<p className="loadingLabel">Cargando...</p>}>
+          <AboutMe />
+        </Suspense>
       </Modal>
       <footer className={styles.footer}>
         <div className={styles.footerContainer}>
@@ -46,6 +49,15 @@ const Footer = () => {
             <i className="fas fa-angle-double-up" />
           </button>
         </div>
+        <p className={styles.visitas}>
+          Num. Visitas
+          <img
+            src="https://counter1.stat.ovh/private/contadorvisitasgratis.php?c=1am2er4yl9uq6du4qfz5hdqc3enw75xt"
+            border="0"
+            title="contador de visitas"
+            alt="contador de visitas"
+          />
+        </p>
       </footer>
     </>
   );
