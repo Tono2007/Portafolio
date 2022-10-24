@@ -22,11 +22,11 @@ const Slide = ({ valueIndex, index, dataLength, data }) => {
       <div className={styles.left}>
         <div className={styles.slideImg}>
           {/* <img src={img('./testimonial/appdt.jpg').default} alt="fsf" /> */}
-          <img src={img} alt="company" />
+          <img width="300px" height="300px" src={img} alt="company" />
         </div>
         <div className={styles.details}>
           <span>{company}</span>
-          <h2>{name}</h2>
+          <h4>{name}</h4>
           <p>{level}</p>
         </div>
       </div>
@@ -35,8 +35,8 @@ const Slide = ({ valueIndex, index, dataLength, data }) => {
           <i className="fas fa-quote-right" />
         </div>
         <div className={styles.content}>
-          <h1>{work}</h1>
-          <h3>{date}</h3>
+          <h3>{work}</h3>
+          <h4>{date}</h4>
           <p>{testimony}</p>
         </div>
       </div>

@@ -77,17 +77,17 @@
 }
 .visitas img {
   margin-left: 7px;
-  width: auto;
-  height: 10px;
+  width: 35px;
+  height: auto;
 }
 
 @keyframes up {
   0% {
-    top: 0;
+    transform: translateY(0);
   }
 
   100% {
-    top: -15px;
+    transform: translateY(-40px);
   }
 }
 

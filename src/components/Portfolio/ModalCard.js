@@ -8,7 +8,7 @@ function ModalCard({ project }) {
   return (
     <div className={styles.modalContainer}>
       <div className={styles.modalImg}>
-        <img src={img} alt="" />
+        <img width="500px" height="500px" src={img} alt="" />
       </div>
       <div className={styles.modalText}>
         <span>

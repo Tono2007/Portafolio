@@ -2,7 +2,7 @@ import { useState, useRef } from 'react';
 import styles from './Contact.module.css';
 import { constants } from '../../utils/constants';
 import useIsInViewportOnce from '../../utils/hooks/useIsInViewportOnce';
-import me from '../../assets/me.jpg';
+import me from '../../assets/me.webp';
 
 const Contact = () => {
   const sectionRef = useRef();
@@ -80,7 +80,12 @@ const Contact = () => {
         <div className={styles.left}>
           <div className={styles.box}>
             <div className={styles.img}>
-              <img src={me} alt="antonio Ayola Profile" />
+              <img
+                width="300px"
+                height="400px"
+                src={me}
+                alt="antonio Ayola Profile"
+              />
             </div>
             <div className={styles.details}>
               <h1>Juan Antonio Ayola Cortes</h1>

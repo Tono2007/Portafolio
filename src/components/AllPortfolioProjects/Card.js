@@ -27,7 +27,7 @@ const Card = ({ project }) => {
           <span>{category}</span>
         </div>
         <div className={styles.img}>
-          <img src={img} alt="" />
+          <img width="300px" height="300px" src={img} alt="" />
         </div>
 
         <span className={styles.date}>

@@ -1,9 +1,9 @@
-import user from '../../assets/testimonial/appdt.jpg';
+/* import user from '../../assets/testimonial/appdt.webp'; */
 
 const data = [
   {
     id: 0,
-    profileImg: 'appdt.jpg',
+    profileImg: 'appdt.webp',
     company: 'APPDT Software',
     name: 'Ing. Miguel Méndez Sánchez',
     level: 'Director General',
@@ -14,7 +14,7 @@ const data = [
   },
   {
     id: 1,
-    profileImg: 'appdt.jpg',
+    profileImg: 'appdt.webp',
     company: 'APPDT Software',
     name: 'Ing. Miguel Méndez Sánchez',
     level: 'Director General',

@@ -43,6 +43,7 @@
   object-fit: cover;
   border-radius: 10px;
   min-height: 300px;
+  height: auto;
   width: 100%;
   transition: 0.5s;
 }

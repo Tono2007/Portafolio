@@ -13,7 +13,7 @@ const data = [
     date: '16/3/2022',
     category: 'WEB DESIGN',
     title: 'Mi Portafolio',
-    image: 'portafolio.png',
+    image: 'portafolio.webp',
     technologies: [
       'PWA',
       'React',
@@ -44,7 +44,7 @@ const data = [
     date: '21/3/2022',
     category: 'DEVELOPMENT',
     title: 'Cars Landing Page',
-    image: 'carsLandingPage.png',
+    image: 'carsLandingPage.webp',
     technologies: [
       'Webpack',
       'Yarn',
@@ -73,7 +73,7 @@ const data = [
     date: '10/4/2022',
     category: 'APPLICATION',
     title: 'MoviesApp',
-    image: 'movieApp.jpeg',
+    image: 'movieApp.webp',
     technologies: [
       'ReactJs',
       'Material-ui (MUI)',
@@ -105,7 +105,7 @@ const data = [
     date: '04/5/2022',
     category: 'WEB DESIGN',
     title: 'LOL-APP',
-    image: 'lolApp.png',
+    image: 'lolApp.webp',
     technologies: [
       'ReactJs',
       'Styled-Components',
@@ -136,7 +136,7 @@ const data = [
     date: '-',
     category: '-',
     title: 'Proximo Proyecto',
-    image: 'portafolioBlack.png',
+    image: 'portafolioBlack.webp',
     technologies: ['-'],
     desc: `Siguiente proyecto proximamente
     `,

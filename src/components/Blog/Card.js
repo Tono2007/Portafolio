@@ -18,7 +18,7 @@ const Card = ({ data }) => {
         fnCloseModal={() => setModal(false)}
         styleContent={styles.modalContent}
       >
-        <Suspense fallback={<p className="loadingLabel">Cargando...</p>}>
+        <Suspense fallback={null}>
           <ModalCard data={data} />
         </Suspense>
       </Modal>
@@ -31,7 +31,12 @@ const Card = ({ data }) => {
           aria-label={`Ver blog ${title}`}
         >
           <div className={styles.img}>
-            <img src={img} alt={`Banner ${title}`} />
+            <img
+              width="300px"
+              height="300px"
+              src={img}
+              alt={`Banner ${title}`}
+            />
           </div>
           <div className={styles.date}>
             <span>{date}</span>

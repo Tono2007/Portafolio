@@ -17,11 +17,12 @@
   margin-right: 5%;
 }
 
-.hero .heroLeft h3 {
+.hero .heroLeft h4 {
   font-weight: 100;
   letter-spacing: 2px;
   color: var(--textSecondary);
   animation-delay: 0.4s;
+  font-size: 1.1rem;
 }
 
 .hero h1 {
@@ -40,10 +41,11 @@
 .hero h2 span {
   color: var(--textSecondary);
 }
-.hero p {
+.hero h3 {
   color: var(--textTertiary);
   font-size: 18px;
   line-height: 30px;
+  font-weight: normal;
 }
 .socialSkills {
   display: flex;
@@ -55,7 +57,7 @@
   display: flex;
 }
 
-.socialSkills h4 {
+.socialSkills h5 {
   font-weight: 500;
   letter-spacing: 2px;
   /*  color: var(--textPrimary); */

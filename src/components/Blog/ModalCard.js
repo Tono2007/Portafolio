@@ -43,7 +43,7 @@ function ModalCard({ data }) {
       </div>
 
       <div className={styles.modalImg}>
-        <img src={img} alt="" />
+        <img width="1000px" height="500px" src={img} alt="" />
       </div>
       <div className={styles.header}>
         <div className={styles.avatar}>

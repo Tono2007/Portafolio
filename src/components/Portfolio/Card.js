@@ -32,7 +32,12 @@ const Card = ({ project }) => {
           aria-label={`Ver proyecto ${title}`}
         >
           <div className={styles.img}>
-            <img src={img} alt={`Screenshot ${title}`} />
+            <img
+              width="300px"
+              height="300px"
+              src={img}
+              alt={`Screenshot ${title}`}
+            />
           </div>
           <div className={styles.category}>
             <span>{category}</span>

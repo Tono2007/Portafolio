@@ -1,5 +1,5 @@
 import { useState, lazy, Suspense } from 'react';
-import logo1 from '../../assets/logo_fondo_blanco_1.png';
+import logo1 from '../../assets/logo_fondo_blanco_1.webp';
 import line from '../../assets/llline.svg';
 
 import styles from './Footer.module.css';
@@ -26,7 +26,7 @@ const Footer = () => {
       <footer className={styles.footer}>
         <div className={styles.footerContainer}>
           <div className="img">
-            <img src={logo1} alt="" />
+            <img width="300px" height="300px" src={logo1} alt="" />
           </div>
           <p>
             {' '}

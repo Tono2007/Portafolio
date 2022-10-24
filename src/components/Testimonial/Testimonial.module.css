@@ -88,7 +88,8 @@
 .details span {
   color: var(--primaryColor);
 }
-.details h2 {
+.details h4 {
+  font-size: 1.1rem;
   margin: 15px 0 0 0;
   color: var(--textSecondary);
 }
@@ -113,12 +114,13 @@
   margin-bottom: 20px;
 }
 
-.content h1 {
+.content h3 {
+  font-size: 1.2rem;
   font-weight: 500;
 }
 
-.content h3 {
-  font-size: 18px;
+.content h4 {
+  font-size: 16px;
   font-weight: 400;
   margin-bottom: 40px;
   color: var(--textTertiary);

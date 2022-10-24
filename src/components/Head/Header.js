@@ -5,7 +5,7 @@ import useToggle from '../../utils/hooks/useToggle';
 import useScrollInto from '../../utils/hooks/useScrollInto';
 import useScrollSpy from '../../utils/hooks/useScrollSpy';
 
-import logo1 from '../../assets/logo_fondo_blanco_4.png';
+import logo1 from '../../assets/logo_fondo_blanco_4.webp';
 import styles from './Header.module.css';
 
 import Modal from '../Modal/Modal';
@@ -97,7 +97,13 @@ const Header = () => {
       <header className={activeNav ? styles.headerActive : styles.header}>
         <nav className={styles.nav}>
           <button type="button" onClick={scrollTop}>
-            <img src={logo1} alt="<AntonioAyola/>" className={styles.logo} />
+            <img
+              width="200px"
+              height="50px"
+              src={logo1}
+              alt="<AntonioAyola/>"
+              className={styles.logo}
+            />
           </button>
           <ul className={styles.navLinks}>
             <li className="home">

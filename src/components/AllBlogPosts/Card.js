@@ -29,7 +29,7 @@ function Card({ data }) {
         role="presentation"
       >
         <div className={styles.img}>
-          <img src={img} alt="" />
+          <img width="300px" height="300px" src={img} alt="" />
         </div>
         <div className={styles.info}>
           <div className={styles.title}>
