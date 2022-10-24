@@ -1,7 +1,7 @@
 /* eslint-disable import/no-dynamic-require */
 import { useEffect, useState } from 'react';
 import styles from './ModalCard.module.css';
-import me from '../../assets/me.jpg';
+import me from '../../assets/me.webp';
 //MdComponents
 import { Link, Code } from './Renderers/Renderers';
 //Plugins
