@@ -51,6 +51,7 @@ const Testimonial = () => {
 
           <div className={styles.slideButtons}>
             <button
+              title="slide anterior"
               name="slide anterior"
               className={styles.sliderBtn}
               type="button"
@@ -59,6 +60,7 @@ const Testimonial = () => {
               <i className="fas fa-arrow-left" />
             </button>
             <button
+              tiele="slide siguiente"
               name="slide siguiente"
               className={styles.sliderBtn}
               type="button"

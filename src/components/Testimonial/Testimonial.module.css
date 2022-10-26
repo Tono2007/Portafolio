@@ -88,7 +88,7 @@
 .details span {
   color: var(--primaryColor);
 }
-.details h4 {
+.details h5 {
   font-size: 1.1rem;
   margin: 15px 0 0 0;
   color: var(--textSecondary);

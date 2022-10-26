@@ -52,6 +52,8 @@ const Footer = () => {
         <p className={styles.visitas}>
           Num. Visitas
           <img
+            width="20px"
+            height="10px"
             src="https://counter1.stat.ovh/private/contadorvisitasgratis.php?c=1am2er4yl9uq6du4qfz5hdqc3enw75xt"
             border="0"
             title="contador de visitas"

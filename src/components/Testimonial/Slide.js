@@ -26,7 +26,7 @@ const Slide = ({ valueIndex, index, dataLength, data }) => {
         </div>
         <div className={styles.details}>
           <span>{company}</span>
-          <h4>{name}</h4>
+          <h5>{name}</h5>
           <p>{level}</p>
         </div>
       </div>
