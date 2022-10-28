@@ -45,7 +45,13 @@ const Footer = () => {
           <img src={line} alt="" className={styles.svg} />
           <img src={line} alt="" className={styles.svg} />
 
-          <button type="button" className={styles.floatBtn} onClick={scrollTop}>
+          <button
+            title="Regresar arriba"
+            name="Regresar arriba"
+            type="button"
+            className={styles.floatBtn}
+            onClick={scrollTop}
+          >
             <i className="fas fa-angle-double-up" />
           </button>
         </div>

@@ -60,7 +60,7 @@ const Testimonial = () => {
               <i className="fas fa-arrow-left" />
             </button>
             <button
-              tiele="slide siguiente"
+              title="slide siguiente"
               name="slide siguiente"
               className={styles.sliderBtn}
               type="button"

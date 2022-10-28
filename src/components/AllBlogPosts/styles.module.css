@@ -28,7 +28,7 @@
   align-items: center;
   padding: 10px;
   cursor: pointer;
-  max-width: 700px;
+  max-width: 750px;
   width: 100%;
   composes: boxShadow from global;
   position: relative;

@@ -295,6 +295,8 @@ const Header = () => {
             className={styles.showMobile}
             onClick={toogleMobileNav}
             type="button"
+            title="Abrir Menu Lateral"
+            name="Abrir Menu Lateral"
           >
             <i className={Mobile ? styles.closeBtn : styles.openBtn} />
           </button>
