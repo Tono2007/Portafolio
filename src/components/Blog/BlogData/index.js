@@ -24,7 +24,7 @@ const data = [
     date: '10 de Marzo, 2022',
     banner: 'ecmascript/banner.webp',
     tags: ['js', 'javascript', 'ecmascript'],
-    md: 'ecmascript/ecmascript.webp',
+    md: 'ecmascript/ecmascript.md',
   },
   {
     id: 3,
