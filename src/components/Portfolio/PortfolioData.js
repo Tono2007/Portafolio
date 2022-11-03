@@ -93,6 +93,7 @@ const data = [
     Fue un proyecto complicado, por el manejo de los datos, principalmente la seccion del buscador; ademas de que el diseño fue completamente pensado por mi.
     Falta terminar la pestaña de actores y series que seria muy parecida a la de peliculas.
     El despliegue del sitio esta en vercel, se guarda la clave de la api en variables de ambiente.
+    Me gustaria aprender y mejorar el rendimiento en este proyecto
     `,
     links: {
       code: 'https://github.com/Tono2007/Movies-App',

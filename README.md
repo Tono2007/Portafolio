@@ -6,10 +6,10 @@ Este portafolio es una PWA, asi que puedes instalar la aplicacion en tu disposit
 
 ## **CAPTURAS**
 
-![img](src/assets/logo_fondo_blanco_4.png)
+![img](src/assets/logo_fondo_blanco_4.webp)
 
-![img](src/assets/portafolio/portafolio.png)
-![img](src/assets/portafolio/portafolioBlack.png)
+![img](src/assets/portafolio/portafolio.webp)
+![img](src/assets/portafolio/portafolioBlack.webp)
 
 ## **DEMO**
 
