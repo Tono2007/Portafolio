@@ -133,6 +133,37 @@ const data = [
   },
   {
     id: 5,
+    year: '2022',
+    date: '05/11/2022',
+    category: 'WEB DESIGN',
+    title: 'Pokedex',
+    image: 'pokedex.webp',
+    technologies: [
+      'NextJs',
+      'ReactJs',
+      'Tailwind',
+      'HTML',
+      'CSS',
+      'JS',
+      'PropTypes',
+      'Pokeapi',
+      'Vercel',
+      'Responsive',
+      'Axios',
+    ],
+    desc: `La típica aplicación pokedex que todos hacen, principalmente para practicar nextjs y tener mi primer acercamiento con tailwind y testing.
+    Simplemente muestra, busca y guarda tus pokemones ademas de secciones como generaciones y tipos.
+    Puedes encontrar imagenes, nombres y detalles de cada pokemon.
+    Me senti muy comodo con tailwind, el diseño fue totalmente creado por mi.
+    Ante la duda de agregar typescript ocupé proptypes para verificar los tipos de datos.
+    El despliegue del sitio esta en Vercel.`,
+    links: {
+      code: 'https://github.com/Tono2007/pokedex',
+      page: 'https://pokedex-tono2007.vercel.app/',
+    },
+  },
+  {
+    id: 6,
     year: '-',
     date: '-',
     category: '-',
