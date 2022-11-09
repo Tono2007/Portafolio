@@ -83,12 +83,6 @@ function Index() {
         </div>
 
         <TransitionGroup className={styles.contentGrid}>
-          {/* {data.slice(0, 3).map((post) => (
-      <Card key={post.id} data={post} />
-    ))} */}
-          {/*  {data.slice(0, 3).map((post) => (
-            <Card key={post.id} data={post} />
-          ))} */}
           {projectsList.map((project, index) => (
             <CSSTransition
               key={project.id}

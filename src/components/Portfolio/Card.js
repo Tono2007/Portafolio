@@ -17,7 +17,7 @@ const Card = ({ project }) => {
       <Modal
         openModal={modal}
         fnCloseModal={() => setModal(false)}
-        styleContent={styles.modalContent}
+        /* styleContent={styles.modalContent} */
       >
         <Suspense fallback={<p className="loadingLabel">Cargando...</p>}>
           <ModalCard project={project} />

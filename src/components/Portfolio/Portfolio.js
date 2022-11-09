@@ -15,7 +15,11 @@ const Portfolio = () => {
   const [modal, setModal] = useState(false);
   return (
     <>
-      <Modal openModal={modal} fnCloseModal={() => setModal(false)}>
+      <Modal
+        openModal={modal}
+        fnCloseModal={() => setModal(false)}
+        styleContent={styles.modalContent}
+      >
         <Suspense fallback={<p className="loadingLabel">Cargando...</p>}>
           <AllPortfolioProjects />
         </Suspense>

@@ -116,3 +116,9 @@
     right: 3%;
   }
 }
+
+.modalContent {
+  /*  min-width: 90vw;
+  min-height: 90vh; */
+  width: 100%;
+}

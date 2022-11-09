@@ -5,6 +5,7 @@
   cursor: pointer;
   position: relative;
   color: var(--textSecondary);
+  height: fit-content;
 }
 
 .img {

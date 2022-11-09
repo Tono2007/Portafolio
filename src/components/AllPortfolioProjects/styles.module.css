@@ -22,7 +22,6 @@
 
 .tagsContainer p {
   font-weight: bold;
-  margin: 4px 10px;
   color: var(--textTertiary);
 }
 
@@ -86,6 +85,8 @@
   /* display: flex;
     flex-direction: column;
     align-items: center; */
+  margin-bottom: 20rem;
+  height: 100vh;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 30px;
