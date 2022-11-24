@@ -45,7 +45,9 @@
 }
 .mainIcon i {
   font-size: 35px;
+  transition: 1s;
   color: var(--textPrimary);
+  color: var(--primaryColor);
 }
 
 .card:hover p {
@@ -54,6 +56,9 @@
 .card:hover .actionIcon i {
   color: var(--textContrast);
   opacity: 1;
+}
+.card:hover .mainIcon i {
+  color: var(--textContrast);
 }
 
 @media screen and (max-width: 900px) {
