@@ -44,7 +44,7 @@ p {
 
 :global .container {
   width: 95%;
-  max-width: 1300px;
+  max-width: 81.25rem;
   margin: auto;
   position: relative;
 }
@@ -56,12 +56,12 @@ p {
 :global .boxShadow {
   background: var(--gradientPaper);
   box-shadow: var(--boxShadow);
-  border-radius: 10px;
+  border-radius: .625rem;
 }
 
 :global .btnShadow {
-  padding: 18px 25px;
-  border-radius: 6px;
+  padding: 1.125rem 1.5625rem;
+  border-radius: .375rem;
   transition: 0.5s all ease;
   cursor: pointer;
   color: var(--textSecondary);
@@ -72,16 +72,16 @@ p {
 :global .btnShadow:hover {
   background: var(--primaryColor);
   color: var(--textContrast);
-  transform: translateY(-10px);
+  transform: translateY(-0.625rem);
 }
 :global .btnShadow:active {
-  transform: scale(1.02) translateY(-10px);
+  transform: scale(1.02) translateY(-0.625rem);
   background: var(--primaryDark);
 }
 
 :global .smallBtnShadow {
-  padding: 10px 15px;
-  border-radius: 6px;
+  padding: .625rem .9375rem;
+  border-radius: .375rem;
   transition: 0.5s all ease;
   cursor: pointer;
   color: var(--textSecondary);
@@ -91,19 +91,19 @@ p {
 :global .smallBtnShadow:hover {
   background: var(--primaryColor);
   color: var(--textContrast);
-  transform: translateY(-10px);
+  transform: translateY(-0.625rem);
 }
 :global .smallBtnShadow:active {
-  transform: scale(1.02) translateY(-10px);
+  transform: scale(1.02) translateY(-0.625rem);
   background: var(--primaryDark);
 }
 
 :global .tag {
-  margin: 3px 10px;
-  padding: 2px 10px;
-  margin: 3px 5px;
+  margin: .1875rem .625rem;
+  padding: .125rem .625rem;
+  margin: .1875rem .3125rem;
   color: #fff;
-  border-radius: 7px;
+  border-radius: .4375rem;
   font-weight: 500;
   background: var(--primaryColor);
   box-shadow: 4px 4px 8px var(--backgroundTertiary),
@@ -111,20 +111,20 @@ p {
 }
 
 :global .heading {
-  margin: 50px 0;
+  margin: 3.125rem 0;
 }
 :global .heading h4 {
   color: var(--primaryColor);
-  letter-spacing: 2px;
+  letter-spacing: .125rem;
   font-weight: 400;
 }
 :global .heading h1 {
-  font-size: 60px;
+  font-size: 3.75rem;
   color: var(--textPrimary);
 }
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 28.125rem) {
   :global .heading h1 {
-    font-size: 50px;
+    font-size: 3.125rem;
   }
 }
 
@@ -144,19 +144,19 @@ textarea,
 input {
   transition: 0.1s;
   width: 100%;
-  padding: 20px;
-  border-radius: 5px;
+  padding: 1.25rem;
+  border-radius: .3125rem;
   outline: none;
-  border: 3px solid var(--backgroundSecondary);
+  border: .1875rem solid var(--backgroundSecondary);
   font-size: 1rem;
 }
 input:hover,
 textarea:hover {
-  border: 3px solid var(--backgroundTertiary);
+  border: .1875rem solid var(--backgroundTertiary);
 }
 input:focus,
 textarea:focus {
-  border: 3px solid var(--primaryColor);
+  border: .1875rem solid var(--primaryColor);
 }
 :global .transition-enter {
   opacity: 0;
@@ -217,8 +217,8 @@ textarea:focus {
 
 @keyframes :global(slideInFwd) {
   0% {
-    -webkit-transform: translateZ(-1400px);
-    transform: translateZ(-1400px);
+    -webkit-transform: translateZ(-87.5rem);
+    transform: translateZ(-87.5rem);
     opacity: 0;
   }
 
@@ -231,8 +231,8 @@ textarea:focus {
 
 @keyframes :global(slideInLef) {
   0% {
-    -webkit-transform: translateX(-1000px);
-    transform: translateX(-1000px);
+    -webkit-transform: translateX(-62.5rem);
+    transform: translateX(-62.5rem);
     opacity: 0;
   }
   100% {
@@ -242,7 +242,7 @@ textarea:focus {
   }
 }
 
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 25rem) {
   /* Tamaño del scroll */
   ::-webkit-scrollbar {
     width: 14px;
@@ -251,8 +251,8 @@ textarea:focus {
   /* Estilos barra (thumb) de scroll */
   ::-webkit-scrollbar-thumb {
     background-color: rgba(27, 30, 50, 0.3);
-    border-radius: 8px;
-    border: 3px solid rgba(0, 0, 0, 0);
+    border-radius: .5rem;
+    border: .1875rem solid rgba(0, 0, 0, 0);
     background-clip: padding-box;
   }
   ::-webkit-scrollbar-thumb:hover {
@@ -269,8 +269,8 @@ textarea:focus {
     background-color: rgba(27, 30, 50, 0.15);
     display: block;
     border-style: solid;
-    height: 13px;
-    max-width: 16px;
+    height: .8125rem;
+    max-width: 1rem;
   }
   /* Up */
   ::-webkit-scrollbar-button:single-button:vertical:decrement {

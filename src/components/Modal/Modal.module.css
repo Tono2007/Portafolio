@@ -30,7 +30,7 @@
   position: relative;
   z-index: 9999;
   padding: 50px;
-  border-radius: 10px;
+  border-radius: .625rem;
   overflow: auto;
   scroll-behavior: smooth;
   animation: fadeIn 0.4s ease-in 1 both;
@@ -54,24 +54,24 @@
   composes: btnShadow from global;
   color: var(--primaryColor);
   position: fixed;
-  width: 50px;
-  height: 50px;
+  width: 3.125rem;
+  height: 3.125rem;
   text-align: center;
   border-radius: 50%;
   padding: 0;
-  padding-top: 3px;
-  font-size: 20px;
+  padding-top: .1875rem;
+  font-size: 1.25rem;
   margin: 0;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 56.25rem) {
   .modalContent {
     max-height: 100vh;
     flex-direction: column;
     padding: 4%;
   }
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 56.25rem) {
   .btnWrapper {
     top: 2%;
     right: 15%;

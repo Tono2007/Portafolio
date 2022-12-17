@@ -10,6 +10,10 @@
 .footer img {
   width: 350px;
 }
+.logoImg{
+  width: 350px;
+  height: auto;
+}
 
 .svg {
   position: absolute;
@@ -94,6 +98,11 @@
 @media screen and (max-width: 450px) {
   .footer img {
     width: 200px;
+  }
+  .visitas img {
+    margin-left: 7px;
+    width: 35px;
+    height: auto;
   }
 }
 @media screen and (max-width: 850px) {

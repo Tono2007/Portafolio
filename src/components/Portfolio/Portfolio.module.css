@@ -11,38 +11,38 @@
   composes: smallBtnShadow from global;
   color: var(--primaryColor);
   position: absolute;
-  top: 110px;
+  top: 6.875rem;
   right: 3%;
 }
 
 .contentGrid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 30px;
+  grid-gap: 1.875rem;
 }
 
 .card {
   composes: boxShadow from global;
-  border-radius: 10px;
-  padding: 18px 25px;
+  border-radius: .625rem;
+  padding: 1.125rem 1.5625rem;
   cursor: pointer;
   position: relative;
 }
 
 .img {
   width: 100%;
-  max-height: 300px;
+  max-height: 18.75rem;
 
   transition: 0.5s;
   overflow: hidden;
-  border-radius: 10px;
+  border-radius: .625rem;
   box-shadow: 10px 15px 20px -15px rgba(0, 0, 0, 0.459);
 }
 
 .img img {
   object-fit: cover;
-  border-radius: 10px;
-  min-height: 300px;
+  border-radius: .625rem;
+  min-height: 18.75rem;
   height: auto;
   width: 100%;
   transition: 0.5s;
@@ -54,13 +54,13 @@
 .category {
   display: flex;
   justify-content: space-between;
-  margin: 15px 0 15px 0;
+  margin: .9375rem 0 .9375rem 0;
   text-transform: uppercase;
 }
 .category span:nth-child(1) {
   color: var(--primaryColor);
-  font-size: 13px;
-  letter-spacing: 2px;
+  font-size: .8125rem;
+  letter-spacing: .125rem;
   font-weight: 500;
 }
 .category span:nth-child(2) {
@@ -69,15 +69,15 @@
 
 .arrow {
   position: absolute;
-  right: 15px;
-  bottom: 15px;
+  right: .9375rem;
+  bottom: .9375rem;
   transform: rotate(-45deg);
   color: var(--primaryColor);
   opacity: 0;
   transition: 0.5s;
 }
 .arrow i {
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 
 .card:hover .arrow {
@@ -87,9 +87,9 @@
 .card h2 {
   color: var(--textPrimary);
   text-align: left;
-  font-size: 18px;
+  font-size: 1.125rem;
   transition: 0.5s;
-  padding-bottom: 20px;
+  padding-bottom: 1.25rem;
 }
 
 .card:hover h2 {
@@ -97,22 +97,22 @@
 }
 
 .card span i {
-  margin-right: 10px;
+  margin-right: .625rem;
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 56.25rem) {
   .contentGrid {
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 30px;
+    grid-gap: 1.875rem;
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 37.5rem) {
   .contentGrid {
     grid-template-columns: repeat(1, 1fr);
-    grid-gap: 30px;
+    grid-gap: 1.875rem;
   }
   .seeAllBtn {
-    top: 130px;
+    top: 8.125rem;
     right: 3%;
   }
 }

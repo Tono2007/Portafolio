@@ -8,8 +8,8 @@
 .heroContainer {
   composes: container from global;
   display: flex;
-  margin-top: 10px;
-  padding: 40px;
+  margin-top: .625rem;
+  padding: 2.5rem;
 }
 
 .heroLeft {
@@ -19,32 +19,32 @@
 
 .hero .heroLeft h4 {
   font-weight: 100;
-  letter-spacing: 2px;
+  letter-spacing: .125rem;
   color: var(--textSecondary);
   animation-delay: 0.4s;
   font-size: 1.1rem;
 }
 
 .hero h1 {
-  font-size: 60px;
+  font-size: 3.75rem;
   font-weight: bold;
 }
 .hero h1 span {
   color: var(--primaryColor);
 }
 .hero h2 {
-  font-size: 40px;
+  font-size: 2.5rem;
   font-weight: bold;
   color: var(--primaryColor);
-  min-height: 85px;
+  min-height: 5.3125rem;
 }
 .hero h2 span {
   color: var(--textSecondary);
 }
 .hero h3 {
   color: var(--textTertiary);
-  font-size: 18px;
-  line-height: 30px;
+  font-size: 1.125rem;
+  line-height: 1.875rem;
   font-weight: normal;
 }
 .socialSkills {
@@ -59,23 +59,23 @@
 
 .socialSkills h5 {
   font-weight: 500;
-  letter-spacing: 2px;
+  letter-spacing: .125rem;
   /*  color: var(--textPrimary); */
   color: var(--textQuaternary);
-  font-size: 15px;
-  margin: 30px 0;
+  font-size: .9375rem;
+  margin: 1.875rem 0;
 }
 
 .socialBtn {
   composes: btnShadow from global;
   margin: 0;
-  margin-right: 30px;
+  margin-right: 1.875rem;
 }
 .skillBtn {
-  margin-right: 30px;
+  margin-right: 1.875rem;
 
-  width: 63px;
-  height: 63px;
+  width: 3.9375rem;
+  height: 3.9375rem;
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -83,12 +83,12 @@
 }
 
 .socialSkills i {
-  font-size: 22px;
+  font-size: 1.375rem;
 }
 .socialSkills figure img {
   object-fit: cover;
-  width: 50px;
-  height: 50px;
+  width: 3.125rem;
+  height: 3.125rem;
 }
 .heroRight {
   width: 40%;
@@ -99,13 +99,13 @@
   transition: 0.3s;
   position: relative;
   composes: boxShadow from global;
-  border-radius: 10px;
+  border-radius: .625rem;
   width: 100%;
-  height: 500px;
+  height: 31.25rem;
 }
 .rightImg:hover {
-  top: -2px;
-  left: -2px;
+  top: -0.125rem;
+  left: -0.125rem;
   box-shadow: 14px 14px 8px var(--backgroundTertiary),
     14px -9px 8px var(--contrastBackground);
   transform: skew(0deg, 5deg);
@@ -116,7 +116,7 @@
   width: 100%;
   object-fit: cover;
   composes: bgPattern from global;
-  background-size: 50px 50px;
+  background-size: 3.125rem 3.125rem;
 }
 
 .slideIn {
@@ -128,33 +128,33 @@
   animation-delay: 0.5s;
 }
 
-@media screen and (max-width: 1150px) {
+@media screen and (max-width: 71.875rem) {
   .socialSkills {
     flex-direction: column;
   }
   .hero h2 {
-    font-size: 40px;
-    min-height: 120px;
+    font-size: 2.5rem;
+    min-height: 7.5rem;
   }
   .hero h1 {
     font-size: 50px;
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 50rem) {
   .heroLeft,
   .heroRight {
     width: 100%;
-    margin-bottom: 50px;
+    margin-bottom: 3.125rem;
   }
 
   .heroContainer {
     flex-direction: column-reverse;
-    padding: 20px;
+    padding: 1.25rem;
   }
 
   .hero h1 {
-    font-size: 40px;
+    font-size: 2.5rem;
     font-weight: bold;
   }
 

@@ -26,7 +26,13 @@ const Footer = () => {
       <footer className={styles.footer}>
         <div className={styles.footerContainer}>
           <div className="img">
-            <img width="300px" height="300px" src={logo1} alt="" />
+            <img
+              width="300px"
+              height="300px"
+              src={logo1}
+              className={styles.logoImg}
+              alt=""
+            />
           </div>
           <p>
             {' '}

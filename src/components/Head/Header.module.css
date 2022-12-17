@@ -4,7 +4,7 @@
 
 .headerActive {
   height: 12vh;
-  max-height: 100px;
+  max-height: 6.25rem;
   position: fixed;
   top: 0;
   z-index: 1000;
@@ -28,10 +28,10 @@ nav li a::after {
   content: '';
   position: absolute;
   bottom: 0;
-  border-radius: 25px;
+  border-radius: 1.5625rem;
   left: 0;
   width: 0;
-  height: 2px;
+  height: .125rem;
   background: var(--primaryColor);
 }
 :global nav li.active a::after {
@@ -42,9 +42,9 @@ nav li a::after {
 }
 
 .logo {
-  margin-top: 10px;
+  margin-top: .625rem;
   width: auto;
-  height: 45px;
+  height: 2.8125rem;
   cursor: pointer;
 }
 
@@ -56,21 +56,21 @@ nav li a::after {
 }
 .navLinks li {
   position: relative;
-  margin-left: 30px;
+  margin-left: 1.875rem;
 }
 
 .navLinks li a {
   transition: 0.5s;
-  font-size: 13px;
+  font-size: .8125rem;
   font-weight: 500;
-  letter-spacing: 1px;
+  letter-spacing: .0625rem;
 }
 
 .navLinks li a:hover {
   color: var(--primaryColor);
 }
 .cogBtn {
-  font-size: 18px;
+  font-size: 1.125rem;
   composes: fas fa-cog from global;
   animation-name: rotation;
   animation-duration: 3.5s;
@@ -91,8 +91,8 @@ nav li a::after {
 }
 
 .homeBtn {
-  padding: 18px 25px;
-  border-radius: 6px;
+  padding: 1.125rem 1.5625rem;
+  border-radius: .375rem;
   transition: 0.3s all ease;
   cursor: pointer;
   height: fit-content;
@@ -126,10 +126,10 @@ nav li a::after {
 .navMobileLinks li {
   width: 100%;
   transition: 0.5s;
-  line-height: 65px;
+  line-height: 4.0625rem;
 }
 .navMobileLinks li a::after {
-  max-width: 100px;
+  max-width: 6.25rem;
 }
 
 .showMobile {
@@ -139,7 +139,7 @@ nav li a::after {
   transition: 0.5s;
   position: absolute;
   color: var(--primaryColor);
-  font-size: 25px;
+  font-size: 1.5625rem;
   z-index: 999;
   composes: showMobile;
 }
@@ -147,8 +147,8 @@ nav li a::after {
 .openBtn {
   composes: fas fa-bars from global;
   composes: mobileBtns;
-  top: 35px;
-  right: 30px;
+  top: 2.1875rem;
+  right: 1.875rem;
   cursor: pointer;
 }
 .closeBtn {
@@ -156,20 +156,20 @@ nav li a::after {
   composes: homeBtn mobileBtns;
   border-radius: 50%;
   padding: 0;
-  width: 60px;
-  height: 60px;
-  line-height: 60px;
-  top: 35px;
+  width: 3.75rem;
+  height: 3.75rem;
+  line-height: 3.75rem;
+  top: 2.1875rem;
   right: 45%;
 }
 
-@media (max-width: 1250px) {
+@media (max-width: 78.125rem) {
   /* .homeBtn {
     display: none;
   }*/
 }
 
-@media (max-width: 1250px) {
+@media (max-width: 78.125rem) {
   .homeBtn {
     display: block;
   }
@@ -181,7 +181,7 @@ nav li a::after {
     display: none;
   }
   .navMobileLinks {
-    padding-top: 30px;
+    padding-top: 1.875rem;
     display: block;
   }
 }

@@ -1,6 +1,6 @@
 .particleContainer {
   width: 95%;
-  max-width: 1300px;
+  max-width: 81.25rem;
   position: absolute;
   left: 0;
   right: 0;
@@ -13,13 +13,13 @@
   composes: boxShadow from global;
   position: absolute;
   border-radius: 50%;
-  border: 10px solid var(--backgroundPrimary);
-  width: 700px;
-  height: 700px;
+  border: .625rem solid var(--backgroundPrimary);
+  width: 43.75rem;
+  height: 43.75rem;
   animation: downHide 20s linear infinite both;
 
   z-index: -1;
-  filter: blur(23px);
+  filter: blur(1.4375rem);
   /* -webkit-transform: translateY(-3000px);
   transform: translateY(-3000px); */
 }
@@ -43,41 +43,41 @@
 
 @keyframes downHide {
   0% {
-    filter: blur(23px);
-    width: 700px;
-    height: 700px;
-    -webkit-transform: translateY(-800px);
-    transform: translateY(-800px);
+    filter: blur(1.4375rem);
+    width: 43.75rem;
+    height: 43.75rem;
+    -webkit-transform: translateY(-50rem);
+    transform: translateY(-50rem);
     opacity: 1;
   }
   25% {
-    width: 600px;
-    height: 600px;
-    filter: blur(13px);
+    width: 37.5rem;
+    height: 37.5rem;
+    filter: blur(.8125rem);
   }
   50% {
-    width: 700px;
-    height: 700px;
-    filter: blur(23px);
+    width: 43.75rem;
+    height: 43.75rem;
+    filter: blur(1.4375rem);
   }
   75% {
-    width: 600px;
-    height: 600px;
-    filter: blur(13px);
+    width: 37.5rem;
+    height: 37.5rem;
+    filter: blur(.8125rem);
   }
   90% {
     opacity: 1;
   }
   100% {
-    filter: blur(23px);
-    width: 700px;
-    height: 700px;
-    -webkit-transform: translateY(4000px);
-    transform: translateY(4000px);
+    filter: blur(1.4375rem);
+    width: 43.75rem;
+    height: 43.75rem;
+    -webkit-transform: translateY(250rem);
+    transform: translateY(250rem);
     opacity: 0;
   }
 }
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 28.125rem) {
   .particleContainer {
     display: none;
   }
