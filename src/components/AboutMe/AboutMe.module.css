@@ -33,17 +33,17 @@
 }
 
 .tabs li button {
-  border-radius: 25px;
+  border-radius: 1.5625rem;
   text-transform: uppercase;
   cursor: pointer;
   transition: 0.5s;
-  font-size: 12px;
+  font-size: .75rem;
   font-weight: 500;
   letter-spacing: 1px;
   text-transform: uppercase;
   color: var(--textSecondary);
-  margin: 5px 2px;
-  padding: 8px 10px;
+  margin: .3125rem .125rem;
+  padding: .5rem .625rem;
 }
 .tabBtn {
   composes: boxShadow from global;
@@ -58,7 +58,7 @@
   content: '';
   position: absolute;
   bottom: 0;
-  border-radius: 25px;
+  border-radius: 1.5625rem;
   left: 0;
   width: 0;
   height: 2px;
@@ -86,11 +86,11 @@
   margin: auto;
   position: relative;
   /* composes: boxShadow from global;*/
-  border-radius: 10px;
+  border-radius: .625rem;
   padding: 10%;
   margin-right: 10%;
   composes: bgPattern from global;
-  background-size: 18px 18px;
+  background-size: 1.125rem 1.125rem;
   position: sticky;
   top: 0;
 }
@@ -102,7 +102,7 @@
 .img {
   border: 1px solid var(--textTertiary);
   composes: boxShadow from global;
-  border-radius: 8px;
+  border-radius: .5rem;
   object-fit: cover;
   max-width: 100%;
   height: auto;
@@ -110,7 +110,7 @@
 .supportBtn {
   composes: smallBtnShadow from global;
   display: inline-block;
-  margin: 10px 0;
+  margin: .625rem 0;
   color: var(--primaryColor);
 }
 
@@ -121,32 +121,32 @@
 }
 
 .AboutRight h2 {
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: bold;
   color: var(--textPrimary);
-  margin: 10px 0;
+  margin: .625rem 0;
 }
 .AboutRight span {
   color: var(--primaryColor);
 }
 
 .AboutRight p {
-  font-size: 17px;
-  line-height: 30px;
+  font-size: 1.0625rem;
+  line-height: 1.875rem;
 }
 
 .skillsContainer {
   display: flex;
   flex-wrap: wrap;
-  margin: 20px 0;
+  margin: 1.25rem 0;
 }
 .skillsContainer a {
   transition: 0.3s;
-  border-radius: 10px;
-  padding: 6px;
+  border-radius: .625rem;
+  padding: .375rem;
   color: var(--textPrimary);
-  margin-top: 10px;
-  margin-right: 10px;
+  margin-top: .625rem;
+  margin-right: .625rem;
   display: flex;
   align-items: center;
 }
@@ -160,7 +160,7 @@
 }
 .studiesContainer li a {
   display: block;
-  margin: 5px 0;
+  margin: .3125rem 0;
 }
 
 .studiesContainer li:hover a {
@@ -174,18 +174,18 @@
 }
 
 .educationSection span {
-  font-size: 14px;
+  font-size: .875rem;
   color: var(--textTertiary);
 }
 .educationSection h4 {
   color: var(--textSecondary);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 48rem) {
   .AboutRight,
   .AboutLeft {
     width: 100%;
-    margin-bottom: 30px;
+    margin-bottom: 1.875rem;
   }
 
   .aboutContainer {
@@ -193,14 +193,14 @@
   }
 
   .aboutContainer h1 {
-    font-size: 30px;
+    font-size: 1.875rem;
     font-weight: bold;
   }
 }
 
-@media screen and (max-width: 440px) {
+@media screen and (max-width: 27.5rem) {
   .aboutContainer h1 {
-    font-size: 25px;
+    font-size: 1.5625rem;
   }
   .leftImg {
     padding: 0;

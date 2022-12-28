@@ -1,5 +1,5 @@
 .link i {
-  font-size: 13px;
+  font-size: .8125rem;
   color: var(--textTertiary);
 }
 
@@ -7,7 +7,7 @@
 
 .highlighter {
   margin-top: 0 !important;
-  font-size: 18px !important;
+  font-size: 1.125rem !important;
   font-family: 'Poppins', sans-serif ;
 }
 
@@ -15,7 +15,7 @@
   border-bottom: 1px solid var(--backgroundTertiary);
   border-bottom: 2px solid var(--primaryColor);
   background: var(--backgroundPrimary);
-  padding: 15px;
+  padding: .9375rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;

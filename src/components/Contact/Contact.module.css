@@ -1,6 +1,6 @@
 .contact {
   composes: container from global;
-  margin-top: 80px;
+  margin-top: 5rem;
 }
 
 .heading {
@@ -19,19 +19,19 @@
 .right {
   width: 60%;
   composes: boxShadow from global;
-  padding: 35px;
+  padding: 2.1875rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
 .box {
-  padding: 30px;
+  padding: 1.875rem;
   composes: boxShadow from global;
 }
 .img {
   composes: boxShadow from global;
-  max-height: 400px;
+  max-height: 25rem;
   width: 100%;
   margin: auto;
 }
@@ -41,41 +41,41 @@
 
   width: 100%;
   height: 100%;
-  height: 400px;
+  height: 25rem;
   object-fit: cover;
-  border-radius: 5px;
+  border-radius: .3125rem;
 }
 .details h1 {
-  margin: 20px 0;
-  font-size: 35px;
+  margin: 1.25rem 0;
+  font-size: 2.1875rem;
 }
 .details p {
-  font-style: 17px;
+  font-style: 1.0625rem;
 }
 .details span {
   color: var(--textSecondary);
 }
 
 .socialContainer {
-  margin-top: 20px;
+  margin-top: 1.25rem;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   composes: bgPattern from global;
-  background-size: 15px 15px;
+  background-size: .9375rem .9375rem;
 }
 
 .socialContainer a {
-  margin-top: 10px;
+  margin-top: .625rem;
   /*  margin-right: 25px; */
 }
 
 .socialContainer a i {
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 
 .form {
-  margin-top: 60px;
+  margin-top: 3.75rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -84,8 +84,8 @@
 
 .input {
   width: 100%;
-  margin-bottom: 20px;
-  padding-top: 20px;
+  margin-bottom: 1.25rem;
+  padding-top: 1.25rem;
   position: relative;
 }
 
@@ -93,7 +93,7 @@
   position: absolute;
   top: 0;
   left: 5px;
-  font-size: 13px;
+  font-size: .8125rem;
 }
 
 .input input:focus + label,
@@ -119,11 +119,11 @@
 }
 
 .submitBtn i {
-  margin-left: 5px;
-  font-size: 15px;
+  margin-left: .3125rem;
+  font-size: .9375rem;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 48rem) {
   .content {
     flex-direction: column;
   }
@@ -131,16 +131,16 @@
   .left,
   .right {
     width: 100%;
-    margin-bottom: 50px;
-    margin-top: 30px;
+    margin-bottom: 3.125rem;
+    margin-top: 1.875rem;
   }
 }
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 34.375rem) {
   .heading {
     margin: 0px 0px;
   }
   .heading h1 {
-    font-size: 50px;
+    font-size: 3.125rem;
   }
 
   .inputRow {
@@ -149,24 +149,24 @@
 }
 
 .loader {
-  margin-right: 25px;
+  margin-right: 1.5625rem;
   border: 13px solid var(--backgroundTertiary); /* Light grey */
   border-top: 13px solid var(--primaryColor); /* Blue */
   border-radius: 50%;
-  width: 60px;
-  height: 60px;
+  width: 3.75rem;
+  height: 3.75rem;
   animation: spin 1.5s linear infinite;
 }
 .loader + p {
-  font-size: 15px;
+  font-size: .9375rem;
   font-weight: bold;
 }
 .errorMsg {
   width: 100%;
   text-align: center;
-  margin-top: 10px;
+  margin-top: .625rem;
   color: #d50000;
-  font-size: 15px;
+  font-size: .9375rem;
   font-weight: bold;
 }
 .successMsg {

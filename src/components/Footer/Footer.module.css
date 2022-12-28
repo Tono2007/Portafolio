@@ -8,25 +8,25 @@
 }
 
 .footer img {
-  width: 350px;
+  width: 21.875rem;
 }
 .logoImg{
-  width: 350px;
+  width: 21.875rem;
   height: auto;
 }
 
 .svg {
   position: absolute;
-  width: 150px;
-  height: 150px;
+  width: 9.375rem;
+  height: 9.375rem;
 }
 .svg:nth-of-type(1) {
   top: 0;
   right: 0;
 }
 .svg:nth-of-type(2) {
-  top: 80px;
-  left: 80px;
+  top: 5rem;
+  left: 5rem;
   transform: rotate(45deg) skew(20deg);
 }
 .svg:nth-of-type(3) {
@@ -34,14 +34,14 @@
   left: 0;
 }
 .svg:nth-of-type(4) {
-  bottom: 80px;
-  right: 80px;
+  bottom: 5rem;
+  right: 5rem;
   transform: rotate(45deg) skew(20deg);
 }
 
 .floatBtn i {
   color: var(--primaryColor);
-  font-size: 25px;
+  font-size: 1.5625rem;
 }
 .floatBtn:hover {
   cursor: pointer;
@@ -53,7 +53,7 @@
 .floatBtn {
   transition: 0.5s;
   composes: boxShadow from global;
-  padding: 18px 25px;
+  padding: 1.125rem 1.5625rem;
   position: absolute;
   top: 0;
   right: 0;
@@ -66,12 +66,12 @@
 }
 
 .userBtn {
-  font-size: 17px;
+  font-size: 1.0625rem;
 }
 .userBtn:hover {
   cursor: pointer;
   color: var(--primaryColor);
-  font-size: 17px;
+  font-size: 1.0625rem;
 }
 .modalContent {
   height: 85vh;
@@ -81,7 +81,7 @@
 }
 .visitas img {
   margin-left: 7px;
-  width: 35px;
+  width: 2.1875rem;
   height: auto;
 }
 
@@ -95,17 +95,17 @@
   }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 28.125rem) {
   .footer img {
-    width: 200px;
+    width: 12.5rem;
   }
   .visitas img {
-    margin-left: 7px;
-    width: 35px;
+    margin-left: .4375rem;
+    width: 2.1875rem;
     height: auto;
   }
 }
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 53.125rem) {
   .svg {
     display: none;
   }

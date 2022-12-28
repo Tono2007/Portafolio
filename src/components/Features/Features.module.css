@@ -1,12 +1,12 @@
 .features {
-  margin-top: 80px;
+  margin-top: 5rem;
 }
 
 .contentGrid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 30px;
-  column-gap: 45px;
+  grid-gap: 1.875rem;
+  column-gap: 2.8125rem;
   -webkit-perspective: 1000;
 }
 
@@ -25,12 +25,12 @@
 
 .card {
   composes: btnShadow from global;
-  padding: 40px;
+  padding: 2.5rem;
 }
 
 .card h2 {
-  font-size: 23px;
-  margin: 15px 0;
+  font-size: 1.4375rem;
+  margin: .9375rem 0;
 }
 .card p {
   word-spacing: 2px;
@@ -38,13 +38,13 @@
 }
 
 .actionIcon i {
-  font-size: 25px;
-  margin-top: 20px;
+  font-size: 1.5625rem;
+  margin-top: 1.25rem;
   transition: 0.5s;
   opacity: 0;
 }
 .mainIcon i {
-  font-size: 35px;
+  font-size: 2.1875rem;
   transition: 1s;
   color: var(--textPrimary);
   color: var(--primaryColor);
@@ -61,16 +61,16 @@
   color: var(--textContrast);
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 56.25rem) {
   .contentGrid {
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 30px;
+    grid-gap: 1.875rem;
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 37.5rem) {
   .contentGrid {
     grid-template-columns: repeat(1, 1fr);
-    grid-gap: 30px;
+    grid-gap: 1.875rem;
   }
 }

@@ -1,7 +1,7 @@
 .card {
   composes: boxShadow from global;
-  border-radius: 10px;
-  padding: 18px 25px;
+  border-radius: .625rem;
+  padding: 1.125rem 1.5625rem;
   cursor: pointer;
   position: relative;
   color: var(--textSecondary);
@@ -10,19 +10,19 @@
 
 .img {
   width: 100%;
-  max-height: 250px;
+  max-height: 15.625rem;
   transition: 0.5s;
   overflow: hidden;
-  border-radius: 10px;
-  box-shadow: 10px 15px 20px -15px rgba(0, 0, 0, 0.459);
+  border-radius: .625rem;
+  box-shadow: .625rem .9375rem 1.25rem -.9375rem rgba(0, 0, 0, 0.459);
   margin: 5px 0;
-  margin-bottom: 15px;
+  margin-bottom: .9375rem;
 }
 
 .img img {
   object-fit: cover;
-  border-radius: 10px;
-  min-height: 300px;
+  border-radius: .625rem;
+  min-height: 18.75rem;
   width: 100%;
   transition: 0.5s;
 }
@@ -36,26 +36,26 @@
 }
 .category span {
   color: var(--primaryColor);
-  font-size: 13px;
+  font-size: .8125rem;
   letter-spacing: 2px;
   font-weight: 500;
 }
 .date {
-  font-size: 13px;
+  font-size: .8125rem;
   color: var(--textPrimary);
 }
 
 .arrow {
   position: absolute;
-  right: 15px;
-  bottom: 15px;
+  right: .9375rem;
+  bottom: .9375rem;
   transform: rotate(-45deg);
   color: var(--primaryColor);
   opacity: 0;
   transition: 0.5s;
 }
 .arrow i {
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 
 .card:hover .arrow {
@@ -63,9 +63,9 @@
 }
 
 .card h2 {
-  font-size: 18px;
+  font-size: 1.125rem;
   transition: 0.5s;
-  padding-bottom: 0px;
+  padding-bottom: 0;
 }
 
 .card:hover h2 {
@@ -73,5 +73,5 @@
 }
 
 .card span i {
-  margin-right: 10px;
+  margin-right: .625rem;
 }

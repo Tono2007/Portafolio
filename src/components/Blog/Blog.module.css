@@ -7,29 +7,29 @@
   composes: smallBtnShadow from global;
   color: var(--primaryColor);
   position: absolute;
-  top: 110px;
+  top: 6.875rem;
   right: 3%;
 }
 .contentGrid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 30px;
+  grid-gap: 1.875rem;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 56.25rem) {
   .contentGrid {
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 30px;
+    grid-gap: 1.875rem;
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 37.5rem) {
   .contentGrid {
     grid-template-columns: repeat(1, 1fr);
-    grid-gap: 30px;
+    grid-gap: 1.875rem;
   }
   .seeAllBtn {
-    top: 105px;
+    top: 6.5625rem;
     right: 3%;
   }
 }
@@ -37,8 +37,8 @@
 /*          Card            */
 .card {
   composes: boxShadow from global;
-  border-radius: 10px;
-  padding: 18px 25px;
+  border-radius: .625rem;
+  padding: 1.125rem 1.5625rem;
   cursor: pointer;
   position: relative;
   height: 100%;
@@ -48,13 +48,13 @@
   width: 100%;
   transition: 0.5s;
   overflow: hidden;
-  border-radius: 10px;
-  max-height: 300px;
+  border-radius: .625rem;
+  max-height: 18.75rem;
 }
 
 .img img {
   width: 100%;
-  height: 300px;
+  height: 18.75rem;
   transition: 0.5s;
   object-fit: cover;
 }
@@ -66,21 +66,21 @@
 .date {
   display: flex;
   justify-content: space-between;
-  margin: 10px 0 20px 0;
+  margin: .625rem 0 1.25rem 0;
   text-transform: uppercase;
 }
 .date span:nth-child(1) {
   color: var(--primaryColor);
-  font-size: 13px;
-  letter-spacing: 2px;
+  font-size: .8125rem;
+  letter-spacing: .125rem;
   font-weight: 500;
 }
 
 .card h2 {
   text-align: left;
-  font-size: 18px;
+  font-size: 1.125rem;
   transition: 0.5s;
-  padding-bottom: 30px;
+  padding-bottom: 1.875rem;
   color: var(--textSecondary);
 }
 
@@ -90,15 +90,15 @@
 
 .arrow {
   position: absolute;
-  right: 25px;
-  bottom: 20px;
+  right: 1.5625rem;
+  bottom: 1.25rem;
   transform: rotate(-45deg);
   color: var(--primaryColor);
   opacity: 0;
   transition: 0.5s;
 }
 .arrow i {
-  font-size: 25px;
+  font-size: 1.5625rem;
 }
 
 .card:hover .arrow {

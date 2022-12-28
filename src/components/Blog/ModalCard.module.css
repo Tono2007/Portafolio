@@ -9,7 +9,7 @@
 }
 
 .modalContainer hr {
-  margin: 15px 0;
+  margin: .9375rem 0;
 }
 
 /*--------------------------*/
@@ -24,7 +24,7 @@
 
 .tagsContainer p {
   font-weight: bold;
-  margin: 4px 10px;
+  margin: .25rem .625rem;
 
   color: var(--textTertiary);
 }
@@ -33,18 +33,18 @@
   width: 100%;
   height: auto;
   padding: 0;
-  margin-top: 30px;
+  margin-top: 1.875rem;
 }
 .modalImg img {
   width: 100%;
   height: 100%;
-  max-height: 450px;
-  border-radius: 5px;
+  max-height: 28.125rem;
+  border-radius: .3125rem;
   object-fit: cover;
 }
 
 .header {
-  margin-top: 10px;
+  margin-top: .625rem;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
@@ -54,22 +54,22 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 10px;
+  margin-bottom: .625rem;
   composes: boxShadow from global;
-  border-radius: 50px;
-  padding-right: 30px;
+  border-radius: 3.125rem;
+  padding-right: 1.875rem;
 }
 .avatar p {
   font-weight: bold;
-  font-size: 18px;
-  margin-left: 20px;
+  font-size: 1.125rem;
+  margin-left: 1.25rem;
 }
 
 .avatar img {
   border: 1px solid var(--primaryColor);
   border-radius: 50%;
-  width: 60px;
-  height: 60px;
+  width: 3.75rem;
+  height: 3.75rem;
 }
 .header span {
   color: var(--textTertiary);
@@ -97,31 +97,31 @@
 .modalText h5,
 .modalText h6 {
   font-weight: 400;
-  margin: 10px 0;
+  margin: .625rem 0;
 }
 
 .modalText h1 {
-  font-size: 35.2px;
-  margin: 30px 0;
+  font-size: 2.2rem;
+  margin: 1.875rem 0;
 }
 
 .modalText h2 {
-  font-size: 26.4px;
-  margin: 20px 0;
+  font-size: 1.65rem;
+  margin: 1.25rem 0;
 }
 
 .modalText h3 {
-  margin: 5px 0;
-  font-size: 21px;
-  margin: 20px 0;
+  margin: .3125rem 0;
+  font-size: 1.3125rem;
+  margin: 1.25rem 0;
 }
 
 .modalText p,
 a {
   font-weight: 300;
-  font-size: 17px;
-  line-height: 27px;
-  margin: 15px 0;
+  font-size: 1.0625rem;
+  line-height: 1.6875rem;
+  margin: .9375rem 0;
 }
 
 .modalText blockquote {
@@ -131,13 +131,13 @@ a {
   align-content: center;
   background: var(--backgroundSecondary);
   background: var(--backgroundPrimary);
-  padding: 20px;
-  margin: 10px 0;
+  padding: 1.25rem;
+  margin: .625rem 0;
   display: block;
 }
 
 .modalText ul {
-  margin-left: 15px;
+  margin-left: .9375rem;
 }
 
 .modalText ul li::before {
@@ -150,11 +150,11 @@ a {
   margin-left: -1em;
 }
 .modalText code {
-  padding: 4px;
-  margin: 0 5px;
+  padding: .25rem;
+  margin: 0 .3125rem;
   color: var(--textPrimary);
 
-  border-radius: 5px;
+  border-radius: .3125rem;
   font-weight: 600;
   background: var(--backgroundTertiary);
   background: var(--backgroundPrimary);
@@ -184,22 +184,22 @@ a {
 }
 .modalText th,
 .modalText td {
-  padding: 10px;
+  padding: .625rem;
 }
 
 .blog_contact .right,
 .blog_contact .left {
-  margin: 0 25px 0 0;
+  margin: 0 1.5625rem 0 0;
 }
 
 /*-----Modal----*/
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 37.5rem) {
   .modalContainer h1 {
     font-size: 2rem;
   }
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 56.25rem) {
   .modalText {
     width: 100%;
   }
