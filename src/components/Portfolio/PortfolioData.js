@@ -164,43 +164,25 @@ const data = [
   },
   {
     id: 6,
-    year: '-',
-    date: '-',
-    category: '-',
-    title: 'Proximo Proyecto',
-    image: 'portafolioBlack.webp',
-    technologies: ['-'],
-    desc: `Siguiente proyecto proximamente
+    year: '2022',
+    date: '11/11/2022',
+    category: 'APPLICATION',
+    title: 'React-Libs',
+    image: 'reactLibs.webp',
+    technologies: ['ReactJs', 'JS', 'Docusaurus ', 'Vercel', 'Responsive'],
+    desc: `Para este proyecto queria intentar generar una documentación, me encontre con varias herramientas que ya se encargan de un desarrollo rapido para centrarnos en el contenido.
+    Se elijio Docusaurus 2, un moderno generador de sitios estaticos, especializado en documentación ademas de estar construido con React.
+    
+    Utilizando el preset(classic) de Docusaurus fue muy sencillo generar la estructura de documentación. Se puede personalizar el diseño, crear tus componentes y seguir ocupando React, ademas que el contenido se escribe en mdx.
+
+    El tema que se escogio fue generar una base de datos con información util, consejos, guias en el uso de React.
+    Este proyecto fue muy sencillo, el proposito solo fue agregar una herramienta mas a mis conocimientos que en algun momento puede ser util.
     `,
     links: {
-      code: null,
-      page: null,
+      code: 'https://github.com/Tono2007/React-Libs',
+      page: 'https://react-libs.vercel.app/',
     },
   },
-  /* {
-    id: 2,
-    category: 'WEB DESIGN',
-    totalLike: '780',
-    title: 'Mobile Restaurant App Landing design complete',
-    image: 'https://picsum.photos/600/500?random=2',
-    desc: 'Landing page made for promoting physical therapist services, this project was made using html, and css',
-  },
-  {
-    id: 3,
-    category: 'APPLICATION',
-    totalLike: '180',
-    title: 'Logo and application design',
-    image: 'https://picsum.photos/600/500?random=3',
-    desc: 'Single Page Application to list and preview Rick and Morty’s Characters made using vanilla javascript, html and css',
-  },
-  {
-    id: 4,
-    category: 'WEB DESIGN',
-    totalLike: '120',
-    title: 'Dashboard Completed',
-    image: 'https://picsum.photos/600/500?random=4',
-    desc: 'Este proyecto me tomo mucho trabajo solo para poder experesar lo que hago y lo que me gusta hacer. Espero que te guste <3',
-  }, */
 ];
 
 export default data;
