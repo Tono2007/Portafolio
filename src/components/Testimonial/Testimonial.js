@@ -35,8 +35,18 @@ const Testimonial = () => {
             isInViewportOnce ? 'useSlideInLeft' : 'useSlideInLeftEnter'
           }`}
         >
-          <h4>QUE DICEN DE MI TRABAJO</h4>
+          <h4>QUE DICEN DE MI TRABAJO </h4>
           <h1>Testimonios</h1>
+        </div>
+        <div className={styles.pagination}>
+          {testimonialData.map((key) => (
+            <span
+              key={key.id}
+              className={`${styles['pagination-dot']} ${
+                key.id === index ? styles['pagination-dot--active'] : ''
+              }`}
+            />
+          ))}
         </div>
         <div className={styles.slider}>
           {testimonialData.map((data) => (

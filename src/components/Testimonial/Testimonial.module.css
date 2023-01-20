@@ -5,6 +5,25 @@
   composes: heading from global;
   text-align: center;
 }
+
+.pagination {
+  display: flex;
+  justify-content: center;  width: 100%;
+  gap: .3125rem;
+ }
+
+ .pagination-dot{
+  display: inline-block;
+  height: .7rem;
+  width: .7rem;  
+  background: #0004;
+  border-radius: 50%;
+ }
+
+ .pagination-dot--active{
+   background: var(--primaryColor);
+  }
+
 .slideButtons {
   position: absolute;
   top: 1.875rem;
