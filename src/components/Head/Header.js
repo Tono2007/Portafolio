@@ -292,13 +292,17 @@ const Header = () => {
           )}
 
           <button
-            className={styles.showMobile}
+            className={Mobile ? styles.closeBtn : styles.openBtn}
             onClick={toogleMobileNav}
             type="button"
             title="Abrir Menu Lateral"
             name="Abrir Menu Lateral"
           >
-            <i className={Mobile ? styles.closeBtn : styles.openBtn} />
+            <i
+              className={
+                Mobile ? styles['btn-close-icon'] : styles['btn-open-icon']
+              }
+            />
           </button>
         </nav>
       </header>

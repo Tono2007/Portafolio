@@ -81,6 +81,9 @@
   .modalText h1 {
     margin: 1.5625rem 0;
   }
+  .actionBtn {
+    margin-bottom: .825rem;
+  }
 }
 @media screen and (max-width: 28.125rem) {
   .modalContainer {
@@ -94,7 +97,7 @@
   .actionBtn {
     margin-bottom: 1.5625rem;
     margin-right: 0px;
-  }
+   }
 }
 
 /*-----Modal----*/

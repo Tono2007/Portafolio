@@ -145,22 +145,26 @@ nav li a::after {
 }
 
 .openBtn {
-  composes: fas fa-bars from global;
   composes: mobileBtns;
-  top: 2.1875rem;
-  right: 1.875rem;
+  top: 35px;
+  right: 30px;
   cursor: pointer;
 }
 .closeBtn {
-  composes: fas fa-times from global;
   composes: homeBtn mobileBtns;
   border-radius: 50%;
   padding: 0;
-  width: 3.75rem;
-  height: 3.75rem;
-  line-height: 3.75rem;
-  top: 2.1875rem;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  top: 35px;
   right: 45%;
+}
+.btn-open-icon{
+  composes: fas fa-bars from global;
+}
+.btn-close-icon{
+  composes: fas fa-times from global;
 }
 
 @media (max-width: 78.125rem) {
