@@ -22,10 +22,9 @@ function ModalCard({ data }) {
       .then((res) => {
         fetch(res.default)
           .then((res) => res.text())
-          .then((res) => setPost(res))
-          .catch((err) => console.log(err));
+          .then((res) => setPost(res));
       })
-      .catch((err) => console.log(err));
+      .catch((err) => {});
   }, []);
   return (
     <div className={styles.modalContainer}>

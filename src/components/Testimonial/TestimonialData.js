@@ -14,6 +14,19 @@ const data = [
   },
   {
     id: 1,
+    profileImg: 'juanFranciscoIA.webp',
+    company: 'CIC IPN',
+    name: 'M. en C. Juan Francisco Islas Austria',
+    level: 'Project Manager',
+    work: 'Programador Frontend',
+    date: '28 de Diciembre, 2022',
+    testimony: `Que es una ciudadano con una conducta intachable. Ha demostrado ser un excelente 
+      compañero y un gran colaborador, comprometido, responsable y fiel cumplidor de sus tareas. 
+      Siempre ha manifestado preocupación por mejorar, aprender nuevas tecnologías y actualizar 
+      sus conocimientos`,
+  },
+  {
+    id: 2,
     profileImg: 'appdt.webp',
     company: 'APPDT Software',
     name: 'Ing. Miguel Méndez Sánchez',
