@@ -128,16 +128,28 @@ p {
   }
 }
 
-:global .loadingLabel {
+:global .loadingLabel-container{
   position: fixed;
-  text-align: center;
-  font-size: 2rem;
-  color: var(--textPrimary);
+  text-align: center; 
   top: 30%;
   width: 100vw;
   z-index: 999999;
-  padding: 1rem;
+ }
+
+:global .loadingLabel {
+  border-radius: 50%;
+  display: inline-block;
+  text-align: center;
+  font-size: 2rem;
+  color: var(--textPrimary);
+  z-index: 999999;
+  padding: 9rem 5rem;
   background: var(--backgroundPrimary);
+  background: #fff5;
+  backdrop-filter: blur(10px);
+  opacity: 1;
+  box-shadow: 4px 4px 0px var(--primaryColor),  10px 30px 40px #0004;
+
 }
 
 textarea,

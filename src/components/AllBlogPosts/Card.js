@@ -1,5 +1,6 @@
 import { useState, memo, lazy, Suspense } from 'react';
 import Modal from '../Modal/Modal';
+import Loader from '../Loader';
 
 import styles from './styles.module.css';
 
@@ -19,7 +20,7 @@ function Card({ data }) {
         fnCloseModal={() => setModal(false)}
         styleContent={styles.modalContent}
       >
-        <Suspense fallback={<p className="loadingLabel">Cargando...</p>}>
+        <Suspense fallback={<Loader />}>
           <ModalCard data={data} />
         </Suspense>
       </Modal>

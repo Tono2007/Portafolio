@@ -6,6 +6,7 @@ import useIsInViewportOnce from '../../utils/hooks/useIsInViewportOnce';
 
 import Card from './Card';
 import Modal from '../Modal/Modal';
+import Loader from '../Loader';
 
 const AllBlogPosts = lazy(() => import('../AllBlogPosts'));
 
@@ -21,7 +22,7 @@ const Blog = () => {
         fnCloseModal={() => setModal(false)}
         styleContent={styles.modalContentAB}
       >
-        <Suspense fallback={<p className="loadingLabel">Cargando...</p>}>
+        <Suspense fallback={<Loader />}>
           <AllBlogPosts />
         </Suspense>
       </Modal>

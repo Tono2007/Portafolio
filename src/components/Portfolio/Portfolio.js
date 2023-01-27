@@ -6,6 +6,7 @@ import styles from './Portfolio.module.css';
 
 import Card from './Card';
 import Modal from '../Modal/Modal';
+import Loader from '../Loader';
 
 const AllPortfolioProjects = lazy(() => import('../AllPortfolioProjects'));
 
@@ -20,7 +21,7 @@ const Portfolio = () => {
         fnCloseModal={() => setModal(false)}
         styleContent={styles.modalContent}
       >
-        <Suspense fallback={<p className="loadingLabel">Cargando...</p>}>
+        <Suspense fallback={<Loader />}>
           <AllPortfolioProjects />
         </Suspense>
       </Modal>

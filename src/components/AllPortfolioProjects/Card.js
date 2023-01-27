@@ -1,5 +1,7 @@
 import { useState, memo, lazy, Suspense } from 'react';
 import Modal from '../Modal/Modal';
+import Loader from '../Loader';
+
 import styles from './Card.module.css';
 
 const ModalCard = lazy(() => import('../Portfolio/ModalCard'));
@@ -13,7 +15,7 @@ const Card = ({ project }) => {
   return (
     <>
       <Modal openModal={modal} fnCloseModal={() => setModal(false)}>
-        <Suspense fallback={<p className="loadingLabel">Cargando...</p>}>
+        <Suspense fallback={<Loader />}>
           <ModalCard project={project} />
         </Suspense>
       </Modal>

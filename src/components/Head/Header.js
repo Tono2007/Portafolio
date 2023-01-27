@@ -9,6 +9,7 @@ import logo1 from '../../assets/logo_fondo_blanco_4.webp';
 import styles from './Header.module.css';
 
 import Modal from '../Modal/Modal';
+import Loader from '../Loader';
 
 const ModalConfig = lazy(() => import('./ModalConfig'));
 const AboutMe = lazy(() => import('../AboutMe/AboutMe'));
@@ -82,7 +83,7 @@ const Header = () => {
 
   return (
     <>
-      <Suspense fallback={<p className="loadingLabel">Cargando...</p>}>
+      <Suspense fallback={<Loader />}>
         <Modal openModal={modal} fnCloseModal={() => setModal(false)}>
           <AboutMe />
         </Modal>

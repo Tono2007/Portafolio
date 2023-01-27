@@ -6,6 +6,7 @@ import styles from './Footer.module.css';
 import scrollTop from '../../utils/helpers/scrollTop';
 
 import Modal from '../Modal/Modal';
+import Loader from '../Loader';
 
 const AboutMe = lazy(() => import('../AboutMe/AboutMe'));
 
@@ -19,7 +20,7 @@ const Footer = () => {
         fnCloseModal={() => setModal(false)}
         styleContent={styles.modalContent}
       >
-        <Suspense fallback={<p className="loadingLabel">Cargando...</p>}>
+        <Suspense fallback={<Loader />}>
           <AboutMe />
         </Suspense>
       </Modal>

@@ -2,6 +2,7 @@ import { useState, memo, lazy, Suspense } from 'react';
 import styles from './Blog.module.css';
 
 import Modal from '../Modal/Modal';
+import Loader from '../Loader';
 
 const ModalCard = lazy(() => import('./ModalCard'));
 
@@ -18,7 +19,7 @@ const Card = ({ data }) => {
         fnCloseModal={() => setModal(false)}
         styleContent={styles.modalContent}
       >
-        <Suspense fallback={null}>
+        <Suspense fallback={<Loader />}>
           <ModalCard data={data} />
         </Suspense>
       </Modal>
