@@ -2,13 +2,22 @@ import { useState, useEffect } from 'react';
 import styles from './ModalConfig.module.css';
 
 function ModalConfig() {
-  const [mode, setMode] = useState(false);
+  const [darkMode, setMarkMode] = useState(false);
   useEffect(() => {
-    const r = document.querySelector(':root');
-    const rs = getComputedStyle(r);
-
-    rs.getPropertyValue('--backgroundPrimary') === '#212121' && setMode(true);
+    if (document.documentElement.classList.contains('darkMode')) {
+      setMarkMode(true);
+    }
   }, []);
+
+  useEffect(() => {
+    if (darkMode === false) {
+      document.documentElement.classList.remove('darkMode');
+      document.documentElement.classList.add('lightMode');
+    } else {
+      document.documentElement.classList.remove('lightMode');
+      document.documentElement.classList.add('darkMode');
+    }
+  }, [darkMode]);
 
   const changeColor = (e) => {
     e.stopPropagation();
@@ -20,38 +29,6 @@ function ModalConfig() {
     r.style.setProperty('--primaryColor', e.target.dataset.color);
     r.style.setProperty('--primaryDark', e.target.dataset.dark);
   };
-  const handleMode = (e) => {
-    e.stopPropagation();
-    const r = document.querySelector(':root');
-    if (mode) {
-      r.style.setProperty('--backgroundPrimary', '#ecf0f3');
-      r.style.setProperty('--backgroundSecondary', '#e2e8ec');
-      r.style.setProperty('--contrastBackground', '#fff');
-      r.style.setProperty('--backgroundTertiary', '#cbcbcb');
-      r.style.setProperty('--backgroundQuaternary', '#f5f5f5');
-      r.style.setProperty('--textPrimary', '#3c3e41');
-      r.style.setProperty('--textSecondary', '#000');
-      r.style.setProperty('--textTertiary', '#878e99');
-      r.style.setProperty('--textQuaternary', '#43474b');
-    } else {
-      /* 
-            r.style.setProperty('--backgroundPrimary', '#424242');
-            r.style.setProperty('--backgroundSecondary', '#191919');
-            r.style.setProperty('--contrastBackground', '#191919');
-            r.style.setProperty('--backgroundTertiary', '#3c3e41');
-            r.style.setProperty('--backgroundQuaternary', '#3c3e41'); */
-      r.style.setProperty('--backgroundPrimary', '#212121');
-      r.style.setProperty('--backgroundSecondary', '#424242 ');
-      r.style.setProperty('--contrastBackground', '#212121');
-      r.style.setProperty('--backgroundTertiary', '#3c3e41');
-      r.style.setProperty('--backgroundQuaternary', '#616161');
-      r.style.setProperty('--textPrimary', '#eeeeee');
-      r.style.setProperty('--textSecondary', '#fff');
-      r.style.setProperty('--textTertiary', '#d3d3d3');
-      r.style.setProperty('--textQuaternary', '#fff');
-    }
-  };
-
   return (
     <div className={styles.config}>
       <h2>Preferencias</h2>
@@ -62,17 +39,16 @@ function ModalConfig() {
           role="presentation"
           className={styles.switchMode}
           htmlFor="checkboxMode"
-          onClick={handleMode}
         >
           <input
             type="checkbox"
             id="checkboxMode"
-            checked={mode}
-            onChange={(e) => setMode(!mode)}
+            checked={darkMode}
+            onChange={() => setMarkMode(!darkMode)}
           />
           <div className={styles.slider}>
             <div className={styles.icon}>
-              {mode ? (
+              {darkMode ? (
                 <i className="fas fa-moon" />
               ) : (
                 <i className="fas fa-sun" />
@@ -80,7 +56,7 @@ function ModalConfig() {
             </div>
           </div>
         </label>
-        <p> {mode ? 'Modo Oscuro' : 'Modo Claro'}</p>
+        <p> {darkMode ? 'Modo Oscuro' : 'Modo Claro'}</p>
       </div>
       <h4>Cambia el color Principal</h4>
       <div className={styles.colorsContainer}>

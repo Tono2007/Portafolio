@@ -24,3 +24,15 @@
   /*DarkMode*/
   /* --backgroundPrimary: #3c3e41; */
 }
+
+.darkMode{ 
+  --backgroundPrimary: #212121;
+  --backgroundSecondary: #424242;
+  --backgroundTertiary: #3c3e41;
+  --backgroundQuaternary: #616161;
+  --contrastBackground: #212121;
+  --textPrimary: #eeeeee;
+  --textSecondary: #fff;
+  --textTertiary: #d3d3d3;
+  --textQuaternary: #fff;
+ }
