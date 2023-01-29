@@ -27,6 +27,8 @@ export const constants = {
       'https://drive.google.com/file/d/1X-8ZCh0IoXh4Qup_sWYPSkaVnyisXjKI/view?usp=sharing',
     frontendDeveloper:
       'https://platzi.com/p/AntonioAyola/curso/2467-frontend-developer/diploma/detalle/',
+    scrumStudy:
+      'https://www.scrumstudy.com/certification/verify?type=SFC&number=962492',
     scrum:
       'https://www.linkedin.com/learning/certificates/5a305bf06cee89fba7ca237afc285ba9138b7a4fcbfee0145d6b4e0bdaf41f7e',
     ingDeSoftware:

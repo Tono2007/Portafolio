@@ -196,6 +196,27 @@ function Studies() {
         </li>
         <li>
           <a
+            title="Certificado Ingles"
+            target="_blank"
+            rel="noreferrer noopener"
+            href={constants.cursos.inglesC1}
+          >
+            • EF SET English Certificate 70/100 (C1 Advanced) - EF Standard
+            English Test (EF SET) - 06 de Octubre 2022
+          </a>
+        </li>
+        <li>
+          <a
+            title="Certificado SCRUM"
+            target="_blank"
+            rel="noreferrer noopener"
+            href={constants.cursos.scrumStudy}
+          >
+            • Scrum Fundamentals Certified - SCRUMstudy - 29 de Enero 2023
+          </a>
+        </li>
+        <li>
+          <a
             title="Certificado Frontend"
             target="_blank"
             rel="noreferrer noopener"
@@ -214,17 +235,7 @@ function Studies() {
             • Curso de SCRUM - Linkedin
           </a>
         </li>
-        <li>
-          <a
-            title="Certificado Ingles"
-            target="_blank"
-            rel="noreferrer noopener"
-            href={constants.cursos.inglesC1}
-          >
-            • EF SET English Certificate 70/100 (C1 Advanced) - EF Standard
-            English Test (EF SET) - 06 de Octubre 2022
-          </a>
-        </li>
+
         <li>
           <a
             title="Certificado Fundamentos ing."
