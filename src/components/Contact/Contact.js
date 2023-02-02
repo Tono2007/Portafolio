@@ -7,6 +7,9 @@ import me from '../../assets/me.webp';
 const Contact = () => {
   const sectionRef = useRef();
   const isInViewportOnce = useIsInViewportOnce(sectionRef);
+  const [isLoading, setIsLoading] = useState(false);
+  const [error, setError] = useState(false);
+  const [success, setSuccess] = useState(false);
   const [formValues, setFormValues] = useState({
     name: '',
     number: '',
@@ -14,9 +17,6 @@ const Contact = () => {
     subject: '',
     message: '',
   });
-  const [isLoading, setIsLoading] = useState(false);
-  const [error, setError] = useState(false);
-  const [success, setSuccess] = useState(false);
 
   const submit = async (e) => {
     e.preventDefault();
@@ -26,14 +26,17 @@ const Contact = () => {
     setIsLoading(true);
 
     try {
-      const response = await fetch('https://formspree.io/f/xknybpbr', {
-        method: 'POST',
-        body: JSON.stringify(formValues),
-        /*    body: { fd: 'd' }, */
-        headers: {
-          Accept: 'application/json',
+      const response = await fetch(
+        `https://formspree.io/f/${process.env.REACT_APP_FORMSPREE_KEY}`,
+        {
+          method: 'POST',
+          body: JSON.stringify(formValues),
+          /*    body: { fd: 'd' }, */
+          headers: {
+            Accept: 'application/json',
+          },
         },
-      });
+      );
       console.log(response);
       if (response.status !== 200) {
         throw new Error();
