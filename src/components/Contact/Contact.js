@@ -53,10 +53,10 @@ const Contact = () => {
           message: '',
         });
       }
-    } catch (error) {
+    } catch (formError) {
       setError(true);
-      console.log(error);
-      console.log(error.response);
+      console.log(formError);
+      console.log(formError.response);
     } finally {
       setIsLoading(false);
     }
