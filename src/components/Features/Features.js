@@ -19,7 +19,7 @@ function Features() {
           }`}
         >
           <h4>Habilidades</h4>
-          <h1>Que hago</h1>
+          <h1>Qué hago</h1>
         </div>
         <div className={styles.contentGrid}>
           {data.map((feature, index) => (

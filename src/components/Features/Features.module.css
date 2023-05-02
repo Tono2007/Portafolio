@@ -26,6 +26,7 @@
 .card {
   composes: btnShadow from global;
   padding: 2.5rem;
+  cursor:auto;
 }
 
 .card h2 {

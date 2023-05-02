@@ -83,7 +83,7 @@ const skills = [
 function About() {
   return (
     <div className={styles.me}>
-      <h2>Quien soy y mas sobre mi</h2>
+      <h2>Quien soy y más sobre mi</h2>
       <p>
         Me llamo Antonio Ayola soy un desarrollador de Software de México con
         gran afición al mundo Tecnológico, autodidacta y apasionado por aprender
@@ -192,6 +192,16 @@ function Studies() {
             href={constants.cursos.ingSoftware}
           >
             • Titulo Ing. en Software - UPP - 17 de Enero 2020
+          </a>
+        </li>
+        <li>
+          <a
+            title="Platzi Profile"
+            target="_blank"
+            rel="noreferrer noopener"
+            href="https://platzi.com/p/AntonioAyola/"
+          >
+            • Perfil Platzi
           </a>
         </li>
         <li>

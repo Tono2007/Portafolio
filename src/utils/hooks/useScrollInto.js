@@ -6,7 +6,7 @@ const useScrollInto = () => {
       const getId = document.getElementById(sectionId);
       if (typeof window !== 'undefined') {
         window.scroll({
-          top: getId.offsetTop - 90,
+          top: getId.offsetTop - 130,
           left: 0,
           behavior: 'smooth',
         });

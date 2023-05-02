@@ -56,7 +56,7 @@ function Hero() {
             />
           </h2>
           <h3>
-            Con gran afición al mundo Tecnológico, tanto Frontend como Backend;
+            Con gran afición al mundo tecnológico, tanto Frontend como Backend;
             persiguiendo nuevos retos y explorando continuamente las nuevas
             tendencias.
             {/* Experiencia en Creación, prototipado y desarrollo de
