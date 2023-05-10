@@ -39,6 +39,8 @@ export const constants = {
       'https://platzi.com/p/AntonioAyola/curso/1741-computacion-basica-2019/diploma/detalle/',
     introduccionAPIRest: 'https://ed.team/@antonioayola/curso/api-rest',
     git: 'https://www.udemy.com/certificate/UC-0c57c4a0-ee62-47a0-a349-b8feccc4dcc6/',
+    noCountry:
+      'https://drive.google.com/file/d/1T1MNROvwBrDLYxlMnpYfEmKXs7Rtc7Go/view?usp=share_link',
   },
   language: 'es_mx',
   siteData: {

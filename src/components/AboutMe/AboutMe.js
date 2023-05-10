@@ -227,6 +227,16 @@ function Studies() {
         </li>
         <li>
           <a
+            title="Certificado NoCountry"
+            target="_blank"
+            rel="noreferrer noopener"
+            href={constants.cursos.noCountry}
+          >
+            • No Country - Seleccionado7 - 1 de Mayo 2023
+          </a>
+        </li>
+        <li>
+          <a
             title="Certificado Frontend"
             target="_blank"
             rel="noreferrer noopener"
