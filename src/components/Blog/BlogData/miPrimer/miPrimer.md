@@ -12,7 +12,7 @@ Mi idea era tener un espacio para mostrar mis proyectos y mi información de con
 
 La idea de este blog no es hablar tanto de mi, va mas enfocado al **desarrollo de software** tal vez haciendo tutoriales o explicando como fue la construncció de algunos de mis proyectos, mejorar mi escritura y tal vez en algun momento escribir anécdoas, aventuras y esas cosillas.
 
-Lo mas complicado fué decidirse a hacerlo, tecnicamente tambien fue complicado ya que no era la idea al principio por lo que no hay backend ni base de datos, ni herramientas o planntillas como **docusaurus** para facilitar el desarrollo, todo esta localmente. Pero tiene una desventaja y es que, qué pasará cuando tenga muchos archivos? el proyecto se hará muy pesado 🤔.
+Lo mas complicado fué decidirse a hacerlo, tecnicamente tambien fue complicado ya que no era la idea al principio por lo que no hay backend ni base de datos, ni herramientas o plantillas como **docusaurus** para facilitar el desarrollo, todo esta localmente. Pero tiene una desventaja y es que, qué pasará cuando tenga muchos archivos? el proyecto se hará muy pesado 🤔.
 
 &nbsp;&nbsp;
 
@@ -23,7 +23,7 @@ Esto facilita mucho la creacion de contenido pero complica la implementación: B
 
 Con una estructura no muy complicada creo yo para agregar mas publicaciones solo es necesario agregar un archivo nuevo en formato markdown .md y algunos datos extra como titulo, fecha, etiquetas...
 
-Algo complicado que todavia no logro es mostrar imagenes alojadas localmente, por ahora las subo a **Imgur**.
+Algo complicado que todavia no logro es mostrar imagenes alojadas localmente, por ahora las subo a **Imgur**. Las publicaciones solo se cargan cuando se abren, de modo que si la cantidad de publicaciones aumenta la carga inicial no tardará más.
 
 ---
 
