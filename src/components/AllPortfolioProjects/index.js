@@ -16,6 +16,7 @@ const categories = [
   'APPLICATION',
   'DESIGN',
   'MOBILE',
+  'COLABORATION',
 ];
 
 function Index() {

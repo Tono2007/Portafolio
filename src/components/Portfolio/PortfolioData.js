@@ -217,6 +217,41 @@ const data = [
       page: 'https://slim-free-react-mui-template.netlify.app/',
     },
   },
+  {
+    id: 101,
+    year: '2023',
+    date: '06/03/2023',
+    category: 'COLABORATION',
+    title: 'DustBusters',
+    image: 'dustBusters.webp',
+    technologies: ['ReactJs', 'Typescript', 'Tailwind ', 'Java', 'Spring Boot'],
+    desc: `Proyecto colaborativo desarrollado durante el cohorte8 de No Country, simulación de entorno de trabajo con duranción de 5 semanas, con un equipo de 8 personas donde participe como frontend developer consiguiendo un avance satisfactorio.
+    Buenisimo para mejorar abilidades blandas y hacer amistades nuevas.
+
+    El proyecto consistió en Una plataforma de servicio de limpieza que permita a los clientes solicitar y programar servicios de limpieza en su hogar o lugar de trabajo. 
+    `,
+    links: {
+      code: 'https://github.com/No-Country/c9-32-t-javareact',
+      page: 'https://dust-busters.netlify.app/login',
+    },
+  },
+  {
+    id: 102,
+    year: '2023',
+    date: '30/04/2023',
+    category: 'COLABORATION',
+    title: 'CompraListo',
+    image: 'compraListo.webp',
+    technologies: ['ReactJs', 'JS', 'Tailwind ', 'Java', 'Spring Boot'],
+    desc: `Proyecto colaborativo desarrollado durante el seleccionado7 de No Country, simulación de entorno de trabajo con duranción de 5 semanas, con un equipo de 9 personas donde participe como frontend developer.
+
+    El proyecto consistió en web app para crear, guardar y compartir tus listas de compras. Puedes ingresar desde cualquier dispositivo, crearte una cuenta y empezar a crear tus listas, compartir con tus familiares, generar un pdf o compartir por whatsapp marcar los productos que ya tenes en el supermercado y hasta te calcula cuando vas a gastar. 
+    `,
+    links: {
+      code: 'https://github.com/No-Country/s7-11-t-javareact',
+      page: 'https://compralisto0.vercel.app/',
+    },
+  },
 ];
 
 export default data;
