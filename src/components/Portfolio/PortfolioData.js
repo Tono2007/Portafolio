@@ -232,7 +232,7 @@ const data = [
     `,
     links: {
       code: 'https://github.com/No-Country/c9-32-t-javareact',
-      page: 'https://dust-busters.netlify.app/login',
+      page: 'https://dust-busters.netlify.app',
     },
   },
   {
@@ -245,7 +245,7 @@ const data = [
     technologies: ['ReactJs', 'JS', 'Tailwind ', 'Java', 'Spring Boot'],
     desc: `Proyecto colaborativo desarrollado durante el seleccionado7 de No Country, simulación de entorno de trabajo con duranción de 5 semanas, con un equipo de 9 personas donde participe como frontend developer.
 
-    El proyecto consistió en web app para crear, guardar y compartir tus listas de compras. Puedes ingresar desde cualquier dispositivo, crearte una cuenta y empezar a crear tus listas, compartir con tus familiares, generar un pdf o compartir por whatsapp marcar los productos que ya tenes en el supermercado y hasta te calcula cuando vas a gastar. 
+    El proyecto consistió en web app para crear, guardar y compartir tus listas de compras. Puedes ingresar desde cualquier dispositivo, crearte una cuenta y empezar a crear tus listas, compartir con tus familiares, generar un pdf o compartir por whatsapp marcar los productos que ya tienes en el supermercado y hasta te calcula cuando vas a gastar. 
     `,
     links: {
       code: 'https://github.com/No-Country/s7-11-t-javareact',
