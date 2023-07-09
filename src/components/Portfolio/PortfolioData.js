@@ -252,6 +252,25 @@ const data = [
       page: 'https://compralisto0.vercel.app/',
     },
   },
+  {
+    id: 103,
+    year: '2023',
+    date: '10/06/2023',
+    category: 'COLABORATION',
+    title: 'Pigmeo',
+    image: 'pigmeo.jpg',
+    technologies: ['ReactJs', 'Typescript', 'JS', 'Tailwind '],
+    desc: `Proyecto colaborativo desarrollado durante el seleccionado8 de No Country, simulación de entorno de trabajo con duranción de 5 semanas, con un equipo de 12 personas donde participe como frontend developer.
+
+    El proyecto consistió en web app mobile responsive desarrollada para brindar a los usuarios un control total de sus finanzas y facilitar la realización de diversas transacciones de forma rápida y segura.
+
+    -> https://www.youtube.com/watch?v=UJ5vFleryLM
+    `,
+    links: {
+      code: 'https://github.com/No-Country/s8-14-t-mern',
+      page: 'https://pigmeo-app.netlify.app/',
+    },
+  },
 ];
 
 export default data;

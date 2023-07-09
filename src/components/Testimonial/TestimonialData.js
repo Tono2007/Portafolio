@@ -25,17 +25,7 @@ const data = [
       Siempre ha manifestado preocupación por mejorar, aprender nuevas tecnologías y actualizar 
       sus conocimientos`,
   },
-  {
-    id: 2,
-    profileImg: 'appdt.webp',
-    company: 'APPDT Software',
-    name: 'Ing. Miguel Méndez Sánchez',
-    level: 'Director General',
-    work: 'Programador Analista',
-    date: '15 de Abril, 2019',
-    testimony:
-      'Cabe mencionar que el trabajo que Antonio realizo fue muy certero creando un excelente equipo de trabajo.',
-  } /* 
+  /* 
   {
     id: 2,
     profileImg: '',
@@ -65,6 +55,6 @@ const data = [
     work: 'Programador Analista',
     testimony:
       'Cabe mencionar que el trabajo que Antonio realizo fue muy certero creando un excelente equipo de trabajo',
-  }, */,
+  }, */
 ];
 export default data;
